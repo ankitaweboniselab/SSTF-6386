@@ -1,0 +1,2869 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect" />
+  <link href="https://fonts.googleapis.com/css?family=Alfa+Slab+One&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Titillium+Web:wght@400;600;700;900&amp;display=swap"
+    rel="stylesheet" />
+  <title>Formulator</title>
+
+  <style data-name="adjustedFractions">
+    .btnWrapper button a,
+    .btnWrapper button a:focus,
+    .btnWrapper button a:visited,
+    .btnWrapper button a:active,
+    .btnWrap button a,
+    .btnWrap button a:focus,
+    .btnWrap button a:visited,
+    .btnWrap button a:active {
+      width: 100%;
+      height: 100%;
+      display: block;
+      color: #0066cc;
+      font-size: 15px;
+      line-height: 32px;
+      font-weight: 600;
+      text-align: center;
+    }
+
+    .btnLearnMore {
+      width: 123px;
+      height: 48px;
+      margin: 0 auto;
+      padding: 12px 24px;
+      line-height: 24px;
+    }
+
+    @media screen and (max-width: 767px) {
+      .adjustedFractions .contentWrap {
+        margin: 16px -16px;
+      }
+
+      .btnWrapper {
+        text-align: center;
+        margin-top: 16px;
+      }
+    }
+
+    @media screen and (min-width: 768px) {
+      .adjustedFractions img {
+        width: 100%;
+      }
+
+      .adjustedFractions .stepDesc {
+        font-size: 32px;
+        line-height: 40px;
+        text-align: center;
+      }
+
+      .btnWrapper {
+        text-align: center;
+        margin-top: 44px;
+      }
+    }
+  </style>
+  <style data-name="allPagesWeb">
+    @media screen and (min-width: 768px) {
+      section .subTitle {
+        font-size: 21px;
+        line-height: 28px;
+        max-width: 66%;
+        margin: 4px auto;
+      }
+
+      .formulatorLanding .colorBgSection {
+        padding: 32px 36px;
+      }
+
+      .formulatorLanding .sectionTitle {
+        font-size: 40px;
+        line-height: 48px;
+      }
+
+      .formulatorLanding .sectionBlueTitle {
+        font-size: 32px;
+        line-height: 40px;
+      }
+
+      .listWrap h3 {
+        color: #19345e;
+        font-size: 24px;
+        line-height: 32px;
+        font-weight: 700;
+        margin-bottom: 14px;
+      }
+
+      .listWrap li {
+        margin-bottom: 18px;
+        font-size: 17px;
+        line-height: 24px;
+      }
+
+      .wageringLeftSection .btnWrap {
+        text-align: left;
+      }
+
+      .wageringLiveVideo .login {
+        width: 324px;
+      }
+
+      .accordianContentWrap {
+        display: flex;
+      }
+
+      .contentLeftSection {
+        width: 40%;
+      }
+
+      .accordianContentWrap .accordianImgWrap {
+        width: 60%;
+        margin-left: 24px;
+        margin-top: -65px;
+      }
+
+      .contentWrap {
+        margin-top: 14px;
+      }
+
+      .accordianWrapper .accordianHeader {
+        font-size: 24px;
+        line-height: 32px;
+      }
+
+      .accordianHeader .accordianIcon {
+        top: 4px;
+      }
+
+      .accordianWrapper .accordianContentWrap {
+        margin-bottom: 59px;
+      }
+
+      .desktopHide {
+        display: none;
+      }
+
+      .videoReplaysImgWrap img {
+        width: 100%;
+        margin: 36px 0 40px
+      }
+
+      .videoListWrapper {
+        display: flex;
+        flex-direction: row-reverse;
+        align-items: center;
+      }
+
+      .videoListWrapper .videoWrap {
+        width: 49%;
+        margin-top: 0;
+      }
+
+      .videoListWrapper .listWrap {
+        width: 51%;
+      }
+    }
+
+    @media (min-width: 768px) and (max-width: 991px) {
+      .wageringContentWrap .contentWrap {
+        width: 54%;
+      }
+
+      .wageringContentWrap .wageringLeftSection {
+        width: 43%;
+      }
+
+      .wageringContentWrap .availableFormulatorCard,
+      .wageringLiveVideo .primary {
+        width: 305px;
+      }
+
+      .videoWrap iframe {
+        width: 320px;
+        height: 190px;
+      }
+
+      .formulatorLanding section.colorBgSection {
+        padding: 24px;
+      }
+
+      .raceChartVideoListWrap .listWrap {
+        margin-left: 60px;
+        width: 55%;
+      }
+
+      .raceChartVideoListWrap .videoWrap {
+        width: 42%;
+      }
+
+      .videoListWrapper .listWrap h3 {
+        font-size: 18px;
+      }
+
+      section.customizedPrinting .contentWrap img {
+        margin: 10px 0 20px;
+      }
+
+      .wageringContentWrap {
+        margin-top: 20px;
+      }
+
+      .formulatorLanding .sectionBlueTitle {
+        font-size: 30px;
+      }
+
+      .adjustedFractions .stepDesc {
+        font-size: 24px;
+      }
+
+      .btnWrapper {
+        margin-top: 24px;
+      }
+
+      .accordianContentWrap .accordianImgWrap {
+        width: 54%;
+      }
+    }
+
+    @media (min-width: 1024px) and (max-width: 1024px) {
+      .videoWrap iframe {
+        width: 470px;
+        height: 280px;
+      }
+
+      .reportsImgWrap img,
+      .accordianImgWrap img,
+      .wageringContentWrap .contentWrap img {
+        width: 525px;
+      }
+
+    }
+  </style>
+  <style data-name="conditionalFiters">
+    .conditionalFilters {
+      flex-direction: column;
+      margin-bottom: 20px;
+      margin-top: 20px;
+    }
+
+    .conditionalFilters img {
+      width: 100%;
+      height: auto;
+    }
+
+    .conditionalFilterInfo li::before {
+      background: transparent;
+    }
+
+    .conditionalFilters .sectionTitle {
+      margin-bottom: 14px;
+    }
+
+    .mobileShow {
+      display: block;
+    }
+
+    .mobileHide {
+      display: none;
+    }
+
+    .conditionalFilterCnt {
+      margin-left: 0;
+      margin-top: 21px;
+    }
+
+    .conditionalFilters .infoCnt li {
+      margin-bottom: 12px;
+      font-size: 15px;
+      line-height: 20px;
+      padding-left: 24px;
+    }
+
+    .conditionalFilters .infoCnt li:before {
+      width: 16px;
+      height: 16px;
+      background-size: 16px 16px;
+    }
+
+    .conditionalFilterInfo li {
+      margin-bottom: 8px;
+    }
+
+    .conditionalFilterInfo li b {
+      color: #19345e;
+      font-weight: 700;
+    }
+
+    @media screen and (min-width: 992px) {
+      .mobileShow {
+        display: none;
+      }
+
+      .mobileHide {
+        display: block;
+      }
+
+      .conditionalFilters {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        margin-top: 40px;
+        margin-bottom: 40px;
+      }
+
+      .conditionalFilters .sectionTitle {
+        margin-bottom: 32px;
+      }
+
+      .conditionalFilters .infoCnt li:before {
+        width: 24px;
+        height: 24px;
+        background-size: 24px 24px;
+      }
+
+      .conditionalFilters img {
+        width: 649px;
+        height: 564px;
+      }
+
+      .conditionalFilterCnt {
+        margin-left: 24px;
+      }
+
+      .conditionalFilters .infoCnt li {
+        margin-bottom: 16px;
+        font-size: 17px;
+        line-height: 24px;
+        padding-left: 32px;
+      }
+
+      .conditionalFilterInfo li b {
+        color: #000;
+      }
+
+      .conditionalFilters .infoCnt li:last-child {
+        margin-bottom: 6px;
+      }
+
+      .conditionalFilterInfo li {
+        font-size: 17px;
+        line-height: 28px;
+        color: #000;
+      }
+    }
+  </style>
+
+  <style data-name="customizedPrinting">
+    .btndownloadExample,
+    .btnTraineeLearnMore {
+      padding: 12px 48px;
+      margin-top: 16px;
+      height: 48px;
+      line-height: 24px;
+      width: 182px;
+      box-shadow: 0 4px 4px -3px rgba(0, 102, 204, 0.5);
+      margin: 0 auto;
+    }
+
+    .btndownloadExample {
+      padding: 12px 28px;
+      margin-top: 16px;
+    }
+
+    @media screen and (max-width: 767px) {
+      .customizedPrinting .contentWrap {
+        margin: 16px -16px;
+      }
+    }
+
+    @media screen and (min-width: 768px) {
+      .customizedPrinting .contentWrap img {
+        width: 100%;
+        margin: 26px 0 30px;
+      }
+
+      .customizedPrinting .listWrap {
+        display: flex;
+      }
+
+      .customizedPrinting .listWrap ul {
+        width: 50%;
+      }
+    }
+  </style>
+  <style data-name="formulatorpps">
+    .formulatorpps {
+      background-color: #19345E;
+      background-image: url('https://static.drf.com/sstf/images/pps_page_images/formulatorpphorse.png');
+      background-size: auto 396px;
+      background-repeat: no-repeat;
+      background-position: top right;
+      height: 396px;
+      width: 100%;
+      height: auto;
+    }
+
+    .formulatorpps .backLink a {
+      color: #fff;
+      font-size: 14px;
+      line-height: 24px;
+      display: flex;
+      align-items: center;
+    }
+
+    .formulatorpps .content {
+      margin-top: 359px;
+      padding: 18px 0 24px;
+      background-image: #19345E;
+    }
+
+    .formulatorpps .content .hgroup h1 {
+      font-family: "Alfa Slab One";
+      font-size: 30px;
+      line-height: 40px;
+      color: #fff;
+      margin-bottom: 10px;
+      letter-spacing: 1px;
+    }
+
+    .formulatorpps .content .hgroup p {
+      font-size: 17px;
+      line-height: 24px;
+      color: #fee600;
+      margin-bottom: 10px;
+      font-weight: 600;
+      max-width: 330px;
+    }
+
+    .formulatorpps .customize {
+      width: 272px;
+      font-size: 20px;
+      line-height: 28px;
+      font-weight: 700;
+      color: #fee600;
+      margin-bottom: 14px;
+    }
+
+    .formulatorpps ul li::before {
+      background: url('https://static.drf.com/sstf/images/pps_page_images/Icons/listarrowdown.svg') no-repeat;
+      background-position: left center;
+      background-size: 24px 24px;
+      height: 24px;
+      width: 24px;
+      margin-right: 8px;
+    }
+
+    .formulatorpps ul li {
+      font-size: 17px;
+      line-height: 24px;
+      color: #fff;
+      margin-bottom: 16px;
+    }
+
+    .formulatorpps ul li a,
+    .formulatorpps ul li a:focus,
+    .formulatorpps ul li a:hover,
+    .formulatorpps ul li a:visited {
+      font-size: 17px;
+      line-height: 24px;
+      color: #fff;
+      margin-bottom: 16px;
+    }
+
+    .formulatorpps ul li a:hover {
+      font-weight: 700;
+    }
+
+    .formulatorpps ul li:last-child {
+      margin-bottom: 0;
+    }
+
+    .container section.formulatorpps {
+      margin-bottom: 0;
+    }
+
+
+    @media screen and (min-width: 768px) {
+      .formulatorpps {
+        background-image: url('https://static.drf.com/sstf/images/pps_page_images/formulatorpphorse.png');
+        background-size: auto 934px;
+        background-repeat: no-repeat;
+        background-position: 240% 0;
+        height: 934px;
+        width: 100%;
+      }
+
+      .formulatorpps .content {
+        margin-top: 60px;
+        width: 400px;
+        background: transparent;
+      }
+
+      .formulatorpps .customize {
+        margin-bottom: 19px;
+      }
+
+      .formulatorpps ul li {
+        font-size: 17px;
+        line-height: 24px;
+        color: #fff;
+        margin-bottom: 16px;
+      }
+    }
+
+    @media screen and (min-width: 992px) {
+      .formulatorpps {
+        background-image: url('https://static.drf.com/sstf/images/pps_page_images/formulatorpphorse.png');
+        background-size: auto 934px;
+        background-repeat: no-repeat;
+        background-position: right top;
+        height: 934px;
+        width: 100%;
+      }
+
+      .formulatorpps .content {
+        margin-top: 65px;
+        width: 440px;
+        background: transparent;
+      }
+
+      .formulatorpps .content .hgroup h1 {
+        font-size: 36px;
+        line-height: 48px;
+      }
+
+      .formulatorpps .customize {
+        margin-bottom: 19px;
+      }
+
+      .formulatorpps ul li {
+        font-size: 17px;
+        line-height: 24px;
+        color: #fff;
+        margin-bottom: 16px;
+      }
+    }
+
+    @media screen and (min-width:1200px) {
+      .formulatorpps .content {
+        width: 502px;
+      }
+    }
+  </style>
+  <style data-name="global">
+    /*****
+            
+          Mobile First Design starting with 360px and moving ahead by using min-width
+          Breakpoints: 360, 375, 768, 991, 1024?, 1025, 1200
+          Max Container: 1200px
+          Internal and Inline Styles only
+    
+        *****/
+
+    /* Start Base Classes */
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      font-family: "Titillium Web", sans-serif;
+      font-size: 14px;
+      line-height: 16px;
+      color: #000;
+    }
+
+    a {
+      cursor: pointer;
+      text-decoration: none;
+      color: #0066cc;
+    }
+
+    a:hover,
+    a:focus {
+      text-decoration: none;
+      outline: none;
+    }
+
+    @media screen and (min-width: 1025px) {
+      a:hover {
+        color: #19345e;
+      }
+
+      a:active,
+      a a:visited {
+        color: #0066cc;
+      }
+    }
+
+    .clearfix::after {
+      content: "";
+      clear: both;
+      display: table;
+    }
+
+    .center {
+      text-align: center;
+    }
+
+    .hide {
+      display: none;
+    }
+
+    button,
+    a.button {
+      border: none;
+      border-radius: 4px;
+      box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.15);
+      cursor: pointer;
+    }
+
+    button.primary,
+    a.button.primary {
+      color: #fff;
+      font-size: 17px;
+      font-weight: 600;
+      text-align: center;
+      background-color: #669933;
+      display: block;
+    }
+
+    button.secondary,
+    a.button.secondary {
+      border: 1px solid #06c;
+      color: #0066cc;
+      font-size: 15px;
+      font-weight: 600;
+      text-align: center;
+      background-color: #fff;
+      display: block;
+    }
+
+    .backLink {
+      font-size: 14px;
+      line-height: 24px;
+      color: #ffffff;
+      padding-top: 13px;
+    }
+
+    .backLink svg {
+      fill: #ffffff;
+      width: 16px;
+      height: 16px;
+      margin-right: 8px;
+    }
+
+    .hDivider {
+      width: 100%;
+      height: 1px;
+      background: #ffffff;
+      opacity: 0.3;
+      margin: 24px 0 16px;
+    }
+
+    .white {
+      color: #fff;
+    }
+
+    .red {
+      color: #ec1c24;
+    }
+
+    .yellowText {
+      color: #fee600;
+    }
+
+    .grey {
+      color: #666;
+    }
+
+    .black {
+      color: #000;
+    }
+
+    .coolWhite {
+      color: #f4faff
+    }
+
+    .formulatorLanding .container.formulator {
+      width: 100%;
+      max-width: 1200px;
+      margin: 0 auto;
+      position: relative;
+      padding: 0;
+    }
+
+    .container section {
+      margin-bottom: 16px;
+      padding: 0 36px;
+    }
+
+    .container section.withBg {
+      padding: 0;
+    }
+
+    .innerContainer {
+      padding: 0 16px;
+    }
+
+    .sectionTitle {
+      font-size: 24px;
+      line-height: 32px;
+      font-weight: 700;
+      text-align: center;
+      color: #000;
+      margin-bottom: 4px;
+    }
+
+    .formulatorLanding .colorBgSection {
+      background-color: #f4faff;
+    }
+
+    section .subTitle {
+      font-size: 15px;
+      line-height: 20px;
+      font-weight: 400;
+      color: #666666;
+      text-align: center;
+    }
+
+    li {
+      list-style-type: none;
+      font-size: 15px;
+      line-height: 20px;
+      color: #000;
+      padding-left: 32px;
+      position: relative;
+    }
+
+    ul li::before {
+      content: '';
+      width: 24px;
+      height: 24px;
+      background: url('https://static.drf.com/sstf/images/pps_page_images/Icons/liGreenTick.svg');
+      background-size: 24px 24px;
+      position: absolute;
+      left: 0;
+    }
+
+    .bettingCard::before {
+      display: none;
+    }
+
+    .stepsNumber {
+      font-size: 38px;
+      line-height: 40px;
+      color: rgba(25, 52, 94, 0.2);
+      font-family: 'Alfa Slab One', sans-serif;
+    }
+
+    .contentWrap {
+      margin-bottom: 16px;
+    }
+
+    .stepDesc {
+      font-size: 15px;
+      color: #000000;
+      line-height: 20px;
+      margin-top: 3px;
+    }
+
+    .accordianHeader {
+      font-size: 17px;
+      line-height: 24px;
+      font-weight: 700;
+      color: #0066cc;
+      position: relative;
+      padding-left: 32px;
+      margin-bottom: 12px;
+    }
+
+    .accordianHeader .accordianIcon {
+      width: 24px;
+      height: 24px;
+      background: url('https://static.drf.com/sstf/images/pps_page_images/Icons/plusExpand.svg');
+      background-size: 24px 24px;
+      position: absolute;
+      left: 0;
+    }
+
+    .accordianHeader .collapseIcon {
+      background: url('https://static.drf.com/sstf/images/pps_page_images/Icons/collapseMinusIcon.svg');
+      background-size: 24px 24px;
+    }
+
+    .videoWrap {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin: 36px 0 20px;
+    }
+
+    .videoWrap iframe {
+      border-radius: 8px;
+    }
+
+    img {
+      max-width: 100%;
+      height: auto;
+    }
+
+    /* End Base Classes */
+
+    /* Media Queries*/
+
+    @media screen and (max-width: 767px) {
+      li::before {
+        width: 16px;
+        height: 16px;
+        background: url('https://static.drf.com/sstf/images/pps_page_images/Icons/liGreenTick.svg');
+        background-size: 16px 16px;
+      }
+
+      .container section {
+        margin-bottom: 16px;
+        padding: 16px;
+      }
+
+      .videoWrap iframe {
+        width: 100%;
+        height: 196px;
+      }
+
+      .mobileHide {
+        display: none;
+      }
+    }
+
+
+    @media screen and (min-width: 991px) {
+      .innerContainer {
+        padding: 0 24px;
+      }
+    }
+
+
+    @media screen and (min-width: 1200px) {
+      .innerContainer {
+        padding: 0 36px;
+      }
+    }
+  </style>
+  <style data-name="joinNow">
+    .joinNow {
+      font-size: 13px;
+      line-height: 20px;
+      font-weight: 600;
+      color: #19345e;
+      background-color: #f4faff;
+      text-align: center;
+      height: 48px;
+      padding: 4px;
+    }
+
+    .joinNow a {
+      font-weight: bold;
+      color: #ec1c24;
+    }
+
+    .container section.joinNow {
+      margin-bottom: 0;
+    }
+
+
+    @media screen and (min-width: 768px) {
+      .joinNow {
+        line-height: 48px;
+        height: 48px;
+        font-size: 16px;
+      }
+
+      .joinNow .br {
+        display: none;
+      }
+    }
+
+    @media screen and (min-width: 1200px) {
+      .joinNow {
+        line-height: 62px;
+        height: 62px;
+        font-size: 21px;
+      }
+    }
+  </style>
+  <style data-name="learnMoreHorseBetting">
+    .bettingCardsWrap {
+      margin-top: 24px;
+    }
+
+    .bettingCardsList {
+      display: flex;
+    }
+
+    .bettingCardsList li {
+      padding-left: 0;
+    }
+
+    .bettingCardsList li::before {
+      display: none;
+    }
+
+    .bettingCardsWrap .slick-arrow {
+      position: absolute;
+      top: -34px;
+      height: 34px;
+      width: 34px;
+      text-indent: -9999px;
+      border: none;
+      cursor: pointer;
+    }
+
+    .bettingCardsWrap .slick-arrow::before {
+      display: none;
+    }
+
+    .bettingCardsWrap .slick-arrow.slick-disabled {
+      opacity: 0.15;
+      pointer-events: none;
+    }
+
+    .bettingCardsWrap .slick-prev {
+      right: 30px;
+      background: url("https://static.drf.com/sstf/images/101_page_images/handicapping/slider-prev.svg");
+      margin-right: 8px;
+      left: auto;
+    }
+
+    .bettingCardsWrap .slick-prev:hover {
+      background: url("https://static.drf.com/sstf/images/101_page_images/handicapping/slider-prev-hover.svg");
+    }
+
+    .bettingCardsWrap .slick-next {
+      right: 0;
+      background: url("https://static.drf.com/sstf/images/101_page_images/handicapping/slider-next.svg");
+    }
+
+    .bettingCardsWrap .slick-next:hover {
+      background: url("https://static.drf.com/sstf/images/101_page_images/handicapping/slider-next-hover.svg");
+    }
+
+    .bettingCardsWrap .bettingCardHead {
+      justify-content: space-between;
+      margin-bottom: 20px;
+      align-items: center;
+    }
+
+    .bettingCardsWrap .cardTitle {
+      font-size: 19px;
+      line-height: 24px;
+      font-weight: 700;
+    }
+
+    .bettingCardsWrap .bettingCardsList .bettingCard .sliderBox {
+      width: 152px;
+      margin: 0 8px;
+      padding: 8px;
+      border-radius: 4px;
+      border: solid 1px #d7e4f2;
+      background: #ffffff;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+      position: relative;
+      min-height: 150px;
+    }
+
+    .bettingCardsWrap .bettingCardsList .bettingCard .sliderBox:first-child {
+      margin-left: 0;
+    }
+
+    .bettingCardsWrap .bettingCardsList .cardIcon img {
+      width: auto;
+      height: 28px;
+    }
+
+    .bettingCardsWrap .bettingCardsList .cardTag {
+      height: 20px;
+      background: #09498e;
+      margin: 6px 0 8px;
+      padding: 0 2px;
+      font-size: 13px;
+      line-height: 20px;
+      color: #ffffff;
+      font-weight: 700;
+      min-width: 96px;
+    }
+
+    .bettingCardsWrap .bettingCardsList .cardTag.tag-green {
+      background: #669933;
+    }
+
+    .bettingCardsWrap .bettingCardsList .cardTag.tag-navy {
+      background: #09498e;
+    }
+
+    .bettingCardsWrap .bettingCardsList .cardTag.tag-orange {
+      background: #f89d00;
+    }
+
+    .bettingCardsWrap .bettingCardsList .cardTag.tag-red {
+      background: #e84f55;
+    }
+
+    .bettingCardsWrap .bettingCardsList .cardTag.tag-blue {
+      background: #0066d3;
+    }
+
+    .bettingCardsWrap .bettingCardsList .cardDesc {
+      font-size: 10px;
+      line-height: 12px;
+      color: #19345e;
+    }
+
+    .bettingCardsWrap .bettingCardsList .drfCard {
+      margin-bottom: 12px;
+    }
+
+    .bettingCardsWrap .bettingCardsList .drfCard img {
+      height: auto;
+    }
+
+    .bettingCardsWrap .bettingCardsList h4 {
+      font-size: 18px;
+      line-height: 26px;
+      margin-bottom: 8px;
+      padding-top: 9px;
+    }
+
+    .bettingCardsWrap .bettingCardsList .cardActionBtn {
+      width: calc(100% - 16px);
+      height: 32px;
+      margin: 8px 0 0;
+      padding: 6px 0;
+      border-radius: 4px;
+      box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.15);
+      border: solid 1px #0066cc;
+      background-color: #ffffff;
+      font-size: 14px;
+      line-height: 20px;
+      color: #0066cc;
+      font-family: "Titillium Web", sans-serif;
+      font-weight: 600;
+      position: absolute;
+      bottom: 8px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    @media(min-width:1200px) {
+      .bettingCardsWrap .bettingCardsList .cardActionBtn:hover {
+        box-shadow: 0 4px 8px -3px #06c;
+        border: solid 1px #06c;
+        background-color: #06c;
+        color: #fff;
+      }
+    }
+
+    .bettingCardsWrap .slick-arrow::before {
+      display: none;
+    }
+
+    .bettingCardsWrap .slick-arrow.slick-disabled {
+      opacity: 0.15;
+      pointer-events: none;
+    }
+
+    .bettingCardsWrap .slick-prev {
+      right: 30px;
+      background: url("https://static.drf.com/sstf/images/101_page_images/handicapping/slider-prev.svg");
+      margin-right: 8px;
+      left: auto;
+    }
+
+    .bettingCardsWrap .slick-prev:hover {
+      background: url("https://static.drf.com/sstf/images/101_page_images/handicapping/slider-prev-hover.svg");
+    }
+
+    .bettingCardsWrap .slick-next {
+      right: 0;
+      background: url("https://static.drf.com/sstf/images/101_page_images/handicapping/slider-next.svg");
+    }
+
+    .bettingCardsWrap .slick-next:hover {
+      background: url("https://static.drf.com/sstf/images/101_page_images/handicapping/slider-next-hover.svg");
+    }
+
+    @media only screen and (max-width: 374px) {
+      .bettingCardsWrap .cardTitle {
+        width: 205px;
+      }
+
+      .bettingCardsWrap .slick-arrow {
+        top: -45px;
+      }
+    }
+
+    @media only screen and (max-width: 767px) {
+      .bettingCardsWrap .bettingCardsList .cardIcon.drfCard {
+        max-width: 36px;
+      }
+    }
+
+    @media only screen and (min-width: 768px) {
+      .bettingCardsWrap {
+        margin-top: 32px;
+      }
+
+      .bettingCardsWrap .bettingCardHead {
+        margin-bottom: 16px;
+      }
+
+      .bettingCardsWrap .cardTitle {
+        font-size: 28px;
+        line-height: 36px;
+      }
+
+      .bettingCardsWrap .bettingCardsList .bettingCard .sliderBox {
+        margin: 16px 16px 0 0;
+        padding: 16px;
+        min-height: 212px;
+        position: relative;
+        width: 212px;
+      }
+
+      .bettingCardsWrap .bettingCardsList .cardDesc {
+        font-size: 13px;
+        line-height: 16px;
+        color: #19345e;
+        margin: 8px 0 16px;
+      }
+
+      .bettingCardsWrap .bettingCardsList .cardIcon img {
+        width: auto;
+        height: 52px;
+      }
+
+      .bettingCardsWrap .bettingCardsList .cardIcon.drfCard {
+        margin-bottom: 12px;
+      }
+
+      .bettingCardsWrap .bettingCardsList .cardIcon.drfCard img {
+        width: 60px;
+        height: 30px;
+      }
+
+      .bettingCardsWrap .bettingCardsList .cardTag {
+        height: 28px;
+        margin: 8px 0 0;
+        padding: 2px 5px;
+        font-size: 18px;
+        line-height: 24px;
+      }
+
+      .bettingCardsWrap .bettingCardsList .cardActionBtn {
+        width: calc(100% - 32px);
+        height: 36px;
+        padding: 8px 0;
+        font-size: 14px;
+        line-height: 20px;
+        margin: 0;
+        position: absolute;
+        bottom: 16px;
+      }
+    }
+
+    @media only screen and (min-width: 1201px) {
+      .bettingCardsWrap .bettingCardsList .bettingCard .sliderBox {
+        width: 212px;
+        margin: 0 16px 0 0;
+      }
+
+      .bettingCardsWrap .bettingCardsList .bettingCard:last-child .sliderBox {
+        margin-right: 0;
+      }
+    }
+  </style>
+  <style data-name="pedigreeReports">
+    .pedigreeReportsConentWrap {
+      display: flex;
+      align-items: center;
+    }
+
+    .sectionBlueTitle {
+      color: #19345e;
+      text-align: left;
+      margin-bottom: 12px;
+    }
+
+    .reportsFeatureWrap {
+      margin-top: 16px;
+    }
+
+    @media screen and (max-width: 767px) {
+      .pedigreeReports li::before {
+        width: 16px;
+        height: 16px;
+        background-size: 16px 16px;
+      }
+
+      .pedigreeReports li {
+        padding-left: 24px;
+      }
+
+      .listWrap h3 {
+        font-size: 17px;
+        line-height: 20px;
+        color: #000000;
+        font-weight: 600;
+      }
+
+      .listWrap li {
+        margin-top: 12px;
+      }
+
+      .pedigreeReportsConentWrap {
+        display: block;
+      }
+
+      .reportsImgWrap {
+        margin: 16px 0 20px;
+      }
+
+      .contentWrap img,
+      .reportsImgWrap img {
+        width: 100%;
+      }
+
+      .accordianImgWrap {
+        margin: 0 -16px 16px;
+      }
+    }
+
+    @media screen and (min-width: 768px) {
+      .pedigreeReportsConentWrap {
+        flex-direction: row-reverse;
+        margin: 56px 0 59px;
+      }
+
+      .pedigreeReportsConentWrap .reportsImgWrap {
+        width: 58%;
+      }
+
+      .pedigreeReportsConentWrap .listWrap {
+        width: 42%;
+      }
+
+      .reportsImgWrap img,
+      .accordianImgWrap img {
+        width: 648px;
+      }
+
+      .reportsFeatureWrap .sectionBlueTitle {
+        margin-bottom: 28px;
+      }
+
+      .reportsFeatureWrap .comparisonChartImg {
+        margin-bottom: 0;
+      }
+
+      .comparisonChartImg img {
+        width: 100%;
+      }
+
+      .comparisonChartImg .contentWrap {
+        margin-bottom: 0;
+      }
+    }
+
+    @media (min-width: 768px) and (max-width: 991px) {
+      .container section {
+        padding: 0 24px;
+      }
+
+      .pedigreeReportsConentWrap .reportsImgWrap {
+        width: 56%;
+        margin-left: 20px;
+      }
+
+      .pedigreeReportsConentWrap .listWrap {
+        width: 44%;
+      }
+
+      .accordianContentWrap .contentLeftSection {
+        width: 42%;
+      }
+
+      .reportsImgWrap img,
+      .accordianImgWrap img,
+      .wageringLiveVideo .wageringContentWrap .contentWrap img {
+        width: 390px;
+      }
+    }
+  </style>
+  <style data-name="raceChart">
+    .raceChartImgWrap {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin: 19px 0;
+    }
+
+    .raceChartImgWrap img {
+      width: 213px;
+    }
+
+    .raceChart .videoWrap {
+      margin: 16px 0;
+    }
+
+    @media screen and (min-width: 768px) {
+      .raceChartImgWrap {
+        margin: 0;
+      }
+
+      .raceChartImgWrap img {
+        width: 83%;
+        margin: 40px 0;
+      }
+
+      .raceChartVideoListWrap {
+        display: flex;
+        align-items: center;
+        flex-direction: row-reverse;
+      }
+
+      .raceChartVideoListWrap .videoWrap {
+        width: 40%;
+      }
+
+      .raceChartVideoListWrap .listWrap {
+        width: 60%;
+        margin-left: 120px;
+      }
+    }
+  </style>
+  <style data-name="raceHorseNotes">
+    .formulatorLanding .colorBgSection.raceHorseNotes {
+      padding-bottom: 32px;
+      height: auto;
+    }
+
+    .raceHorseNotes .hgroup {
+      margin-bottom: 16px;
+    }
+
+    .raceHorseNotes .colTwo {
+      display: flex;
+      flex-direction: column-reverse;
+    }
+
+    .raceHorseNotes .colTwo {
+      align-items: flex-start;
+    }
+
+    .raceHorseNotes img {
+      margin-bottom: 20px;
+      object-fit: contain;
+    }
+
+    .raceHorseNotes ol {
+      margin-left: 22px;
+    }
+
+    .raceHorseNotes li {
+      margin-bottom: 24px;
+      font-size: 15px;
+      line-height: 20px;
+      font-weight: 700;
+      color: #000;
+      list-style-type: unset;
+      padding-left: 10px;
+    }
+
+    .raceHorseNotes li:last-child {
+      margin-bottom: 0;
+    }
+
+
+    @media screen and (min-width:992px) {
+      .raceHorseNotes .hgroup {
+        margin-bottom: 40px;
+      }
+
+      .raceHorseNotes .colTwo {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+      }
+
+      .raceHorseNotes li {
+        font-size: 24px;
+        line-height: 36px;
+        margin-bottom: 36px;
+      }
+
+      .raceHorseNotes li:last-child {
+        margin-bottom: 0;
+      }
+
+      .raceHorseNotes img {
+        margin-bottom: 0;
+        width: 580px;
+        margin-left: 24px;
+      }
+    }
+
+    @media screen and (min-width:1200px) {
+      .raceHorseNotes img {
+        width: 744px;
+        margin-left: 24px;
+      }
+    }
+  </style>
+  <style data-name="projectedOdds">
+    .projectedOdds .oddsDescription p {
+      font-size: 15px;
+      line-height: 20px;
+      color: #000000;
+      margin-bottom: 12px;
+    }
+
+    .oddsDescription {
+      margin-top: 16px;
+    }
+
+    .projectedOdds .oddsDescription span {
+      color: #19345e;
+      font-weight: 700;
+    }
+
+    @media screen and (max-width: 767px) {
+      .projectedOdds .subTitle {
+        max-width: 85%;
+        margin: auto;
+      }
+
+      .mergedWorkouts .videoWrap {
+        margin: 16px 0;
+      }
+    }
+
+    @media screen and (min-width: 768px) {
+      .workoutsImageWrap img {
+        width: 100%;
+        margin: 44px 0 4px;
+      }
+
+      .projectedOdds .subTitle {
+        max-width: 48%;
+      }
+
+      .projectedOddsImgWrap img {
+        width: 100%;
+        margin: 22px 0 18px;
+      }
+
+      .oddsDescription {
+        display: flex;
+      }
+
+      .descLeftSection,
+      .descRightSection {
+        width: 49%;
+      }
+
+      .descRightSection {
+        margin-left: 24px;
+      }
+    }
+  </style>
+  <style data-name="relevantNews">
+    .relevantNewsNSelections {
+      border-bottom: 1px solid rgba(25, 52, 94, 0.2);
+    }
+
+    @media screen and (max-width: 767px) {
+      .relevantNewsNSelections .contentWrap {
+        margin: 16px -16px;
+      }
+    }
+
+    @media screen and (min-width: 768px) {
+      .relevantNewsNSelections .contentWrap img {
+        width: 100%;
+        margin-top: 24px;
+      }
+
+      .relevantNewsContentWrap {
+        display: flex;
+        align-items: center;
+      }
+
+      .relevantNewsContentWrap .listWrap {
+        width: 60%;
+      }
+
+      .relevantNewsNSelections .contentWrap {
+        margin: 0;
+      }
+    }
+  </style>
+  <style data-name="timeFormUS">
+    .container section.timeFormUS {
+      background: rgb(63, 171, 45);
+      background: linear-gradient(180deg, rgba(63, 171, 45, 1) 0%, rgba(46, 144, 75, 1) 100%);
+      padding: 16px 0 16px
+    }
+
+    .timeFormUS .hgroup h2 {
+      color: #fff;
+    }
+
+    section.timeFormUS .subTitle {
+      color: #fff;
+    }
+
+    .timeFormUS img.desktop {
+      display: none;
+    }
+
+    .timeFormUS img.mobile {
+      width: 263px;
+      height: 363px;
+      margin: 20px auto;
+      display: block;
+    }
+
+    .timeFormUS .colTwo {
+      display: flex;
+      flex-direction: column;
+      margin: 20px 0;
+    }
+
+    .timeFormUS li::before {
+      content: "";
+      width: 16px;
+      height: 16px;
+      background: url('https://static.drf.com/sstf/images/pps_page_images/Icons/listtick.svg') no-repeat top left;
+      background-size: 16px 16px;
+      margin-top: 2px;
+    }
+
+    .timeFormUS li {
+      margin-bottom: 12px;
+      color: #f4faff;
+      padding-left: 24px;
+    }
+
+    .timeFormUS li:last-child {
+      margin-bottom: 0;
+    }
+
+    .timeFormUS .videoWrap {
+      margin: 16px 0 20px
+    }
+
+    .timeFormUS .cards {
+      display: flex;
+      overflow: auto;
+    }
+
+    .timeFormUS .cards .card {
+      width: 166px;
+      height: 140px;
+      margin: 0 8px 0 0;
+      padding: 12px;
+      border-radius: 8px;
+      background-color: #f4faff;
+      float: left;
+      position: relative;
+    }
+
+    .timeFormUS .cards .card:last-child {
+      margin: 0;
+    }
+
+    .timeFormUS .cards .card .cardtitle {
+      margin-bottom: 4px;
+      font-size: 13px;
+      line-height: 16px;
+      color: #19345e;
+      font-weight: 700;
+    }
+
+    .timeFormUS .cards .card p {
+      margin-bottom: 12px;
+      font-size: 11px;
+      line-height: 16px;
+      color: #19345e;
+      width: 100%;
+      max-height: 36px;
+    }
+
+    .timeFormUS .cards .card a.button.secondary {
+      width: 142px;
+      height: 32px;
+      line-height: 32px;
+      position: absolute;
+      bottom: 12px
+    }
+
+    .timeFormUS .cards .card button a,
+    .timeFormUS .cards .card button a:focus,
+    .timeFormUS .cards .card button a:visited,
+    .timeFormUS .cards .card button a:active {
+      width: 100%;
+      height: 100%;
+      display: block;
+      color: #0066cc;
+      font-size: 15px;
+      line-height: 32px;
+      font-weight: 600;
+      text-align: center;
+    }
+
+    .card br {
+      display: none;
+    }
+
+    @media screen and (min-width: 768px) {
+      .timeFormUS img.desktop {
+        display: block;
+      }
+
+      .timeFormUS img.mobile {
+        display: none;
+      }
+
+      .card br {
+        display: block;
+      }
+    }
+
+    @media screen and (min-width:1024px) {
+
+      .container section.timeFormUS {
+        padding-bottom: 28px;
+      }
+
+      .timeFormUS .cards .card {
+        width: 264px;
+        height: 172px;
+        margin-right: 24px;
+      }
+
+      .timeFormUS .cards .card .cardtitle {
+        margin-bottom: 6px;
+        font-size: 17px;
+        line-height: 24px;
+      }
+
+      .timeFormUS .cards .card p {
+        font-size: 15px;
+        line-height: 20px;
+        height: 74px;
+        width: 100%;
+      }
+
+      .timeFormUS .cards .card a.button.secondary {
+        width: calc(100% - 24px);
+        height: 32px;
+      }
+
+      .timeFormUS .colTwo {
+        display: flex;
+        flex-direction: row-reverse;
+      }
+
+      .timeFormUS .colTwo {
+        margin: 40px 0;
+        justify-content: space-between;
+      }
+
+      .timeFormUS .hgroup {
+        margin-bottom: 44px;
+      }
+
+      .timeFormUS .videoWrap {
+        margin: 0;
+      }
+
+      .timeFormUS ul {
+        width: 400px;
+        margin-top: 80px;
+      }
+    }
+  </style>
+  <style data-name="traineePatterns">
+    .btnTraineeLearnMore {
+      width: 324px;
+      height: 48px;
+      margin: 0 auto;
+    }
+
+    .traineePatternsListing .listWrap li::before {
+      width: 16px;
+      height: 16px;
+      background-size: 16px 16px;
+      top: 2px;
+    }
+
+    .traineePatternsListing .listWrap li span {
+      color: #19345e;
+      font-weight: 700;
+    }
+
+    .trainerPatterns p {
+      font-size: 15px;
+      margin-top: 16px;
+      line-height: 20px;
+    }
+
+    .featuresWrapper {
+      margin-top: 12px;
+    }
+
+    .featuresWrapper .accordianWrapper {
+      margin-bottom: 16px;
+    }
+
+    @media screen and (max-width: 767px) {
+      .modifyingFiltersImgWrap {
+        margin: 12px -16px 0;
+      }
+
+      .trainerPatterns {
+        margin-bottom: 0;
+      }
+    }
+
+    @media screen and (min-width: 768px) {
+      .trainerPatterns .contentWrap {
+        margin: 40px 0;
+      }
+
+      .imgRightSection {
+        width: 588px;
+      }
+
+      .traineePatternsContent {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+      }
+
+      .projectedOdds .descLeftSection p {
+        font-size: 17px;
+        line-height: 24px;
+      }
+
+      .trainerPatterns .traineePatternsAccordianWrap {
+        flex-direction: column;
+      }
+
+      .trainerPatterns .accordianContentWrap p {
+        font-size: 17px;
+        margin-top: 16px;
+        line-height: 24px;
+      }
+
+      .traineePatternsListing {
+        display: flex;
+        margin-top: 10px;
+      }
+
+      .traineePatternsListing .listWrap {
+        width: 50%;
+      }
+
+      .modifyingFiltersImgWrap img {
+        width: 552px;
+      }
+
+      .modifyingFiltersDesc,
+      .modifyingFiltersImgWrap,
+      .traineePatternsContent .descLeftSection,
+      .traineePatternsContent .imgRightSection {
+        width: 49%;
+      }
+
+      .modifyingFiltersWrap {
+        justify-content: space-between;
+        align-items: center;
+      }
+    }
+  </style>
+  <style data-name="wageringLive">
+    .availableFormulatorCard {
+      width: 324px;
+      height: 192px;
+      background: linear-gradient(61deg, #133563 -5%, #09519e 117%);
+      font-size: 24px;
+      line-height: 32px;
+      text-align: center;
+      margin: 0 auto 10px;
+      font-weight: 600;
+      padding: 32px 18px 24px;
+      border-radius: 12px;
+    }
+
+    .availableFormulatorCard span {
+      font-family: 'Alfa Slab One', sans-serif;
+      line-height: 32px;
+    }
+
+    .availableFormulatorCard span.free {
+      letter-spacing: 1px;
+    }
+
+    .wageringLiveVideo .primary {
+      width: 324px;
+      padding: 12px 16px;
+      height: 48px;
+      line-height: 24px;
+    }
+
+    .btnWrap {
+      text-align: center;
+    }
+
+    .wageringLiveVideo .login {
+      font-size: 17px;
+      font-weight: 700;
+      line-height: 24px;
+      margin: 10px 0;
+      text-align: center;
+      display: block;
+    }
+
+    .wageringLiveVideo button a,
+    .wageringLiveVideo button a:active,
+    .wageringLiveVideo button a:focus,
+    .wageringLiveVideo button a:visited {
+      color: #fff;
+    }
+
+    .listWrap .login {
+      font-size: 15px;
+      display: inline;
+      line-height: 20px;
+      margin: 0 0 0 2px;
+    }
+
+    @media screen and (max-width: 767px) {
+      .wageringLiveVideo .contentWrap {
+        margin: 16px -16px;
+      }
+
+      .wageringLiveVideo .primary {
+        margin: 0 auto;
+      }
+    }
+
+    @media screen and (min-width: 768px) {
+      .wageringContentWrap {
+        display: flex;
+        flex-direction: row-reverse;
+        justify-content: space-between;
+        align-items: center;
+        margin-top: 40px;
+      }
+
+      .wageringLeftSection {
+        display: flex;
+        flex-direction: column-reverse;
+      }
+
+      .wageringLeftSection {
+        width: 32%;
+      }
+
+      .wageringContentWrap .contentWrap {
+        width: 58%;
+        margin-left: 24px;
+      }
+
+      .wageringContentWrap .contentWrap img {
+        width: 648px;
+      }
+
+      .wageringLeftSection .availableFormulatorCard {
+        margin: 10px 0;
+      }
+    }
+  </style>
+  <style data-name="footer">
+    .footer {
+      height: 60px;
+      background-color: #f9f9f9;
+      margin-top: 24px;
+    }
+
+    .topBtn {
+      width: 36px;
+      height: 36px;
+      position: fixed;
+      right: 36px;
+      bottom: 20px;
+    }
+
+    .topBtn svg {
+      width: 36px;
+      height: 36px;
+    }
+
+    @media screen and (min-width:1200px) {
+      .footer {
+        height: 108px;
+      }
+    }
+  </style>
+  <style data-name="global2">
+    .accordianHeader {
+      cursor: pointer;
+    }
+
+    @media screen and (min-width:1025px) {
+      a.button.secondary:hover {
+        box-shadow: 0 4px 8px -3px #06c;
+        border: solid 1px #06c;
+        background-color: #06c;
+        color: #fff;
+      }
+
+      a.button.primary:hover {
+        box-shadow: 0 4px 8px -3px rgba(65, 117, 5, 0.7);
+        background-color: #417505;
+        color: #fff
+      }
+    }
+
+    #izmiddle-box {
+      display: none;
+    }
+  </style>
+  <style data-name="slick">
+    /* Slider */
+    .slick-slider {
+      position: relative;
+      display: block;
+      box-sizing: border-box;
+      -webkit-user-select: none;
+      -moz-user-select: none;
+      -ms-user-select: none;
+      user-select: none;
+      -webkit-touch-callout: none;
+      -khtml-user-select: none;
+      -ms-touch-action: pan-y;
+      touch-action: pan-y;
+      -webkit-tap-highlight-color: transparent;
+    }
+
+    .slick-list {
+      position: relative;
+      display: block;
+      overflow: hidden;
+      margin: 0;
+      padding: 0;
+    }
+
+    .slick-list:focus {
+      outline: none;
+    }
+
+    .slick-list.dragging {
+      cursor: pointer;
+      cursor: hand;
+    }
+
+    .slick-slider .slick-track,
+    .slick-slider .slick-list {
+      -webkit-transform: translate3d(0, 0, 0);
+      -moz-transform: translate3d(0, 0, 0);
+      -ms-transform: translate3d(0, 0, 0);
+      -o-transform: translate3d(0, 0, 0);
+      transform: translate3d(0, 0, 0);
+    }
+
+    .slick-track {
+      position: relative;
+      top: 0;
+      left: 0;
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+    .slick-track:before,
+    .slick-track:after {
+      display: table;
+      content: '';
+    }
+
+    .slick-track:after {
+      clear: both;
+    }
+
+    .slick-loading .slick-track {
+      visibility: hidden;
+    }
+
+    .slick-slide {
+      display: none;
+      float: left;
+      height: 100%;
+      min-height: 1px;
+    }
+
+    [dir='rtl'] .slick-slide {
+      float: right;
+    }
+
+    .slick-slide img {
+      display: block;
+    }
+
+    .slick-slide.slick-loading img {
+      display: none;
+    }
+
+    .slick-slide.dragging img {
+      pointer-events: none;
+    }
+
+    .slick-initialized .slick-slide {
+      display: block;
+    }
+
+    .slick-loading .slick-slide {
+      visibility: hidden;
+    }
+
+    .slick-vertical .slick-slide {
+      display: block;
+      height: auto;
+      border: 1px solid transparent;
+    }
+
+    .slick-arrow.slick-hidden {
+      display: none;
+    }
+  </style>
+  <style>
+    /* Slick controls Modification */
+    .bettingCardsWrap .slick-arrow {
+      position: absolute;
+      top: -44px;
+      height: 24px;
+      width: 24px;
+      text-indent: -9999px;
+      border: none;
+      cursor: pointer;
+      box-shadow: none;
+    }
+
+    .bettingCardsWrap .slick-arrow::before {
+      display: none;
+    }
+
+    .bettingCardsWrap .slick-arrow.slick-disabled {
+      opacity: 0.15;
+      pointer-events: none;
+    }
+
+    .bettingCardsWrap .slick-prev {
+      right: 30px;
+      background: url("https://static.drf.com/sstf/images/101_page_images/handicapping/slider-prev.svg") no-repeat;
+      background-size: 24px 24px;
+      margin-right: 8px;
+      left: auto;
+    }
+
+    .bettingCardsWrap .slick-prev:hover {
+      background: url("https://static.drf.com/sstf/images/101_page_images/handicapping/slider-prev-hover.svg") no-repeat;
+      background-size: 24px 24px;
+    }
+
+    .bettingCardsWrap .slick-next {
+      right: 0;
+      background: url("https://static.drf.com/sstf/images/101_page_images/handicapping/slider-next.svg");
+      background-size: 24px 24px;
+    }
+
+    .bettingCardsWrap .slick-next:hover {
+      background: url("https://static.drf.com/sstf/images/101_page_images/handicapping/slider-next-hover.svg");
+      background-size: 24px 24px;
+    }
+
+    .timeFormUS .cardsDots {
+      width: 53px;
+      margin: 20px auto 0;
+    }
+
+    .timeFormUS .cardsDots .slick-dots {
+      display: flex;
+      justify-content: space-between;
+      position: static;
+      bottom: auto;
+
+    }
+
+    .timeFormUS .cards {
+      margin: 0 -16px;
+    }
+
+    .timeFormUS .slick-list {
+      padding-left: 16px;
+    }
+
+    .timeFormUS .cardsDots li {
+      padding: 0;
+      width: auto;
+      cursor: pointer;
+    }
+
+    .timeFormUS .cardsDots li.slick-active button {
+      background-color: #0066CC;
+    }
+
+    .timeFormUS .cardsDots li::before {
+      content: none;
+      display: none;
+    }
+
+    .timeFormUS .cardsDots li button {
+      color: transparent;
+      width: 6px;
+      height: 6px;
+      background-color: #fff;
+      border-radius: 3px;
+      padding: 0;
+    }
+
+    .timeFormUS .cardsDots li button::before {
+      font-size: 0;
+    }
+
+    @media (min-width: 720px) {
+      .timeFormUS .cards {
+        margin: 0 0;
+        width: 690px;
+        margin: 0 auto;
+      }
+
+      .timeFormUS .slick-list {
+        padding-left: 0;
+      }
+    }
+
+    @media(min-width:1024px) {
+      .timeFormUS .cards {
+        width: auto;
+      }
+    }
+  </style>
+  <script src="./formulator.js"></script>
+</head>
+
+<body>
+  <div class="formulatorLanding" id="top">
+    <div class="container formulator">
+      <section class="joinNow withBg" id="joinNow">
+        <p>Formulator is available for FREE exclusively on
+          <br class="br">DRF Bets. <a
+            href="https://www.drf.com/register?utm_source=drf&utm_medium=formulatorpage&utm_campaign=drfbets&utm_content=winning"
+            target="_blank">Join now to access</a>
+        </p>
+      </section>
+      <section class="formulatorpps withBg" id="formulatorpps">
+        <div class="innerContainer">
+          <div class="backLink back">
+            <a href="#"><svg width="16" height="16" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg">
+                <path d="M16 7.018v1.964H3.836l5.568 5.614L8 16 0 8l8-8 1.404 1.404-5.568 5.614z" fill="#FFF"
+                  fill-rule="nonzero" />
+              </svg>Back</a>
+          </div> <!-- backLink -->
+        </div> <!-- innerContainer -->
+        <div class="content">
+          <div class="innerContainer">
+            <div class="hgroup">
+              <h1>FORMULATOR PPs</h1>
+              <p>Take your handicapping to the next level with DRF's premium data product</p>
+            </div>
+            <div class="hDivider"></div>
+            <p class="customize">Customize your PPs with these exclusive features</p>
+            <ul>
+              <li><a class="scrollPage" href="#raceHorseNotes">Create Race, Trip and Card Notes</a></li>
+              <li><a class="scrollPage" href="#timeFormUS">TimeformUS Pace Figures</a></li>
+              <li><a class="scrollPage" href="#conditionalFilters">Conditional Filters</a></li>
+              <li><a class="scrollPage" href="#trainerPatterns">Trainer Patterns</a></li>
+              <li><a class="scrollPage" href="#mergedWorkouts">Merged Workouts</a></li>
+              <li><a class="scrollPage" href="#projectedOdds">Projected Odds</a></li>
+              <li><a class="scrollPage" href="#pedigreeReports">Pedigree Reports</a></li>
+              <li><a class="scrollPage" href="#videoReplays">Video Replays</a></li>
+              <li><a class="scrollPage" href="#raceChart">Race Charts</a></li>
+              <li><a class="scrollPage" href="#adjustedFractions">Adjusted Fractions</a></li>
+              <li><a class="scrollPage" href="#wageringLiveVideo">Wagering and Live Video</a></li>
+              <li><a class="scrollPage" href="#customizedPrinting">Customized Printing</a></li>
+              <li><a class="scrollPage" href="#relevantNewsNSelections">Relevant News and Selections</a></li>
+            </ul>
+          </div> <!-- innerContainer -->
+        </div><!-- content -->
+      </section>
+      <section class="raceHorseNotes colorBgSection" id="raceHorseNotes">
+        <div class="hgroup">
+          <h2 class="sectionTitle">Create Race, Trip and Card Notes</h2>
+          <p class="subTitle">Personalize your PPs with trip, race and card notes!</p>
+        </div>
+        <div class="colTwo">
+          <ol type="1">
+            <li>Click the "Notes" icon to take and access notes</li>
+            <li>Make your horse notes; save automatically to cloud</li>
+            <li>Add your card notes</li>
+            <li>Add your trip notes</li>
+          </ol>
+          <img src="https://static.drf.com/sstf/images/pps_page_images/raceHOrseNotes.png" alt="Race and Horse Notes">
+        </div>
+      </section>
+      <section class="timeFormUS withBg" id="timeFormUS">
+        <div class="innerContainer">
+          <div class="hgroup">
+            <h2 class="sectionTitle">TimeformUS Pace Figures</h2>
+            <p class="subTitle">Pace makes the race!</p>
+          </div>
+          <img src="https://static.drf.com/sstf/images/pps_page_images/timeformus.jpg" alt="" class="desktop">
+          <img src="https://static.drf.com/sstf/images/pps_page_images/timeformus-mobile.png" alt="" class="mobile">
+          <div class="colTwo">
+            <ul>
+              <li>Pace Figures = speed figures for each fraction of a race</li>
+              <li>Quickly understand the totality of a horse's effort using these best-in-class Pace Figures</li>
+              <li>Color-coded red for hot-paced races and blue for slow-paced races</li>
+            </ul>
+            <div class="videoWrap">
+              <iframe width="552" height="310" src="https://www.youtube.com/embed/BLfgjwT8qaI"
+                title="YouTube video player" frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen></iframe>
+            </div>
+          </div>
+          <div class="cards dev">
+            <div class="card">
+              <div class="cardtitle">TimeformUS Pace Figures</div>
+              <p>A great tool for handicappers in DRF Formulator PPs</p>
+              <a class="button secondary" target="_blank"
+                href="https://www.drf.com/news/timeformus-pace-figures-new-tool-handicappers-drf-formulator">Learn
+                More</a>
+            </div> <!--  card -->
+            <div class="card">
+              <div class="cardtitle">Q&A with the experts</div>
+              <p>Q&A with David Arogona and <br>Craig Milkowski</p>
+              <a class="button secondary" target="_blank"
+                href="https://www.drf.com/news/q-and-timeformus-pace-figures">Learn More</a>
+            </div> <!--  card -->
+            <div class="card">
+              <div class="cardtitle">TimeformUS Pace Figures</div>
+              <p>Watch video from figure maker <br>Craig Milkowski</p>
+              <a class="button secondary" target="_blank" href="https://www.youtube.com/watch?v=vTYDRfR1AU0">Learn
+                More</a>
+            </div> <!--  card -->
+            <div class="card">
+              <div class="cardtitle">How to use Pace Figures</div>
+              <p>Get a primer from TimeformUS and DRF Handicappers</p>
+              <a class="button secondary" target="_blank"
+                href="https://help.drf.com/hc/en-us/articles/115015919508-Formulator-Now-With-Timeform-US-Pace-Figures-">Learn
+                More</a>
+            </div> <!--  card -->
+          </div> <!--  cards -->
+          <div class="cardsDots">&nbsp;</div>
+        </div> <!--  innerContainer -->
+      </section>
+      <section class="conditionalFilters" id="conditionalFilters">
+        <h2 class="sectionTitle mobileShow">Conditional Filters</h2>
+        <img src="https://static.drf.com/sstf/images/pps_page_images/conditionalFiltersDesktop.png"
+          class="conditionalFltrDesktop" alt="Conditional Filters">
+        <div class="conditionalFilterCnt">
+          <h2 class="sectionTitle mobileHide">Conditional Filters</h2>
+          <ul class="infoCnt">
+            <li>Filters allow you to display the data YOU want!</li>
+            <li>Only DRF's premium PPs put you in the driver's seat allowing you to customize:</li>
+          </ul>
+          <ul class="conditionalFilterInfo">
+            <li>
+              <b>Distance:</b> Sprints | Routes | By Furlong
+            </li>
+            <li>
+              <b>Track Conditions:</b> All | Fast/Firm | Wet
+            </li>
+            <li>
+              <b>Early Pace:</b> All | Race on the Lead | Raced with 2 Lengths
+            </li>
+            <li>
+              <b>Track:</b> All | Today's Track | Today's Track & Surface
+            </li>
+            <li>
+              <b>Surface:</b> Turf | Dirt | Synthetic
+            </li>
+          </ul>
+        </div>
+      </section>
+      <section class="trainerPatterns colorBgSection" id="trainerPatterns">
+        <div class="hgroup">
+          <h2 class="sectionTitle">Trainer Patterns</h2>
+        </div>
+        <div class="contentWrap">
+          <img src="https://static.drf.com/sstf/images/pps_page_images/trainerPatternsImg.png" class="mobileHide">
+        </div>
+        <div class="traineePatternsContent">
+          <div class="descLeftSection">
+            <p>
+              When handicapping a race, it is very useful to investigate a trainer's history in a similar race. For
+              example, does the
+              trainer excel in cheap claiming races on dirt only? To find out, click on a trainer's name, highlighted
+              in
+              blue text, in
+              the top portion of your PPs. DRF Formulator PPs display the entirety of the trainer's training records,
+              providing
+              both the trainer's statistics and the actual performance profiles for the individual
+              horses trained.
+            </p>
+            <p>
+              This powerful feature enables you to perform in-depth analyses of a trainer's patterns. You can create
+              custom queries
+              about a specific trainer history and tendencies, and view both summary level and detailed results for
+              the
+              query. You can
+              also browse through the PPs of all the horses in a trainer's stable, and use filters to isolate specific
+              horses and to
+              identify patterns.
+            </p>
+          </div>
+          <div class="imgRightSection mobileHide">
+            <img src="https://static.drf.com/sstf/images/pps_page_images//countryGrammerImg.png">
+          </div>
+        </div>
+        <div class="featuresWrapper">
+          <h2 class="sectionTitle sectionBlueTitle">Features</h2>
+          <div class="accordianWrapper">
+            <div class="accordianHeader">
+              <span class="accordianIcon collapseIcon">&nbsp;</span>
+              Accessing Training Patterns
+            </div>
+            <div class="accordianContentWrap traineePatternsAccordianWrap">
+              <p>To launch the Trainer Patterns Tool, click a trainer's name while looking at the past performances
+                (the
+                trainer's name
+                will appear in blue text). This will take you to the Trainer Pattern page, with statistics appearing
+                based on your
+                filters.
+              </p>
+              <p>
+                The top line of the Trainer Patterns page displays the lifetime statistics of the trainer:
+              </p>
+              <div class="traineePatternsListing">
+                <div class="listWrap">
+                  <ul>
+                    <li><span>Horses -</span> The number of horses included in the current query.</li>
+                    <li><span>Starts -</span> The number of starts for this trainer.</li>
+                    <li><span>Wins -</span> The number of times this trainer has won.</li>
+                    <li><span>Win% -</span> The percentage of starters with which this trainer has won.</li>
+                  </ul>
+                </div>
+                <div class="listWrap">
+                  <ul>
+                    <li><span>ITM -</span> The number of times this trainer has finished in the money.</li>
+                    <li>
+                      <span>ITM% -</span> The percentage of starts with which this trainer has finished in the money.
+                    </li>
+                    <li>
+                      <span>$2 ROI -</span> The average return on investment per $2 wagered to win on each of this
+                      trainer's starters.
+                    </li>
+                    <li>
+                      <span>Average Payoff -</span> The average payoff of all winning finishes. This field can be used
+                      to determine if any payoffs have
+                      skewed the ROI.
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="accordianWrapper">
+            <div class="accordianHeader">
+              <span class="accordianIcon">&nbsp;</span>
+              Modifying Filters
+            </div>
+            <div class="accordianContentWrap modifyingFiltersWrap hide">
+              <div class="modifyingFiltersDesc">
+                <p>The default Trainer Patterns setting will show the above statistics for every one of that
+                  trainer's starts in the past
+                  five years. To filter these statistics, click on the “Modify Filters” button in the top right of
+                  the navigation bar.
+                </p>
+                <p>
+                  The Modify Filters dialog box enables you to completely customize what statistics you want
+                  Formulator to show you. Once
+                  you have specified your query options, Formulator provides you with the statistics you requested
+                  for that trainer, as
+                  well as the relevant Performance Profiles for the horses in the trainer's stable that meet the
+                  specified criteria.
+                </p>
+                <p>
+                  After modifying the filters to your desired selection, click "OK" to view that particular
+                  trainer's stats under the
+                  circumstances you have selected.
+                </p>
+                <p>
+                  There are three types of Modifying Filters - Basic horse and trainer filters, race categories and
+                  range filters, and
+                  track/jockey filters.
+                </p>
+              </div>
+              <div class="modifyingFiltersImgWrap">
+                <img src="https://static.drf.com/sstf/images/pps_page_images/modifyingFiltersImg.png">
+              </div>
+            </div>
+          </div>
+          <div class="btnWrap">
+            <a class="button btnTraineeLearnMore secondary"
+              href="https://promos.drf.com/formulator-pps-trainer-patterns" target="_blank">Learn More about Trainer
+              Patterns!</a>
+          </div>
+        </div>
+      </section>
+      <section class="mergedWorkouts" id="mergedWorkouts">
+        <div>
+          <h2 class="sectionTitle">Merged Workouts</h2>
+          <p class="subTitle">
+            Merge workouts to get a sense if your horse is ready off of a layoff. Perfect for getting a chronological
+            view of recent
+            activity to help you spot patterns!
+          </p>
+        </div>
+        <div class="workoutsImageWrap mobileHide">
+          <img src="https://static.drf.com/sstf/images/pps_page_images/mergedWorkoutsImg.png">
+        </div>
+        <div class="videoWrap">
+          <iframe width="552" height="310" src="https://www.youtube.com/embed/s5Bjs-ivj4s" title="YouTube video player"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen>
+          </iframe>
+        </div>
+      </section>
+      <section class="projectedOdds colorBgSection" id="projectedOdds">
+        <div>
+          <h2 class="sectionTitle">Projected Odds</h2>
+          <p class="subTitle">
+            A sensible new tool in your DRF Classic and Formulator PPs to help you make more
+            informed wagers!
+          </p>
+        </div>
+        <div class="projectedOddsImgWrap mobileHide">
+          <img src="https://static.drf.com/sstf/images/pps_page_images/projectedOddsImg.png">
+        </div>
+        <div class="oddsDescription">
+          <div class="descLeftSection">
+            <p>In a 20,000 race study, DRF's projected odds outperformed both live and morning-line odds!</p>
+            <div class="oddsMiddleContent">
+              <p>
+                <span>Vs. Live Odds:</span> Projected Odds were a more accurate predictor of final odds 70% of the time
+                (Live Odds were accurate 30% of the time)
+              </p>
+              <p>
+                <span>Vs. Morning Line (ML) Odds:</span> Projected Odds were a more accurate predictor of final odds 75%
+                of the time (ML Odds were accurate 25% of the time)
+              </p>
+            </div>
+            <p>
+              <span>Simply put: </span>Projected odds are more accurate and the smart choice when making your wagers.
+            </p>
+          </div>
+          <div class="descRightSection">
+            <h2 class="sectionTitle sectionBlueTitle">How Projected Odds Work</h2>
+            <div>
+              <p>
+                As soon as betting pools open for a race, until 10 MTP, we use an algorithm that relies primarily on
+                the Double pool.
+              </p>
+              <p>
+                At 10 MTP, shorter-priced horses' odds are further enhanced, combining the earlier projection with the
+                latest updates
+                from the win pool. Even at 5 MTP, projected odds are far more predictive than the current live odds
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="pedigreeReports" id="pedigreeReports">
+        <div>
+          <h2 class="sectionTitle">Pedigree Reports</h2>
+          <p class="subTitle">Recently added to new DRF Formulator PPs!</p>
+        </div>
+        <div class="pedigreeReportsConentWrap">
+          <div class="reportsImgWrap">
+            <img src="https://static.drf.com/sstf/images/pps_page_images/formulatorPPImg.png">
+          </div>
+          <div class="listWrap">
+            <h3>Access faster than ever before:</h3>
+            <ul>
+              <li>
+                PPs of siblings for today's runners
+              </li>
+              <li>Top progeny by the sire for today's runners</li>
+            </ul>
+          </div>
+        </div>
+        <div class="reportsFeatureWrap">
+          <h2 class="sectionTitle sectionBlueTitle">Features</h2>
+          <div class="accordianWrapper">
+            <div class="accordianHeader">
+              <span class="accordianIcon collapseIcon">&nbsp;</span>
+              How to access
+            </div>
+            <div class="accordianContentWrap">
+              <div class="contentLeftSection">
+                <div class="contentWrap">
+                  <div class="stepsNumber">01</div>
+                  <div class="stepDesc">
+                    Choose any DRF Formulator card.
+                  </div>
+                </div>
+                <div class="contentWrap">
+                  <div class="stepsNumber">02</div>
+                  <div class="stepDesc">
+                    Click on a dam's name in the PPs: you now have easy access to this horse's sibling PPs
+                    (domestic only); sorted by top career Beyer Speed Figures
+                  </div>
+                </div>
+              </div>
+              <div class="contentWrap accordianImgWrap">
+                <img src="https://static.drf.com/sstf/images/pps_page_images/PPReportImage.png">
+              </div>
+            </div>
+          </div>
+          <div class="accordianWrapper">
+            <div class="accordianHeader">
+              <span class="accordianIcon">&nbsp;</span>
+              Dive into related PPs on the sire -side
+            </div>
+            <div class="accordianContentWrap hide">
+              <div class="contentLeftSection">
+                <div class="contentWrap">
+                  <div class="stepsNumber">01</div>
+                  <div class="stepDesc">
+                    Click on the sire's name above today's runner's PPs
+                  </div>
+                </div>
+                <div class="contentWrap">
+                  <div class="stepsNumber">02</div>
+                  <div class="stepDesc">
+                    You now have access to the PPs of the top 20 domestic progeny by sire, sorted by top career Beyer
+                    Speed Figure.
+                  </div>
+                </div>
+              </div>
+              <div class="contentWrap accordianImgWrap">
+                <img src="https://static.drf.com/sstf/images/pps_page_images/PPReportImage.png">
+              </div>
+            </div>
+          </div>
+          <div class="accordianWrapper comparisonChartImg">
+            <div class="accordianHeader">
+              <span class="accordianIcon">&nbsp;</span>
+              Comparison Chart (Progency)
+            </div>
+            <div class="accordianContentWrap hide">
+              <div class="contentWrap">
+                <img src="https://static.drf.com/sstf/images/pps_page_images/comparisonChartDesktopImg.png">
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="videoReplays colorBgSection" id="videoReplays">
+        <div>
+          <h2 class="sectionTitle">Video Replays</h2>
+          <p class="subTitle">Allows trip handicappers to analyze past races!</p>
+        </div>
+        <div class="mobileHide videoReplaysImgWrap">
+          <img src="https://static.drf.com/sstf/images/pps_page_images/videoReplaysDesktopImg.png">
+        </div>
+        <div class="videoListWrapper">
+          <div class="videoWrap">
+            <iframe width="552" height="310" src="https://www.youtube.com/embed/mHKDif_l_Pk"
+              title="YouTube video player" frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+              allowfullscreen>
+            </iframe>
+          </div>
+          <div class="listWrap">
+            <h3>Watch video of most North American races</h3>
+            <ul>
+              <li>
+                Access via the horse's running lines
+              </li>
+              <li>View full-screen</li>
+              <li>Standard/Head-on views</li>
+            </ul>
+          </div>
+        </div>
+      </section>
+      <section class="raceChart" id="raceChart">
+        <div>
+          <h2 class="sectionTitle">Race Chart</h2>
+          <p class="subTitle">
+            Easily dig deeper into results all on one screen (above the PPs)!
+          </p>
+        </div>
+        <div class="raceChartImgWrap">
+          <img src="https://static.drf.com/sstf/images/pps_page_images/raceChartImg.png" class="desktopHide">
+          <img src="https://static.drf.com/sstf/images/pps_page_images/raceChartDesktopImg.png" class="mobileHide">
+        </div>
+        <div class="raceChartVideoListWrap">
+          <div class="listWrap">
+            <ul>
+              <li>
+                Full race details with written recap
+              </li>
+              <li>
+                One-click access via horse's running lines
+              </li>
+              <li>
+                Payouts for all wagers
+              </li>
+              <li>
+                Multiple formats, including Beyer Speed Figure view
+              </li>
+            </ul>
+          </div>
+          <div class="videoWrap">
+            <iframe width="552" height="310" src="https://www.youtube.com/embed/6CnhTBOzTKM"
+              title="YouTube video player" frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+              allowfullscreen>
+            </iframe>
+          </div>
+        </div>
+      </section>
+      <section class="adjustedFractions colorBgSection" id="adjustedFractions">
+        <div>
+          <h2 class="sectionTitle">Adjusted Fractions</h2>
+        </div>
+        <div class="contentWrap">
+          <img src="https://static.drf.com/sstf/images/pps_page_images/adjustedFrationsImg.png">
+        </div>
+        <div class="stepDesc">Adjusted Fractions use the same color-coding as TimeformUS Pace Figures</div>
+        <div class="btnWrapper">
+          <a class="button secondary btnLearnMore" target="_blank"
+            href="https://promos.drf.com/adjusted-fractions-drf-formulator-pps">Learn More
+          </a>
+        </div>
+      </section>
+      <section class="wageringLiveVideo" id="wageringLiveVideo">
+        <div>
+          <h2 class="sectionTitle">Wagering and Live Video</h2>
+        </div>
+        <div class="wageringContentWrap">
+          <div class="contentWrap">
+            <img src="https://static.drf.com/sstf/images/pps_page_images/wageringLiveImg.png">
+          </div>
+          <div class="wageringLeftSection">
+            <div>
+              <div class="availableFormulatorCard white">
+                Formulator is available for
+                <span class="yellowText free">FREE</span><br />
+                Exclusively on <br />
+                <span>DRF BETS</span>
+              </div>
+              <div class="btnWrap">
+                <a class="button primary joinNowBtn" target="_blank"
+                  href="https://www.drf.com/register?utm_source=drf&utm_medium=formulatorpage&utm_campaign=drfbets&utm_content=winning">Join
+                  Now</a>
+              </div>
+              <a target="_blank" href="https://bets.drf.com/" class="login red">Login</a>
+            </div>
+            <div class="listWrap">
+              <ul>
+                <li>Log into your DRF Bets account to watch live race video<a href="https://bets.drf.com/"
+                    target="_blank" class="login red">Login
+                    Now</a>
+                </li>
+                <li>Always FREE</li>
+                <li>Place a wager directly from your PPs!</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="customizedPrinting colorBgSection" id="customizedPrinting">
+        <div>
+          <h2 class="sectionTitle">Customized Printing</h2>
+          <div class="contentWrap">
+            <img src="https://static.drf.com/sstf/images/pps_page_images/customisedPrinting.png" class="desktopHide">
+            <img src="https://static.drf.com/sstf/images/pps_page_images/customisedPrintingDesktopImg.png"
+              class="mobileHide">
+          </div>
+          <div class="listWrap">
+            <ul>
+              <li>Print Closer Looks underneath running lines</li>
+              <li>Print your card, trip, and horse notes</li>
+              <li>Print your picks above PPs</li>
+            </ul>
+            <ul>
+              <li>Choose number of running lines, workouts in PDF</li>
+              <li>Print your PPs without ads!</li>
+            </ul>
+          </div>
+          <div class="btnWrap">
+            <a class="button btndownloadExample secondary" target="_blank"
+              href="http://static.drf.com/sstf/images/pps_page_images/CustomizedPPExample.jpg">Download
+              Example</a>
+          </div>
+        </div>
+      </section>
+      <section class="relevantNewsNSelections" id="relevantNewsNSelections">
+        <div>
+          <h2 class="sectionTitle">Relevant News and Selections</h2>
+          <p class="subTitle">
+            Appear right above your PPs; never go back
+            and forth or search the site again!
+          </p>
+          <div class="contentWrap">
+            <img src="https://static.drf.com/sstf/images/pps_page_images/newsArticlesImg.png">
+          </div>
+          <div class="relevantNewsContentWrap">
+            <div class="listWrap">
+              <ul>
+                <li>
+                  Race-related news articles right at the top of
+                  your PPs
+                </li>
+                <li>Expert selections also found at top of your PPs</li>
+                <li>Simply click the News and Analysis tab</li>
+              </ul>
+            </div>
+            <div class="videoWrap">
+              <iframe width="560" height="315" src="https://www.youtube.com/embed/0uFVD7TZWXY"
+                title="YouTube video player" frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen></iframe>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="learnMoreHorseBetting" id="learnMoreHorseBetting">
+        <div class="bettingCardsWrap">
+          <div class="bettingCardHead d-flex">
+            <h2 class="cardTitle">Learn more about Horse Betting</h2>
+          </div>
+
+          <ul class="bettingCardsList slick-carousel dev">
+            <li class="bettingCard">
+              <div class="sliderBox">
+                <div class="cardIcon"><img
+                    src="https://static.drf.com/sstf/images/101_page_images/handicapping/smartphone.svg" /></div>
+
+                <div class="cardTag tag-navy">Mobile PPs</div>
+
+                <p class="cardDesc">True DRF PPs on your phone</p>
+                <a class="cardActionBtn" target="_blank" href="https://promos.drf.com/drf-pps-mobile-access"
+                  target="_blank">Learn
+                  More</a>
+              </div>
+            </li>
+            <li class="bettingCard">
+              <div class="sliderBox">
+                <div class="cardIcon"><img
+                    src="https://static.drf.com/sstf/images/101_page_images/handicapping/clocker_report.svg" /></div>
+
+                <div class="cardTag tag-orange">Clocker Reports</div>
+
+                <p class="cardDesc">Workout reports straight from the track</p>
+                <a class="cardActionBtn" target="_blank" href="https://promos.drf.com/clocker" target="_blank">Learn
+                  More</a>
+              </div>
+            </li>
+            <li class="bettingCard">
+              <div class="sliderBox">
+                <div class="cardIcon"><img
+                    src="https://static.drf.com/sstf/images/101_page_images/handicapping/profit.svg" />
+                </div>
+
+                <div class="cardTag tag-red">Monthly Rewards</div>
+
+                <p class="cardDesc">FREE DRF PPs + Up to 5% Cashback</p>
+                <a class="cardActionBtn" target="_blank" href="https://promos.drf.com/rewards" target="_blank">Learn
+                  More</a>
+              </div>
+            </li>
+            <li class="bettingCard">
+              <div class="sliderBox">
+                <div class="cardIcon"><img
+                    src="https://static.drf.com/sstf/images/101_page_images/handicapping/bet.svg" />
+                </div>
+
+                <div class="cardTag tag-blue">Betting Strategies</div>
+
+                <p class="cardDesc">Expanded Analysis + Exclusive Wager Recommendations</p>
+                <a class="cardActionBtn" target="_blank" href="https://promos.drf.com/betting-strategies"
+                  target="_blank">Learn More</a>
+              </div>
+            </li>
+            <li class="bettingCard">
+              <div class="sliderBox">
+                <h4>Wagering At</h4>
+
+                <div class="cardIcon drfCard"><img
+                    src="https://static.drf.com/sstf/images/101_page_images/handicapping/drf-logo.svg" /></div>
+
+                <p class="cardDesc">Experience one-stop wagering + handicapping</p>
+                <a class="cardActionBtn wageringBtn" target="_blank" href="https://www.drf.com/wagering_101"
+                  target="_blank">Learn
+                  More</a>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </section>
+      <footer class="footer">
+      </footer>
+
+      <a class="topBtn backToTop" href="/formulator#top"><svg width="38" height="41" viewBox="0 0 38 41"
+          xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+          <defs>
+            <filter x="-9.7%" y="-6.9%" width="119.4%" height="127.8%" filterUnits="objectBoundingBox" id="a">
+              <feMorphology radius="1.5" in="SourceAlpha" result="shadowSpreadOuter1" />
+              <feOffset dy="4" in="shadowSpreadOuter1" result="shadowOffsetOuter1" />
+              <feGaussianBlur stdDeviation="2" in="shadowOffsetOuter1" result="shadowBlurOuter1" />
+              <feComposite in="shadowBlurOuter1" in2="SourceAlpha" operator="out" result="shadowBlurOuter1" />
+              <feColorMatrix values="0 0 0 0 0 0 0 0 0 0.4 0 0 0 0 0.8 0 0 0 0.58 0" in="shadowBlurOuter1" />
+            </filter>
+            <rect id="b" x="0" y="0" width="36" height="36" rx="4" />
+          </defs>
+          <g fill="none" fill-rule="evenodd">
+            <g transform="translate(1)">
+              <use fill="#000" filter="url(#a)" xlink:href="#b" />
+              <rect stroke="#06C" stroke-linejoin="square" fill="#FFF" x=".5" y=".5" width="35" height="35" rx="4" />
+            </g>
+            <path d="m14.5 19.8 4.5-4.5 4.5 4.5" stroke="#06C" stroke-linecap="round" stroke-width="1.5" />
+          </g>
+        </svg></a>
+    </div>
+  </div>
+</body>
+
+</html>

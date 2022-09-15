@@ -1,0 +1,257 @@
+.bettingCardsWrap {
+  margin-top: 24px;
+}
+.bettingCardsList{
+  display: flex;
+}
+.bettingCardsList li{
+  padding-left: 0;
+}
+.bettingCardsList li::before{
+  display: none;
+}
+.bettingCardsWrap .slick-arrow {
+  position: absolute;
+  top: -34px;
+  height: 34px;
+  width: 34px;
+  text-indent: -9999px;
+  border: none;
+  cursor: pointer;
+}
+.bettingCardsWrap .slick-arrow::before {
+  display: none;
+}
+.bettingCardsWrap .slick-arrow.slick-disabled {
+  opacity: 0.15;
+  pointer-events: none;
+}
+.bettingCardsWrap .slick-prev {
+  right: 30px;
+  background: url("https://static.drf.com/sstf/images/101_page_images/handicapping/slider-prev.svg");
+  margin-right: 8px;
+  left: auto;
+}
+.bettingCardsWrap .slick-prev:hover {
+  background: url("https://static.drf.com/sstf/images/101_page_images/handicapping/slider-prev-hover.svg");
+}
+.bettingCardsWrap .slick-next {
+  right: 0;
+  background: url("https://static.drf.com/sstf/images/101_page_images/handicapping/slider-next.svg");
+}
+.bettingCardsWrap .slick-next:hover {
+  background: url("https://static.drf.com/sstf/images/101_page_images/handicapping/slider-next-hover.svg");
+}
+
+.bettingCardsWrap .bettingCardHead {
+  justify-content: space-between;
+  margin-bottom: 20px;
+  align-items: center;
+}
+.bettingCardsWrap .cardTitle {
+  font-size: 19px;
+  line-height: 24px;
+  font-weight: 700;
+}
+
+.bettingCardsWrap .bettingCardsList .bettingCard .sliderBox {
+  width: 152px;
+  margin: 0 8px;
+  padding: 8px;
+  border-radius: 4px;
+  border: solid 1px #d7e4f2;
+  background: #ffffff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  position: relative;
+  min-height: 150px;
+}
+
+.bettingCardsWrap .bettingCardsList .bettingCard .sliderBox:first-child {
+  margin-left: 0;
+}
+
+.bettingCardsWrap .bettingCardsList .cardIcon img {
+  width: auto;
+  height: 28px;
+}
+.bettingCardsWrap .bettingCardsList .cardTag {
+  height: 20px;
+  background: #09498e;
+  margin: 6px 0 8px;
+  padding: 0 2px;
+  font-size: 13px;
+  line-height: 20px;
+  color: #ffffff;
+  font-weight: 700;
+  min-width: 96px;
+}
+
+.bettingCardsWrap .bettingCardsList .cardTag.tag-green {
+  background: #669933;
+}
+.bettingCardsWrap .bettingCardsList .cardTag.tag-navy {
+  background: #09498e;
+}
+.bettingCardsWrap .bettingCardsList .cardTag.tag-orange {
+  background: #f89d00;
+}
+.bettingCardsWrap .bettingCardsList .cardTag.tag-red {
+  background: #e84f55;
+}
+.bettingCardsWrap .bettingCardsList .cardTag.tag-blue {
+  background: #0066d3;
+}
+.bettingCardsWrap .bettingCardsList .cardDesc {
+  font-size: 10px;
+  line-height: 12px;
+  color: #19345e;
+}
+
+.bettingCardsWrap .bettingCardsList .drfCard {
+  margin-bottom: 12px;
+}
+
+.bettingCardsWrap .bettingCardsList .drfCard img {
+  height: auto;
+}
+
+.bettingCardsWrap .bettingCardsList h4 {
+  font-size: 18px;
+  line-height: 26px;
+  margin-bottom: 8px;
+  padding-top: 9px;
+}
+
+.bettingCardsWrap .bettingCardsList .cardActionBtn {
+  width: calc(100% - 16px);
+  height: 32px;
+  margin: 8px 0 0;
+  padding: 6px 0;
+  border-radius: 4px;
+  box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.15);
+  border: solid 1px #0066cc;
+  background-color: #ffffff;
+  font-size: 14px;
+  line-height: 20px;
+  color: #0066cc;
+  font-family: "Titillium Web", sans-serif;
+  font-weight: 600;
+  position: absolute;
+  bottom: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.bettingCardsWrap .bettingCardsList .cardActionBtn:hover {
+  box-shadow: 0 4px 8px -3px #06c;
+  border: solid 1px #06c;
+  background-color: #06c;
+  color: #fff;
+}
+
+.bettingCardsWrap .slick-arrow::before {
+  display: none;
+}
+.bettingCardsWrap .slick-arrow.slick-disabled {
+  opacity: 0.15;
+  pointer-events: none;
+}
+.bettingCardsWrap .slick-prev {
+  right: 30px;
+  background: url("https://static.drf.com/sstf/images/101_page_images/handicapping/slider-prev.svg");
+  margin-right: 8px;
+  left: auto;
+}
+.bettingCardsWrap .slick-prev:hover {
+  background: url("https://static.drf.com/sstf/images/101_page_images/handicapping/slider-prev-hover.svg");
+}
+.bettingCardsWrap .slick-next {
+  right: 0;
+  background: url("https://static.drf.com/sstf/images/101_page_images/handicapping/slider-next.svg");
+}
+.bettingCardsWrap .slick-next:hover {
+  background: url("https://static.drf.com/sstf/images/101_page_images/handicapping/slider-next-hover.svg");
+}
+
+@media only screen and (max-width: 374px) {
+  .bettingCardsWrap .cardTitle{
+    width: 205px;
+  }
+  .bettingCardsWrap .slick-arrow{
+    top: -45px;
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  .bettingCardsWrap .bettingCardsList .cardIcon.drfCard{
+    max-width: 36px;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  .bettingCardsWrap {
+    margin-top: 32px;
+  }
+  .bettingCardsWrap .bettingCardHead {
+    margin-bottom: 16px;
+  }
+  .bettingCardsWrap .cardTitle {
+    font-size: 28px;
+    line-height: 36px;
+  }
+  .bettingCardsWrap .bettingCardsList .bettingCard .sliderBox {
+    margin: 16px 16px 0 0;
+    padding: 16px;
+    min-height: 212px;
+    position: relative;
+    width: 212px;
+  }
+  .bettingCardsWrap .bettingCardsList .cardDesc{
+    font-size: 13px;
+    line-height: 16px;
+    color: #19345e;
+    margin: 8px 0 16px;
+  }
+  .bettingCardsWrap .bettingCardsList .cardIcon img {
+    width: auto;
+    height: 52px;
+  }
+  .bettingCardsWrap .bettingCardsList .cardIcon.drfCard{
+    margin-bottom: 12px;
+  }
+  .bettingCardsWrap .bettingCardsList .cardIcon.drfCard img{
+    width: 60px;
+    height: 30px;
+  }
+  .bettingCardsWrap .bettingCardsList .cardTag {
+    height: 28px;
+    margin: 8px 0 0;
+    padding: 2px 5px;
+    font-size: 18px;
+    line-height: 24px;
+  }
+  .bettingCardsWrap .bettingCardsList .cardActionBtn {
+    width: calc(100% - 32px);
+    height: 36px;
+    padding: 8px 0;
+    font-size: 14px;
+    line-height: 20px;
+    margin: 0;
+    position: absolute;
+    bottom: 16px;
+  }
+}
+
+@media only screen and (min-width: 1201px) {
+  .bettingCardsWrap .bettingCardsList .bettingCard .sliderBox{
+    width: 212px;
+    margin: 0 16px 0 0;
+  }
+  .bettingCardsWrap .bettingCardsList .bettingCard:last-child .sliderBox{
+    margin-right: 0;
+  }
+}

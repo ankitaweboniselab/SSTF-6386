@@ -1,0 +1,70 @@
+.formulatorLanding .colorBgSection.raceHorseNotes {
+  padding-bottom: 32px;
+}
+
+.raceHorseNotes hgroup {
+  margin-bottom: 16px;
+}
+
+.raceHorseNotes .colTwo {
+  display: flex;
+  flex-direction: column-reverse;
+}
+
+.raceHorseNotes img {
+  margin-bottom: 20px;
+}
+
+.raceHorseNotes ol {
+  margin-left: 22px;
+}
+
+.raceHorseNotes li {
+  margin-bottom: 24px;
+  font-size: 15px;
+  line-height: 20px;
+  font-weight: 700;
+  color: #000;
+  list-style-type: unset;
+  padding-left: 10px;
+}
+
+.raceHorseNotes li:last-child {
+  margin-bottom: 0;
+}
+
+
+@media screen and (min-width:992px){
+  .raceHorseNotes hgroup {
+    margin-bottom: 40px;
+  }
+
+  .raceHorseNotes .colTwo {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .raceHorseNotes li {
+    font-size: 24px;
+    line-height: 36px;
+    margin-bottom: 36px;
+  }
+
+  .raceHorseNotes li:last-child {
+    margin-bottom: 0;
+  }
+
+  .raceHorseNotes img {
+    margin-bottom: 0;
+    width: 580px;
+    margin-left: 24px;
+  }
+}
+
+@media screen and (min-width:1200px){
+  .raceHorseNotes img {
+    width: 744px;
+    margin-left: 24px;
+  }
+}

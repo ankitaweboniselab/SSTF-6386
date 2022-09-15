@@ -1,0 +1,161 @@
+.container section.timeFormUS {
+  background: rgb(63,171,45);
+  background: linear-gradient(180deg, rgba(63,171,45,1) 0%, rgba(46,144,75,1) 100%);
+  padding: 16px 0 42px
+}
+
+.timeFormUS hgroup h2{
+  color: #fff;
+}
+
+section.timeFormUS .subTitle {
+  color: #fff;
+}
+
+.timeFormUS img.desktop{
+  display: none;
+}
+
+.timeFormUS img.mobile{
+  width: 263px;
+  height: 363px;
+  margin: 20px auto;
+  display: block;
+}
+
+.timeFormUS .colTwo {
+  display: flex;
+  flex-direction: column;
+  margin: 20px 0;
+}
+
+.timeFormUS li::before {
+  content: "";
+  width: 16px;
+  height: 16px;
+  background: url('../images/Icons/listtick.svg') no-repeat top left;
+  background-size: 16px 16px;
+  margin-top: 2px;
+}
+
+.timeFormUS li {
+  margin-bottom: 12px;
+  color: #f4faff;
+  padding-left: 24px;
+}
+
+.timeFormUS li:last-child {
+  margin-bottom: 0;
+}
+
+.timeFormUS .videoWrap {
+  margin: 16px 0 20px
+}
+
+.timeFormUS .cards {
+  display: flex;
+  overflow: auto;
+}
+
+.timeFormUS .cards .card {
+  width: 180px;
+  height: 140px;
+  margin: 0 8px 0 0;
+  padding: 12px;
+  border-radius: 8px;
+  background-color: #f4faff;
+  float: left;
+}
+.timeFormUS .cards .card:last-child {
+  margin: 0;
+}
+.timeFormUS .cards .card .cardtitle{
+  margin-bottom: 4px;
+  font-size: 13px;
+  line-height: 16px;
+  color:#19345e;
+  font-weight:700;
+}
+.timeFormUS .cards .card p{
+  margin-bottom: 12px;
+  font-size: 13px;
+  line-height: 16px;
+  color:#19345e;
+  height: 48px;
+  width: 80%;
+}
+.timeFormUS .cards .card button{
+  width: 156px;
+  height: 32px;
+}
+.timeFormUS .cards .card button a,
+.timeFormUS .cards .card button a:focus,
+.timeFormUS .cards .card button a:visited,
+.timeFormUS .cards .card button a:active
+{
+  width: 100%;
+  height: 100%;
+  display: block;
+  color: #0066cc;
+  font-size: 15px;
+  line-height: 32px;
+  font-weight: 600;
+  text-align: center;
+}
+
+@media screen and (min-width: 768px) {
+  .timeFormUS img.desktop{
+    display: block;
+  }
+
+  .timeFormUS img.mobile{
+    display: none;
+  }
+}
+
+@media screen and (min-width:1024px) {
+
+  .timeFormUS .cards .card {
+    width: 264px;
+    height: 172px;
+    margin-right: 24px;
+  }
+  .timeFormUS .cards .card .cardtitle{
+    margin-bottom: 6px;
+    font-size: 17px;
+    line-height: 24px;
+  }
+  .timeFormUS .cards .card p{
+    font-size: 15px;
+    line-height: 20px;
+    height: 74px;
+    width: 100%;
+  }
+  .timeFormUS .cards .card button{
+    width: 232px;
+    height: 32px;
+  }
+  
+  .timeFormUS .colTwo {
+    display: flex;
+    flex-direction: row-reverse;
+  }
+
+  .timeFormUS .colTwo {
+    margin: 40px 0;
+    justify-content: space-between;
+  }
+
+  .timeFormUS hgroup {
+    margin-bottom: 44px;
+  }
+
+  .timeFormUS .videoWrap {
+    margin: 0;
+  }
+
+  .timeFormUS ul {
+    width: 400px;
+    margin-top: 80px;
+  }
+}

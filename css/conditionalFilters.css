@@ -1,0 +1,91 @@
+.conditionalFilters {
+  flex-direction: column;
+  margin-bottom: 20px;
+  margin-top: 20px;
+}
+.conditionalFilters img {
+  width: 100%;
+  height: auto;
+}
+.conditionalFilterInfo li::before {
+  background: transparent;
+}
+.conditionalFilters .sectionTitle {
+  margin-bottom: 14px;
+}
+.mobileShow {
+  display: block;
+}
+.mobileHide {
+  display: none;
+}
+.conditionalFilterCnt {
+  margin-left: 0;
+  margin-top: 21px;
+}
+.conditionalFilters .infoCnt li {
+  margin-bottom: 12px;
+  font-size: 15px;
+  line-height: 20px;
+  padding-left: 24px;
+}
+.conditionalFilters .infoCnt li:before {
+  width: 16px;
+  height: 16px;
+  background-size: 16px 16px;
+}
+.conditionalFilterInfo li {
+  margin-bottom: 8px;
+}
+.conditionalFilterInfo li b {
+  color: #19345e;
+  font-weight: 700;
+}
+
+@media screen and (min-width: 992px) {
+  .mobileShow {
+    display: none;
+  }
+  .mobileHide {
+    display: block;
+  }
+  .conditionalFilters {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-top: 40px;
+    margin-bottom: 40px;
+  }
+  .conditionalFilters .sectionTitle {
+    margin-bottom: 32px;
+  }
+  .conditionalFilters .infoCnt li:before {
+    width: 24px;
+    height: 24px;
+    background-size: 24px 24px;
+  }
+  .conditionalFilters img {
+    width: 649px;
+    height: 564px;
+  }
+  .conditionalFilterCnt {
+    margin-left: 24px;
+  }
+  .conditionalFilters .infoCnt li {
+    margin-bottom: 16px;
+    font-size: 17px;
+    line-height: 24px;
+    padding-left: 32px;
+  }
+  .conditionalFilterInfo li b {
+    color: #000;
+  }
+  .conditionalFilters .infoCnt li:last-child {
+    margin-bottom: 6px;
+  }
+  .conditionalFilterInfo li {
+    font-size: 17px;
+    line-height: 28px;
+    color: #000;
+  }
+}

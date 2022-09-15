@@ -1,0 +1,48 @@
+.projectedOdds .oddsDescription p{
+  font-size: 15px;
+  line-height: 20px;
+  color: #000000;
+  margin-bottom: 10px;
+}
+.oddsDescription{
+  margin-top: 16px;
+}
+.projectedOdds .oddsDescription span{
+  color: #19345e;
+  font-weight: 700;
+}
+@media screen and (max-width: 767px) {
+  .projectedOdds .subTitle{
+    max-width: 85%;
+    margin: auto;
+  }
+  .oddsMiddleContent p:first-child{
+    margin-bottom: 24px;
+  }
+  .mergedWorkouts .videoWrap{
+    margin: 16px 0;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .workoutsImageWrap img{
+    width: 100%;
+    margin: 44px 0 4px;
+  }
+  .projectedOdds .subTitle{
+    max-width: 48%;
+  }
+  .projectedOddsImgWrap img{
+    width: 100%;
+    margin: 22px 0 18px;
+  }
+  .oddsDescription{
+    display: flex;
+  }
+  .descLeftSection, .descRightSection{
+    width: 45%;
+  }
+  .descRightSection{
+    margin-left: 24px;
+  }
+}

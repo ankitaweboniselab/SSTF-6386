@@ -1,0 +1,142 @@
+.formulatorpps {
+  background-color: #134E82;
+  background-image: url('../images/formulatorpphorse.png');
+  background-size: auto 396px;
+  background-repeat: no-repeat;
+  background-position: top right;
+  height: 396px;
+  width: 100%;
+  height: auto;
+}
+
+.formulatorpps .backLink a {
+  color: #fff;
+  font-size: 14px;
+  line-height: 24px;
+  display: flex;
+  align-items: center;
+}
+
+.formulatorpps .content {
+  margin-top: 359px;
+  padding: 18px 0 24px;
+  background-image: #134E82;
+}
+
+.formulatorpps .content hgroup h1 {
+  font-family: "Alfa Slab One";
+  font-size: 30px;
+  line-height: 40px;
+  color: #fff;
+  margin-bottom: 10px;
+  letter-spacing: 1px;
+}
+
+.formulatorpps .content hgroup p {
+  font-size: 17px;
+  line-height: 24px;
+  color: #fff;
+  margin-bottom: 10px;
+  font-weight: 600;
+  max-width: 311px;
+}
+
+.formulatorpps .customize {
+  width: 272px;
+  font-size: 20px;
+  line-height: 28px;
+  font-weight: 700;
+  color: #fee600;
+  margin-bottom: 14px;
+}
+
+.formulatorpps ul li::before {
+  background: url('../images/Icons/listarrowdown.svg') no-repeat;
+  background-position: left center;
+  background-size: 24px 24px;
+  height: 24px;
+  width: 24px;
+  margin-right: 8px;
+}
+
+.formulatorpps ul li {
+  font-size: 17px;
+  line-height: 24px;
+  color: #fff;
+  margin-bottom: 16px;
+}
+
+.formulatorpps ul li:last-child {
+  margin-bottom: 0;
+}
+
+.container section.formulatorpps {
+  margin-bottom: 0;
+}
+
+
+ @media screen and (min-width: 768px) {
+  .formulatorpps {
+    background-image: url('../images/formulatorpphorse.png');
+    background-size: auto 934px;
+    background-repeat: no-repeat;
+    background-position: 240% 0;
+    height: 934px;
+    width: 100%;
+  }
+  .formulatorpps .content {
+    margin-top: 60px;
+    width: 400px;
+    background: transparent;
+  }
+
+  .formulatorpps .customize {
+    margin-bottom: 19px;
+  }
+
+  .formulatorpps ul li {
+    font-size: 17px;
+    line-height: 24px;
+    color: #fff;
+    margin-bottom: 16px;
+  }
+}
+
+@media screen and (min-width: 992px) {
+  .formulatorpps {
+    background-image: url('../images/formulatorpphorse.png');
+    background-size: auto 934px;
+    background-repeat: no-repeat;
+    background-position: right top;
+    height: 934px;
+    width: 100%;
+  }
+  
+  .formulatorpps .content {
+    margin-top: 65px;
+    width: 440px;
+    background: transparent;
+  }
+
+  .formulatorpps .content hgroup h1 {
+    font-size: 36px;
+    line-height: 48px;
+  }
+
+  .formulatorpps .customize {
+    margin-bottom: 19px;
+  }
+
+  .formulatorpps ul li {
+    font-size: 17px;
+    line-height: 24px;
+    color: #fff;
+    margin-bottom: 16px;
+  }
+}
+
+@media screen and (min-width:1200px) {
+  .formulatorpps .content {
+    width: 502px;
+  }
+}

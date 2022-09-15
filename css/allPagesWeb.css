@@ -1,0 +1,134 @@
+@media screen and (min-width: 768px) {
+  section .subTitle{
+    font-size: 21px;
+    line-height: 28px;
+    max-width: 66%;
+    margin: 4px auto;
+  }
+  .formulatorLanding .colorBgSection{
+    padding: 32px 36px;
+  }
+  .sectionTitle{
+    font-size: 40px;
+    line-height: 48px;
+  }
+  .sectionBlueTitle{
+    font-size: 32px;
+    line-height: 40px;
+  }
+  .listWrap h3{
+    color: #19345e;
+    font-size: 24px;
+    line-height: 32px;
+    font-weight: 700;
+    margin-bottom: 14px;
+  }
+  .listWrap li{
+    margin-bottom: 18px;
+  }
+  .accordianContentWrap{
+    display: flex;
+  }
+  .contentLeftSection{
+    width: 40%;
+  }
+  .accordianContentWrap .accordianImgWrap{
+    width: 60%;
+    margin-left: 24px;
+    margin-top: -65px;
+  }
+  .contentWrap{
+    margin-top: 14px;
+  }
+  .accordianHeader{
+    margin-bottom: 0;
+    font-size: 24px;
+    line-height: 32px;
+  }
+  .accordianHeader .accordianIcon{
+    top: 4px;
+  }
+  .accordianWrapper{
+    margin-bottom: 59px;
+  }
+  .desktopHide{
+    display: none;
+  }
+  .videoReplaysImgWrap img{
+    width: 100%;
+    margin: 36px 0 40px
+  }
+  .videoListWrapper{
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+  }
+  .videoListWrapper .videoWrap{
+    width: 49%;
+    margin-top: 0;
+  }
+  .videoListWrapper .listWrap{
+    width: 51%;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+  .wageringContentWrap .contentWrap{
+    width: 54%;
+  }
+  .wageringLiveVideo .primary{
+    padding: 11px 117px;
+  }
+  .wageringContentWrap .wageringLeftSection{
+    width: 43%;
+  }
+  .wageringContentWrap .availableFormulatorCard,
+  .wageringLiveVideo .primary{
+    width: 305px;
+  }
+  .videoWrap iframe{
+    width: 320px;
+    height: 190px;
+  }
+  .formulatorLanding section.colorBgSection{
+    padding: 24px;
+  }
+  .raceChartVideoListWrap .listWrap{
+    margin-left: 60px;
+    width: 55%;
+  }
+  .raceChartVideoListWrap .videoWrap{
+    width: 42%;
+  }
+  .videoListWrapper .listWrap h3{
+    font-size: 18px;
+  }
+  section.customizedPrinting .contentWrap img{
+    margin: 10px 0 20px;
+  }
+  .wageringContentWrap{
+    margin-top: 20px;
+  }
+  section .sectionTitle{
+    font-size: 32px;
+  }
+  .adjustedFractions .stepDesc{
+    font-size: 24px;
+  }
+  .btnWrapper{
+    margin-top: 24px;
+  }
+  .accordianContentWrap .accordianImgWrap{
+    width: 54%;
+  }
+}
+
+@media (min-width: 1024px) and (max-width: 1024px) {
+  .reportsImgWrap img, .accordianImgWrap img,
+  .wageringContentWrap .contentWrap img{
+    width: 525px;
+  }
+  .wageringContentWrap .wageringLeftSection{
+    width: 34%;
+  }
+}

@@ -1,0 +1,98 @@
+
+.pedigreeReportsConentWrap{
+  display: flex;
+  align-items: center;
+}
+
+.sectionBlueTitle{
+  color: #19345e;
+  text-align: left;
+  margin-bottom: 12px;
+}
+
+.reportsFeatureWrap{
+  margin-top: 16px;
+}
+
+@media screen and (max-width: 767px) {
+  .pedigreeReports li::before{
+    width: 16px;
+    height: 16px;
+    background-size: 16px 16px;
+  }
+  .pedigreeReports li{
+    padding-left: 24px;
+  }
+  .listWrap h3{
+    font-size: 17px;
+    line-height: 20px;
+    color: #000000;
+    font-weight: 600;
+  }
+  .listWrap li{
+    margin-top: 12px;
+  }
+  .pedigreeReportsConentWrap{
+    display: block;
+  }
+  .reportsImgWrap{
+   margin: 16px 0 20px; 
+  }
+  .contentWrap img,
+  .reportsImgWrap img{
+    width: 100%;
+  }
+  .accordianImgWrap{
+    margin: 0 -16px 16px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .pedigreeReportsConentWrap{
+    flex-direction: row-reverse;
+    margin: 56px 0 59px;
+  }
+  .pedigreeReportsConentWrap .reportsImgWrap{
+    width: 58%;
+  }
+  .pedigreeReportsConentWrap .listWrap{
+    width: 42%;
+  }
+  .reportsImgWrap img,
+  .accordianImgWrap img{
+    width: 648px;
+  }
+  .reportsFeatureWrap .sectionBlueTitle{
+    margin-bottom: 28px;
+  }
+  .reportsFeatureWrap .comparisonChartImg{
+    margin-bottom: 0;
+  }
+  .comparisonChartImg img{
+    width: 100%;
+  }
+  .comparisonChartImg .contentWrap{
+    margin-bottom: 0;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 991px)  {
+  .container section{
+    padding: 0 24px;
+  }
+  .pedigreeReportsConentWrap .reportsImgWrap{
+    width: 56%;
+    margin-left: 20px;
+  }
+  .pedigreeReportsConentWrap .listWrap{
+    width: 44%;
+  }
+  .accordianContentWrap .contentLeftSection{
+    width: 42%;
+  }
+  .reportsImgWrap img, 
+  .accordianImgWrap img,
+  .wageringLiveVideo .wageringContentWrap .contentWrap img{
+    width: 390px;
+  }
+}

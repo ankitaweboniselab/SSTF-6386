@@ -1,0 +1,33 @@
+
+.btndownloadExample{
+  padding: 11px 28px;
+  box-shadow: 0 4px 4px -3px rgba(0, 102, 204, 0.5);
+}
+@media screen and (max-width: 767px) {
+  .customizedPrinting .contentWrap{
+    margin: 16px -16px;
+  }
+  .formulatorLanding .customizedPrinting,
+  .formulatorLanding .adjustedFractions{
+    padding-bottom: 32px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .customizedPrinting .contentWrap img{
+    width: 100%;
+    margin: 26px 0 30px;
+  }
+  .wageringLeftSection .btnWrap{
+    margin-top: 26px;
+  }
+  .btndownloadExample{
+    padding: 11px 60px;
+  }
+  .customizedPrinting .listWrap{
+    display: flex;
+  }
+  .customizedPrinting .listWrap ul{
+    width: 50%;
+  }
+}

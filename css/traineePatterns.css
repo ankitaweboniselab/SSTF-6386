@@ -1,0 +1,75 @@
+.traineePatternsListing .listWrap li::before{
+  width: 16px;
+  height: 16px;
+  background-size: 16px 16px;
+  top: 2px;
+}
+.traineePatternsListing .listWrap li span{
+  color: #19345e;
+  font-weight: 700;
+}
+.trainerPatterns p{
+  font-size: 15px;
+  margin-top: 16px;
+  line-height: 20px;
+}
+.featuresWrapper{
+  margin-top: 12px;
+}
+.featuresWrapper .accordianWrapper{
+  margin-bottom: 16px;
+}
+
+@media screen and (max-width: 767px){
+  .modifyingFiltersImgWrap{
+    margin: 12px -16px 0;
+  }
+  .trainerPatterns{
+    margin-bottom: 0;
+  }
+}
+@media screen and (min-width: 768px) {
+  .trainerPatterns .contentWrap{
+    margin: 40px 0;
+  }
+  .imgRightSection{
+    width: 588px;
+  }
+  .traineePatternsContent{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .descLeftSection p{
+    font-size: 17px;
+    line-height: 24px;
+  }
+  .trainerPatterns .traineePatternsAccordianWrap{
+    flex-direction: column;
+  }
+  .trainerPatterns .accordianContentWrap p{
+    font-size: 17px;
+    margin-top: 16px;
+    line-height: 24px;
+  }
+  .traineePatternsListing{
+    display: flex;
+    margin-top: 10px;
+  }
+  .traineePatternsListing .listWrap{
+    width: 50%;
+  }
+  .modifyingFiltersImgWrap img{
+    width: 552px;
+  }
+  .modifyingFiltersDesc,
+  .modifyingFiltersImgWrap,
+  .traineePatternsContent .descLeftSection, 
+  .traineePatternsContent .imgRightSection{
+    width: 49%;
+  }
+  .modifyingFiltersWrap{
+    justify-content: space-between;
+    align-items: center;
+  }
+}

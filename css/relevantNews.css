@@ -1,0 +1,25 @@
+.relevantNewsNSelections{
+  border-bottom: 1px solid rgba(25, 52, 94, 0.2);
+}
+@media screen and (max-width: 767px) {
+  .relevantNewsNSelections .contentWrap{
+    margin: 16px -16px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .relevantNewsNSelections .contentWrap img{
+    width: 100%;
+    margin-top: 24px;
+  }
+  .relevantNewsContentWrap{
+    display: flex;
+    align-items: center;
+  }
+  .relevantNewsContentWrap .listWrap{
+    width: 60%;
+  }
+  .relevantNewsNSelections .contentWrap{
+    margin: 0;
+  }
+}
