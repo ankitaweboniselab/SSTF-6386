@@ -398,18 +398,17 @@
   </style>
   <style data-name="formulatorpps">
     .formulatorpps {
-      background-color: #19345E;
-      background-image: url('https://static.drf.com/sstf/images/pps_page_images/formulatorpphorse.png');
-      background-size: auto 396px;
+      background-color: #fff;
+      background-image: url('images/timeFormPpHorse.png');
       background-repeat: no-repeat;
       background-position: top right;
-      height: 396px;
+      height: 682px;
       width: 100%;
       height: auto;
     }
 
     .formulatorpps .backLink a {
-      color: #fff;
+      color: #06c;
       font-size: 14px;
       line-height: 24px;
       display: flex;
@@ -426,7 +425,7 @@
       font-family: "Alfa Slab One";
       font-size: 30px;
       line-height: 40px;
-      color: #fff;
+      color: #19345E;
       margin-bottom: 10px;
       letter-spacing: 1px;
     }
@@ -434,10 +433,22 @@
     .formulatorpps .content .hgroup p {
       font-size: 17px;
       line-height: 24px;
-      color: #fee600;
-      margin-bottom: 10px;
+      color: #19345E;
+      margin-bottom: 72px;
       font-weight: 600;
-      max-width: 330px;
+      max-width: 415px;
+      position: relative;
+    }
+
+    .formulatorpps .content .hgroup p::after {
+      content: "";
+      width: 368px;
+      height: 1px;
+      background: #143664;
+      opacity: 0.29;
+      position: absolute;
+      bottom: -39px;
+      left: 0;
     }
 
     .formulatorpps .customize {
@@ -471,12 +482,13 @@
     .formulatorpps ul li a:visited {
       font-size: 17px;
       line-height: 24px;
-      color: #fff;
+      color: #06c;
       margin-bottom: 16px;
     }
 
     .formulatorpps ul li a:hover {
       font-weight: 700;
+      color: #000;
     }
 
     .formulatorpps ul li:last-child {
@@ -485,6 +497,7 @@
 
     .container section.formulatorpps {
       margin-bottom: 0;
+      border-bottom: 4px solid #19345E;
     }
 
 
@@ -518,11 +531,11 @@
 
     @media screen and (min-width: 992px) {
       .formulatorpps {
-        background-image: url('https://static.drf.com/sstf/images/pps_page_images/formulatorpphorse.png');
-        background-size: auto 934px;
+        background-image: url('images/bgImage.png');
+        background-size: auto 679px;
         background-repeat: no-repeat;
         background-position: right top;
-        height: 934px;
+        height: 679px;
         width: 100%;
       }
 
@@ -533,8 +546,8 @@
       }
 
       .formulatorpps .content .hgroup h1 {
-        font-size: 36px;
-        line-height: 48px;
+        font-size: 40px;
+        line-height: 52px;
       }
 
       .formulatorpps .customize {
@@ -658,7 +671,12 @@
     }
 
     .backLink svg {
-      fill: #ffffff;
+      display: inline-block;
+      margin-right: 8px;
+    }
+
+    .backLink svg path {
+      fill: #06c;
       width: 16px;
       height: 16px;
       margin-right: 8px;
@@ -711,6 +729,15 @@
 
     .container section.withBg {
       padding: 0;
+      margin-bottom: 125px;
+    }
+
+    .facts {
+      font-size: 28px;
+      line-height: 36px;
+      font-weight: 700;
+      color: #19345E;
+      margin-bottom: 26px;
     }
 
     .innerContainer {
@@ -723,7 +750,501 @@
       font-weight: 700;
       text-align: center;
       color: #000;
-      margin-bottom: 4px;
+      margin-bottom: 24px;
+    }
+
+    .info {
+      font-size: 17px;
+      line-height: 28px;
+      font-family: "Titillium Web", sans-serif;
+      font-weight: 400;
+      color: #000;
+      padding: 0 194px;
+      text-align: center;
+      margin-bottom: 140px;
+    }
+
+    .paceProjInfoText {
+      font-size: 24px;
+      line-height: 44px;
+      font-family: "Titillium Web", sans-serif;
+      font-weight: 400;
+      color: #000;
+      margin-bottom: 40px;
+      text-align: center;
+    }
+
+    .paceProjInfo .hgroup .sectionTitle {
+      margin-bottom: 52px;
+    }
+
+    .paceProjInfo .sectionTitle {
+      margin-bottom: 0;
+    }
+
+    .paceProjInfo .info {
+      margin-bottom: 76px;
+    }
+
+    .trackImageWrap {
+      display: flex;
+      align-items: center;
+      margin-bottom: 88px;
+    }
+
+    .trackImageWrap div span {
+      text-align: center;
+      display: block;
+      margin-top: 16px;
+      font-size: 20px;
+      line-height: 22px;
+      font-family: "Titillium Web", sans-serif;
+      font-weight: 600;
+      text-transform: uppercase;
+    }
+
+    .trackImageWrap .dirt,
+    .trackImageWrap .synthetic {
+      width: 288px;
+      height: 126px;
+    }
+
+    .trackImageWrap .dirt span,
+    .trackImageWrap .synthetic span {
+      margin-top: 12px;
+    }
+
+    .trackImageWrap .dirt {
+      color: #000000;
+    }
+
+    .trackImageWrap .synthetic {
+      color: #00b7ff;
+    }
+
+    .trackImageWrap .turf {
+      width: 523px;
+      height: 229px;
+      margin-left: 12px;
+      margin-right: 12px;
+      color: #71ac36;
+    }
+
+    .container section.tfusWorking {
+      padding-bottom: 131px;
+      margin-bottom: 0;
+    }
+
+    .tfusWorking h2 {
+      margin-bottom: 103px;
+    }
+
+    .tfusWorking h3 {
+      font-size: 17px;
+      line-height: 28px;
+      color: #000000;
+      font-family: "Titillium Web", sans-serif;
+      font-weight: 400;
+      margin-bottom: 67px;
+    }
+
+    .tfusWorking h3 {
+      font-size: 17px;
+      line-height: 28px;
+      font-family: "Titillium Web", sans-serif;
+      font-weight: 400;
+      color: #000000;
+      text-align: center;
+    }
+
+    .container section.tfusWorking {
+      background: #f4faff;
+      padding-top: 62px;
+    }
+
+    .tfusSpeedFig {
+      margin-bottom: 44px;
+    }
+
+    .tfusSpeedFig .tfusInfo {
+      margin-top: 48px;
+    }
+
+    .tfusSpeedFig img {
+      height: 374px;
+    }
+
+    .spotlightFig {
+      flex-direction: row-reverse;
+      margin-bottom: 71px;
+    }
+
+    .spotlightFig img {
+      height: 370px;
+    }
+
+    .timeformSel img {
+      height: 369px;
+    }
+
+    .tfusWorking .tfusBox,
+    .timeformRating,
+    .paceRatingWrap {
+      display: flex;
+    }
+
+    .tfusWorking .imgBox,
+    .tfusWorking .tfusInfo {
+      width: 50%;
+    }
+
+    .tfusInfo h4 {
+      font-size: 28px;
+      line-height: 36px;
+      font-family: "Titillium Web", sans-serif;
+      font-weight: 700;
+      color: #19345E;
+      margin-bottom: 18px;
+    }
+
+    .tfusInfo {
+      padding-right: 209px;
+    }
+
+    .tfusInfo p {
+      font-size: 15px;
+      line-height: 24px;
+      font-family: "Titillium Web", sans-serif;
+      font-weight: 400;
+      color: #000000;
+    }
+
+    .speedFigBottom,
+    .spotlightBottom,
+    .timeformBottom {
+      margin-top: 16px;
+      font-size: 15px;
+      line-height: 24px;
+      color: #000000;
+      font-family: "Titillium Web", sans-serif;
+      font-weight: 600;
+      padding: 8px;
+      border-radius: 4px;
+      border: solid 1px rgba(0, 102, 204, 0.25);
+      background-color: #fff;
+    }
+
+    .spotlightBottom {
+      padding: 8px 12px;
+    }
+
+    .timeformBottom span {
+      font-size: 14px;
+      line-height: 16px;
+      color: #000000;
+      font-family: "Titillium Web", sans-serif;
+      font-weight: 600;
+    }
+
+    .spotlightBottom .denotation {
+      font-size: 14px;
+      line-height: 16px;
+      color: #000000;
+      font-family: "Titillium Web", sans-serif;
+      font-weight: 600;
+    }
+
+    .spotlightFig .imgBox {
+      margin-right: 20%;
+    }
+
+    .spotlightFig .tfusInfo {
+      padding-right: 110px;
+    }
+
+    .timeformSel .tfusInfo {
+      padding-right: 105px;
+    }
+
+    .timeformSel p {
+      padding-right: 111px;
+    }
+
+    .trackInformation {
+      display: flex;
+      margin-top: 8px;
+    }
+
+    .trackInformation div span {
+      display: inline-block;
+      vertical-align: middle;
+    }
+
+    .trackInformation div span:first-child {
+      margin-right: 8px;
+      font-size: 13px;
+      line-height: 28px;
+      color: #ffffff;
+      font-family: "Titillium Web", sans-serif;
+      font-weight: 700;
+      text-align: center;
+      width: 28px;
+      height: 28px;
+      border-radius: 2px;
+    }
+
+    .trackInformation div span:last-child {
+      font-size: 13px;
+      line-height: 20px;
+      font-family: "Titillium Web", sans-serif;
+      font-weight: 600;
+    }
+
+    .trackInformation div:nth-child(2) {
+      margin: 0 48px;
+    }
+
+    .trackInformation div:first-child span:first-child {
+      background: #e2b07e;
+      color: #000000;
+    }
+
+    .trackInformation div:first-child span:last-child {
+      color: #000000;
+    } 
+
+    .trackInformation div:nth-child(2) span:first-child {
+      background: #71ac36;
+    }
+
+    .trackInformation div:nth-child(2) span:last-child {
+      color: #71ac36;
+    }
+
+    .trackInformation div:last-child span:first-child {
+      background: #44bbee;
+    }
+
+    .trackInformation div:last-child span:last-child {
+      color: #00b7ff;
+    }
+
+    .timeformRating span {
+      font-size: 15.6px;
+      line-height: 20.9px;
+      color: #000000;
+      font-family: "Titillium Web", sans-serif;
+      font-weight: 400;
+    }
+
+    .timeformRating div:nth-child(2) {
+      margin: 0 20px;
+    }
+
+    .timeformRating .rating span,
+    .timeformRating .rating img,
+    .timeformRating span,
+    .timeformRating .rating {
+        display: inline-block;
+        vertical-align: middle;
+    }
+
+    .timeformRating .rating span,
+    .timeformRating .rating img {
+      vertical-align: top;
+    }
+
+    .timeformRating div.rating {
+      margin: 0 0 0 5px;
+    }
+
+    .timeformRating .rating span {
+      font-size: 11.7px;
+      line-height: 15.6px;
+      color: #ffffff;
+      font-family: "Titillium Web", sans-serif;
+      font-weight: 600;
+    }
+
+    .timeformRating .rating img  {
+      width: 13px;
+      height: 13px;
+    }
+
+    .timeformRating .rating {
+      width: 44px;
+      height: 18px;
+      background: #19345E;
+      padding: 2px 4px 0;
+      border-radius: 1.3px;
+    }
+
+    .note {
+      margin-top: 8px;
+      margin-bottom: 16px;
+    }
+
+    .note span {
+      font-size: 14px;
+      line-height: 20px;
+      font-family: "Titillium Web", sans-serif;
+    }
+
+    .note span:first-child {
+      font-weight: 600;
+      color: #ec1c24;
+      margin-right: 2px;
+    }
+
+    .note span:last-child {
+      font-weight: 400;
+      color: #555555;
+    }
+
+    .container section.paceRatingWrap ,
+    .container section.addInfo {
+      background: #f4faff;
+      margin-bottom: 0;
+    }
+
+    .paceRatingWrap .sectionTitle {
+      text-align: left;
+    }
+
+    .paceRatingWrap div {
+      width: 50%;
+    }
+
+    .paceRatingWrap .info {
+      font-size: 15px;
+      line-height: 24px;
+      color: #000000;
+      margin-bottom: 12px;
+      font-family: "Titillium Web", sans-serif;
+      font-weight: 400;
+      padding: 0;
+      text-align: left;
+    }
+
+    .paceRatingWrap div.hgroup {
+      width: auto;
+    }
+
+    .paceRatingWrap img {
+      height: 412px;
+    }
+
+    .container section.topEarlyLate {
+      background: #f4faff;
+      display: flex;
+      padding-bottom: 80px;
+      margin-bottom: 0;
+    }
+
+    .topEarlyLate div {
+      padding: 24px;
+      border-radius: 8px;
+      width: 49%;
+      border: solid 1px rgba(0, 102, 204, 0.25);
+      background-color: #fff;
+    }
+
+    .topEarlyLate div:first-child {
+      margin-right: 1%;
+    }
+
+    .topEarlyLate div:last-child {
+      margin-left: 1%;
+    }
+
+    .topEarlyLate span {
+      font-size: 20px;
+      line-height: 30px;
+      color: #000000;
+      margin-bottom: 8px;
+      display: block;
+      font-family: "Titillium Web", sans-serif;
+      font-weight: 700;
+    }
+
+    .topEarlyLate p {
+      font-size: 15px;
+      line-height: 24px;
+      color: #000000;
+      font-family: "Titillium Web", sans-serif;
+      font-weight: 400;
+    }
+
+    .container section.addInfo {
+      display: flex;
+      justify-content: center;
+      background: #06c;
+    }
+
+    .container section.addInfo {
+      margin-bottom: 66px;
+      height: 312px;
+    }
+
+    .addInfo img {
+      height: 312px;
+    }
+
+    .addInfo div:first-child {
+      margin-right: 61px;
+    }
+
+    .addInfo div:last-child {
+      padding-top: 40px;
+      padding-bottom: 90px;
+      width: 456px;
+    }
+
+    .addInfo div:last-child span {
+      font-size: 21px;
+      line-height: 24px;
+      color: #ffffff;
+      display: block;
+      margin-bottom: 12px;
+      font-family: "Titillium Web", sans-serif;
+      font-weight: 400;
+    }
+
+    .addInfo div:last-child h2 {
+      font-size: 32px;
+      line-height: 40px;
+      color: #ffffff;
+      margin-bottom: 32px;
+      font-family: "Titillium Web", sans-serif;
+      font-weight: 700;
+    }
+
+    .addInfo div:last-child .actionBtn {
+      padding: 12px 15px;
+      border-radius: 5.8px;
+      border: solid 1px #06c;
+      background-color: #fff;
+      font-size: 15px;
+      line-height: 20px;
+      text-align: center;
+      color: #06c;
+      font-family: "Titillium Web", sans-serif;
+      font-weight: 600;
+    }
+
+    .container section.paceProjectElements {
+      padding: 104px 27px;
+      background: #06c;
+    }
+
+    .sectionSubTitle {
+      text-align: center;
+      font-size: 21px;
+      line-height: 28px;
+      color: #666666;
+      margin-bottom: 12px;
+      font-family: "Titillium Web", sans-serif;
+      font-weight: 400;
     }
 
     .formulatorLanding .colorBgSection {
@@ -897,8 +1418,11 @@
     @media screen and (min-width: 1200px) {
       .joinNow {
         line-height: 62px;
-        height: 62px;
-        font-size: 21px;
+        height: 52px;
+        font-size: 15px;
+        color: #19345E;
+        font-family: "Titillium Web", sans-serif;
+        font-weight: 600;
       }
     }
   </style>
@@ -2182,10 +2706,8 @@
   <div class="formulatorLanding" id="top">
     <div class="container formulator">
       <section class="joinNow withBg" id="joinNow">
-        <p>Formulator is available for FREE exclusively on
-          <br class="br">DRF Bets. <a
-            href="https://www.drf.com/register?utm_source=drf&utm_medium=formulatorpage&utm_campaign=drfbets&utm_content=winning"
-            target="_blank">Join now to access</a>
+        <p>
+          TimeformUS past performances are available for Free with DRF Mobile PPs for a limited time.
         </p>
       </section>
       <section class="formulatorpps withBg" id="formulatorpps">
@@ -2200,569 +2722,176 @@
         <div class="content">
           <div class="innerContainer">
             <div class="hgroup">
-              <h1>FORMULATOR PPs</h1>
-              <p>Take your handicapping to the next level with DRF's premium data product</p>
+              <h1>INTRODUCING TIMEFORMUS</h1>
+              <p>Use the Pace Projector and pace-adjusted speed figures to complement and raise your handicapping game.</p>
             </div>
             <div class="hDivider"></div>
-            <p class="customize">Customize your PPs with these exclusive features</p>
+            <p class="facts">Facts & Features</p>
             <ul>
-              <li><a class="scrollPage" href="#raceHorseNotes">Create Race, Trip and Card Notes</a></li>
-              <li><a class="scrollPage" href="#timeFormUS">TimeformUS Pace Figures</a></li>
-              <li><a class="scrollPage" href="#conditionalFilters">Conditional Filters</a></li>
-              <li><a class="scrollPage" href="#trainerPatterns">Trainer Patterns</a></li>
-              <li><a class="scrollPage" href="#mergedWorkouts">Merged Workouts</a></li>
-              <li><a class="scrollPage" href="#projectedOdds">Projected Odds</a></li>
-              <li><a class="scrollPage" href="#pedigreeReports">Pedigree Reports</a></li>
-              <li><a class="scrollPage" href="#videoReplays">Video Replays</a></li>
-              <li><a class="scrollPage" href="#raceChart">Race Charts</a></li>
-              <li><a class="scrollPage" href="#adjustedFractions">Adjusted Fractions</a></li>
-              <li><a class="scrollPage" href="#wageringLiveVideo">Wagering and Live Video</a></li>
-              <li><a class="scrollPage" href="#customizedPrinting">Customized Printing</a></li>
-              <li><a class="scrollPage" href="#relevantNewsNSelections">Relevant News and Selections</a></li>
+              <li><a class="scrollPage" href="#whyTimeFormSection">What are TimeformUS PPs?</a></li>
+              <li><a class="scrollPage" href="#paceProjUnderstanding">Understanding the New Pace Projector</a></li>
+              <li><a class="scrollPage" href="#paceProjElements">Elements of the Pace Projector</a></li>
+              <li><a class="scrollPage" href="#tfusWorkingSection">How TimeformUS PPs Work</a></li>
             </ul>
           </div> <!-- innerContainer -->
         </div><!-- content -->
       </section>
-      <section class="raceHorseNotes colorBgSection" id="raceHorseNotes">
+      <section class="whyTimeForm" id="whyTimeFormSection">
         <div class="hgroup">
-          <h2 class="sectionTitle">Create Race, Trip and Card Notes</h2>
-          <p class="subTitle">Personalize your PPs with trip, race and card notes!</p>
+          <h2 class="sectionTitle">What are TimeformUS PPs?</h2>
         </div>
-        <div class="colTwo">
-          <ol type="1">
-            <li>Click the "Notes" icon to take and access notes</li>
-            <li>Make your horse notes; save automatically to cloud</li>
-            <li>Add your card notes</li>
-            <li>Add your trip notes</li>
-          </ol>
-          <img src="https://static.drf.com/sstf/images/pps_page_images/raceHOrseNotes.png" alt="Race and Horse Notes">
+        <p class="info">
+          TimeformUS past performances are a revolutionary way to look at pace and pace-adjusted speed figures to get an instant look at how the race will be run. TimeformUS Speed Figures are different from Beyer Speed Figures because they are pace-adjusted. Our early Pace Projector, Finish Position projector, and final pace-adjusted speed figures will make your handicapping faster, better, and more profitable.
+        </p>
+      </section>
+      <section class="paceProjInfo" id="paceProjUnderstanding">
+        <div class="hgroup">
+          <h2 class="sectionTitle">Understanding New Modern Pace Projector</h2>
+        </div>
+        <div class="trackImageWrap">
+          <div class="dirt">
+            <img src="images/dirtImage.png"/>
+            <span>Dirt</span>
+          </div>
+          <div class="turf">
+            <img src="images/turfImage.png"/>
+            <span>Turf</span>
+          </div>
+          <div class="synthetic">
+            <img src="images/syntheticImage.png"/>
+            <span>Synthetic</span>
+          </div>
+        </div>
+        <p class="info">
+          The TimeformUS Pace Projector gives you an early pace scenario based on contenders’ running style, and highlights if a race projects to have a fast pace, favors frontrunners, or has no speed at all. The Finish Position Projector gives you an algorithmic basis from which to form your own handicapping opinion. The Projector adjusts for factors such as habitual running style, blinkers, maturity, and more.
+        </p>
+      </section>
+      <section class="paceProjectElements" id="paceProjElements" >
+
+      </section>
+      <section class="tfusWorking" id="tfusWorkingSection">
+        <div class="hgroup">
+          <h2 class="sectionTitle">How TFUS PPs Work</h2>
+          <div class="tfusBox tfusSpeedFig">
+            <div class="imgBox">
+              <img src='images/tfusSpeedFig.png'/>
+            </div>
+            <div class="tfusInfo">
+              <h4>TFUS Speed Figures</h4>
+              <p>
+                TimeformUS Speed Figures are different from Beyer Speed Figures and uniquely account for the pace of each race. If a front-runner gets away with a slow early pace, we will use our algorithms to downgrade its TFUS Speed Figure. Similarly, if a horse goes too fast early, our speed figure for the race will typically be upgraded.
+              </p>
+              <div class="speedFigBottom">
+                The higher the figure, the better the race. Top-class horses can earn figures of 120-plus.
+              </div>
+            </div>
+          </div>
+          <div class="tfusBox spotlightFig">
+            <div class="imgBox">
+              <img src='images/spotlightFig.png'/>
+            </div>
+            <div class="tfusInfo">
+              <h4>Spotlight Figures</h4>
+              <p>
+                Our algorithms look at the race conditions and sort through each horse’s previous races to find the best, most relevant figure the horse has earned. In dirt races, most spotlight figures will be brown. In turf races, most will be green. In synthetic races, most will be light blue. But in some cases, a horse’s most relevant race will be on another surface than the current race, so the color-coding will help you quickly see that.
+              </p>
+              <div class="spotlightBottom">
+                <span class="denotation">Denotations</span>
+                <div class="trackInformation">
+                  <div>
+                    <span>97</span>
+                    <span>Dirt</span>
+                  </div>
+                  <div>
+                    <span>100</span>
+                    <span>Turf</span>
+                  </div>
+                  <div>
+                    <span>97</span>
+                    <span>Synthetic</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="tfusBox timeformSel">
+            <div class="imgBox">
+              <img src='images/timeFormSel.png'/>
+            </div>
+            <div class="tfusInfo">
+              <h4>TimeformUS Selection</h4>
+              <p class="mainInfo">
+                TimeformUS makes Top 3 picks for each race. We use our algorithms to create a points system to rank each horse in the race, with a reliance on TimeformUS Speed Figures and our Early Pace Projector. The more races a horse has, the more relevant the rating. When horses have limited starts, we use trainer data to enhance the selections.
+              </p>
+              <p class="note">
+                <span>Note:</span>
+                <span>Selections are not available until the card goes final, typically 36-48 hours before the race.</span>
+              </p>
+              <div class="timeformBottom">
+                <span>Example of Tag Denotations for Horses</span>
+                <div class="timeformRating">
+                  <div>
+                    <span>Bramble Bay</span>
+                    <div class="rating">
+                      <img src="images/star.svg"/>
+                      <span>1st</span>
+                    </div>
+                  </div>
+                  <div>
+                    <span>Splash Cash</span>
+                    <div class="rating">
+                      <img src="images/star.svg"/>
+                      <span>2nd</span>
+                    </div>
+                  </div>
+                  <div>
+                    <span>Above Par</span>
+                    <div class="rating">
+                      <img src="images/star.svg"/>
+                      <span>3rd</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
       </section>
-      <section class="timeFormUS withBg" id="timeFormUS">
-        <div class="innerContainer">
+      <section class="paceRatingWrap">
+        <div>
           <div class="hgroup">
-            <h2 class="sectionTitle">TimeformUS Pace Figures</h2>
-            <p class="subTitle">Pace makes the race!</p>
-          </div>
-          <img src="https://static.drf.com/sstf/images/pps_page_images/timeformus.jpg" alt="" class="desktop">
-          <img src="https://static.drf.com/sstf/images/pps_page_images/timeformus-mobile.png" alt="" class="mobile">
-          <div class="colTwo">
-            <ul>
-              <li>Pace Figures = speed figures for each fraction of a race</li>
-              <li>Quickly understand the totality of a horse's effort using these best-in-class Pace Figures</li>
-              <li>Color-coded red for hot-paced races and blue for slow-paced races</li>
-            </ul>
-            <div class="videoWrap">
-              <iframe width="552" height="310" src="https://www.youtube.com/embed/BLfgjwT8qaI"
-                title="YouTube video player" frameborder="0"
-                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                allowfullscreen></iframe>
-            </div>
-          </div>
-          <div class="cards dev">
-            <div class="card">
-              <div class="cardtitle">TimeformUS Pace Figures</div>
-              <p>A great tool for handicappers in DRF Formulator PPs</p>
-              <a class="button secondary" target="_blank"
-                href="https://www.drf.com/news/timeformus-pace-figures-new-tool-handicappers-drf-formulator">Learn
-                More</a>
-            </div> <!--  card -->
-            <div class="card">
-              <div class="cardtitle">Q&A with the experts</div>
-              <p>Q&A with David Arogona and <br>Craig Milkowski</p>
-              <a class="button secondary" target="_blank"
-                href="https://www.drf.com/news/q-and-timeformus-pace-figures">Learn More</a>
-            </div> <!--  card -->
-            <div class="card">
-              <div class="cardtitle">TimeformUS Pace Figures</div>
-              <p>Watch video from figure maker <br>Craig Milkowski</p>
-              <a class="button secondary" target="_blank" href="https://www.youtube.com/watch?v=vTYDRfR1AU0">Learn
-                More</a>
-            </div> <!--  card -->
-            <div class="card">
-              <div class="cardtitle">How to use Pace Figures</div>
-              <p>Get a primer from TimeformUS and DRF Handicappers</p>
-              <a class="button secondary" target="_blank"
-                href="https://help.drf.com/hc/en-us/articles/115015919508-Formulator-Now-With-Timeform-US-Pace-Figures-">Learn
-                More</a>
-            </div> <!--  card -->
-          </div> <!--  cards -->
-          <div class="cardsDots">&nbsp;</div>
-        </div> <!--  innerContainer -->
-      </section>
-      <section class="conditionalFilters" id="conditionalFilters">
-        <h2 class="sectionTitle mobileShow">Conditional Filters</h2>
-        <img src="https://static.drf.com/sstf/images/pps_page_images/conditionalFiltersDesktop.png"
-          class="conditionalFltrDesktop" alt="Conditional Filters">
-        <div class="conditionalFilterCnt">
-          <h2 class="sectionTitle mobileHide">Conditional Filters</h2>
-          <ul class="infoCnt">
-            <li>Filters allow you to display the data YOU want!</li>
-            <li>Only DRF's premium PPs put you in the driver's seat allowing you to customize:</li>
-          </ul>
-          <ul class="conditionalFilterInfo">
-            <li>
-              <b>Distance:</b> Sprints | Routes | By Furlong
-            </li>
-            <li>
-              <b>Track Conditions:</b> All | Fast/Firm | Wet
-            </li>
-            <li>
-              <b>Early Pace:</b> All | Race on the Lead | Raced with 2 Lengths
-            </li>
-            <li>
-              <b>Track:</b> All | Today's Track | Today's Track & Surface
-            </li>
-            <li>
-              <b>Surface:</b> Turf | Dirt | Synthetic
-            </li>
-          </ul>
-        </div>
-      </section>
-      <section class="trainerPatterns colorBgSection" id="trainerPatterns">
-        <div class="hgroup">
-          <h2 class="sectionTitle">Trainer Patterns</h2>
-        </div>
-        <div class="contentWrap">
-          <img src="https://static.drf.com/sstf/images/pps_page_images/trainerPatternsImg.png" class="mobileHide">
-        </div>
-        <div class="traineePatternsContent">
-          <div class="descLeftSection">
-            <p>
-              When handicapping a race, it is very useful to investigate a trainer's history in a similar race. For
-              example, does the
-              trainer excel in cheap claiming races on dirt only? To find out, click on a trainer's name, highlighted
-              in
-              blue text, in
-              the top portion of your PPs. DRF Formulator PPs display the entirety of the trainer's training records,
-              providing
-              both the trainer's statistics and the actual performance profiles for the individual
-              horses trained.
-            </p>
-            <p>
-              This powerful feature enables you to perform in-depth analyses of a trainer's patterns. You can create
-              custom queries
-              about a specific trainer history and tendencies, and view both summary level and detailed results for
-              the
-              query. You can
-              also browse through the PPs of all the horses in a trainer's stable, and use filters to isolate specific
-              horses and to
-              identify patterns.
+            <h2 class="sectionTitle">Pace Ratings</h2>
+            <p class="info">
+              The top TimeformUS Early and Late Pace Ratings are created based on an average of each horse’s recent early and late pace figures. Also taken into account are the horse’s running style, distance, and surface of each race.
             </p>
           </div>
-          <div class="imgRightSection mobileHide">
-            <img src="https://static.drf.com/sstf/images/pps_page_images//countryGrammerImg.png">
-          </div>
         </div>
-        <div class="featuresWrapper">
-          <h2 class="sectionTitle sectionBlueTitle">Features</h2>
-          <div class="accordianWrapper">
-            <div class="accordianHeader">
-              <span class="accordianIcon collapseIcon">&nbsp;</span>
-              Accessing Training Patterns
-            </div>
-            <div class="accordianContentWrap traineePatternsAccordianWrap">
-              <p>To launch the Trainer Patterns Tool, click a trainer's name while looking at the past performances
-                (the
-                trainer's name
-                will appear in blue text). This will take you to the Trainer Pattern page, with statistics appearing
-                based on your
-                filters.
-              </p>
-              <p>
-                The top line of the Trainer Patterns page displays the lifetime statistics of the trainer:
-              </p>
-              <div class="traineePatternsListing">
-                <div class="listWrap">
-                  <ul>
-                    <li><span>Horses -</span> The number of horses included in the current query.</li>
-                    <li><span>Starts -</span> The number of starts for this trainer.</li>
-                    <li><span>Wins -</span> The number of times this trainer has won.</li>
-                    <li><span>Win% -</span> The percentage of starters with which this trainer has won.</li>
-                  </ul>
-                </div>
-                <div class="listWrap">
-                  <ul>
-                    <li><span>ITM -</span> The number of times this trainer has finished in the money.</li>
-                    <li>
-                      <span>ITM% -</span> The percentage of starts with which this trainer has finished in the money.
-                    </li>
-                    <li>
-                      <span>$2 ROI -</span> The average return on investment per $2 wagered to win on each of this
-                      trainer's starters.
-                    </li>
-                    <li>
-                      <span>Average Payoff -</span> The average payoff of all winning finishes. This field can be used
-                      to determine if any payoffs have
-                      skewed the ROI.
-                    </li>
-                  </ul>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="accordianWrapper">
-            <div class="accordianHeader">
-              <span class="accordianIcon">&nbsp;</span>
-              Modifying Filters
-            </div>
-            <div class="accordianContentWrap modifyingFiltersWrap hide">
-              <div class="modifyingFiltersDesc">
-                <p>The default Trainer Patterns setting will show the above statistics for every one of that
-                  trainer's starts in the past
-                  five years. To filter these statistics, click on the “Modify Filters” button in the top right of
-                  the navigation bar.
-                </p>
-                <p>
-                  The Modify Filters dialog box enables you to completely customize what statistics you want
-                  Formulator to show you. Once
-                  you have specified your query options, Formulator provides you with the statistics you requested
-                  for that trainer, as
-                  well as the relevant Performance Profiles for the horses in the trainer's stable that meet the
-                  specified criteria.
-                </p>
-                <p>
-                  After modifying the filters to your desired selection, click "OK" to view that particular
-                  trainer's stats under the
-                  circumstances you have selected.
-                </p>
-                <p>
-                  There are three types of Modifying Filters - Basic horse and trainer filters, race categories and
-                  range filters, and
-                  track/jockey filters.
-                </p>
-              </div>
-              <div class="modifyingFiltersImgWrap">
-                <img src="https://static.drf.com/sstf/images/pps_page_images/modifyingFiltersImg.png">
-              </div>
-            </div>
-          </div>
-          <div class="btnWrap">
-            <a class="button btnTraineeLearnMore secondary"
-              href="https://promos.drf.com/formulator-pps-trainer-patterns" target="_blank">Learn More about Trainer
-              Patterns!</a>
-          </div>
+        <div>
+          <img src='images/paceRatings.png'/>
         </div>
       </section>
-      <section class="mergedWorkouts" id="mergedWorkouts">
+      <section class="topEarlyLate">
         <div>
-          <h2 class="sectionTitle">Merged Workouts</h2>
-          <p class="subTitle">
-            Merge workouts to get a sense if your horse is ready off of a layoff. Perfect for getting a chronological
-            view of recent
-            activity to help you spot patterns!
+          <span>Top Early</span>
+          <p>
+            The Early Ratings are the foundation of the TimeformUS Pace Projector. They identify which horses are likely to contest the pace.
           </p>
         </div>
-        <div class="workoutsImageWrap mobileHide">
-          <img src="https://static.drf.com/sstf/images/pps_page_images/mergedWorkoutsImg.png">
-        </div>
-        <div class="videoWrap">
-          <iframe width="552" height="310" src="https://www.youtube.com/embed/s5Bjs-ivj4s" title="YouTube video player"
-            frameborder="0"
-            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-            allowfullscreen>
-          </iframe>
-        </div>
-      </section>
-      <section class="projectedOdds colorBgSection" id="projectedOdds">
         <div>
-          <h2 class="sectionTitle">Projected Odds</h2>
-          <p class="subTitle">
-            A sensible new tool in your DRF Classic and Formulator PPs to help you make more
-            informed wagers!
+          <span>Top Late</span>
+          <p>
+            The Late Ratings attempt to indicate which horses will be finishing fastest through the stretch.
           </p>
         </div>
-        <div class="projectedOddsImgWrap mobileHide">
-          <img src="https://static.drf.com/sstf/images/pps_page_images/projectedOddsImg.png">
-        </div>
-        <div class="oddsDescription">
-          <div class="descLeftSection">
-            <p>In a 20,000 race study, DRF's projected odds outperformed both live and morning-line odds!</p>
-            <div class="oddsMiddleContent">
-              <p>
-                <span>Vs. Live Odds:</span> Projected Odds were a more accurate predictor of final odds 70% of the time
-                (Live Odds were accurate 30% of the time)
-              </p>
-              <p>
-                <span>Vs. Morning Line (ML) Odds:</span> Projected Odds were a more accurate predictor of final odds 75%
-                of the time (ML Odds were accurate 25% of the time)
-              </p>
-            </div>
-            <p>
-              <span>Simply put: </span>Projected odds are more accurate and the smart choice when making your wagers.
-            </p>
-          </div>
-          <div class="descRightSection">
-            <h2 class="sectionTitle sectionBlueTitle">How Projected Odds Work</h2>
-            <div>
-              <p>
-                As soon as betting pools open for a race, until 10 MTP, we use an algorithm that relies primarily on
-                the Double pool.
-              </p>
-              <p>
-                At 10 MTP, shorter-priced horses' odds are further enhanced, combining the earlier projection with the
-                latest updates
-                from the win pool. Even at 5 MTP, projected odds are far more predictive than the current live odds
-              </p>
-            </div>
-          </div>
-        </div>
       </section>
-      <section class="pedigreeReports" id="pedigreeReports">
+      <section class="addInfo">
         <div>
-          <h2 class="sectionTitle">Pedigree Reports</h2>
-          <p class="subTitle">Recently added to new DRF Formulator PPs!</p>
+          <img src="images/addImage.png" />
         </div>
-        <div class="pedigreeReportsConentWrap">
-          <div class="reportsImgWrap">
-            <img src="https://static.drf.com/sstf/images/pps_page_images/formulatorPPImg.png">
-          </div>
-          <div class="listWrap">
-            <h3>Access faster than ever before:</h3>
-            <ul>
-              <li>
-                PPs of siblings for today's runners
-              </li>
-              <li>Top progeny by the sire for today's runners</li>
-            </ul>
-          </div>
-        </div>
-        <div class="reportsFeatureWrap">
-          <h2 class="sectionTitle sectionBlueTitle">Features</h2>
-          <div class="accordianWrapper">
-            <div class="accordianHeader">
-              <span class="accordianIcon collapseIcon">&nbsp;</span>
-              How to access
-            </div>
-            <div class="accordianContentWrap">
-              <div class="contentLeftSection">
-                <div class="contentWrap">
-                  <div class="stepsNumber">01</div>
-                  <div class="stepDesc">
-                    Choose any DRF Formulator card.
-                  </div>
-                </div>
-                <div class="contentWrap">
-                  <div class="stepsNumber">02</div>
-                  <div class="stepDesc">
-                    Click on a dam's name in the PPs: you now have easy access to this horse's sibling PPs
-                    (domestic only); sorted by top career Beyer Speed Figures
-                  </div>
-                </div>
-              </div>
-              <div class="contentWrap accordianImgWrap">
-                <img src="https://static.drf.com/sstf/images/pps_page_images/PPReportImage.png">
-              </div>
-            </div>
-          </div>
-          <div class="accordianWrapper">
-            <div class="accordianHeader">
-              <span class="accordianIcon">&nbsp;</span>
-              Dive into related PPs on the sire -side
-            </div>
-            <div class="accordianContentWrap hide">
-              <div class="contentLeftSection">
-                <div class="contentWrap">
-                  <div class="stepsNumber">01</div>
-                  <div class="stepDesc">
-                    Click on the sire's name above today's runner's PPs
-                  </div>
-                </div>
-                <div class="contentWrap">
-                  <div class="stepsNumber">02</div>
-                  <div class="stepDesc">
-                    You now have access to the PPs of the top 20 domestic progeny by sire, sorted by top career Beyer
-                    Speed Figure.
-                  </div>
-                </div>
-              </div>
-              <div class="contentWrap accordianImgWrap">
-                <img src="https://static.drf.com/sstf/images/pps_page_images/PPReportImage.png">
-              </div>
-            </div>
-          </div>
-          <div class="accordianWrapper comparisonChartImg">
-            <div class="accordianHeader">
-              <span class="accordianIcon">&nbsp;</span>
-              Comparison Chart (Progency)
-            </div>
-            <div class="accordianContentWrap hide">
-              <div class="contentWrap">
-                <img src="https://static.drf.com/sstf/images/pps_page_images/comparisonChartDesktopImg.png">
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-      <section class="videoReplays colorBgSection" id="videoReplays">
         <div>
-          <h2 class="sectionTitle">Video Replays</h2>
-          <p class="subTitle">Allows trip handicappers to analyze past races!</p>
-        </div>
-        <div class="mobileHide videoReplaysImgWrap">
-          <img src="https://static.drf.com/sstf/images/pps_page_images/videoReplaysDesktopImg.png">
-        </div>
-        <div class="videoListWrapper">
-          <div class="videoWrap">
-            <iframe width="552" height="310" src="https://www.youtube.com/embed/mHKDif_l_Pk"
-              title="YouTube video player" frameborder="0"
-              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-              allowfullscreen>
-            </iframe>
-          </div>
-          <div class="listWrap">
-            <h3>Watch video of most North American races</h3>
-            <ul>
-              <li>
-                Access via the horse's running lines
-              </li>
-              <li>View full-screen</li>
-              <li>Standard/Head-on views</li>
-            </ul>
-          </div>
-        </div>
-      </section>
-      <section class="raceChart" id="raceChart">
-        <div>
-          <h2 class="sectionTitle">Race Chart</h2>
-          <p class="subTitle">
-            Easily dig deeper into results all on one screen (above the PPs)!
-          </p>
-        </div>
-        <div class="raceChartImgWrap">
-          <img src="https://static.drf.com/sstf/images/pps_page_images/raceChartImg.png" class="desktopHide">
-          <img src="https://static.drf.com/sstf/images/pps_page_images/raceChartDesktopImg.png" class="mobileHide">
-        </div>
-        <div class="raceChartVideoListWrap">
-          <div class="listWrap">
-            <ul>
-              <li>
-                Full race details with written recap
-              </li>
-              <li>
-                One-click access via horse's running lines
-              </li>
-              <li>
-                Payouts for all wagers
-              </li>
-              <li>
-                Multiple formats, including Beyer Speed Figure view
-              </li>
-            </ul>
-          </div>
-          <div class="videoWrap">
-            <iframe width="552" height="310" src="https://www.youtube.com/embed/6CnhTBOzTKM"
-              title="YouTube video player" frameborder="0"
-              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-              allowfullscreen>
-            </iframe>
-          </div>
-        </div>
-      </section>
-      <section class="adjustedFractions colorBgSection" id="adjustedFractions">
-        <div>
-          <h2 class="sectionTitle">Adjusted Fractions</h2>
-        </div>
-        <div class="contentWrap">
-          <img src="https://static.drf.com/sstf/images/pps_page_images/adjustedFrationsImg.png">
-        </div>
-        <div class="stepDesc">Adjusted Fractions use the same color-coding as TimeformUS Pace Figures</div>
-        <div class="btnWrapper">
-          <a class="button secondary btnLearnMore" target="_blank"
-            href="https://promos.drf.com/adjusted-fractions-drf-formulator-pps">Learn More
-          </a>
-        </div>
-      </section>
-      <section class="wageringLiveVideo" id="wageringLiveVideo">
-        <div>
-          <h2 class="sectionTitle">Wagering and Live Video</h2>
-        </div>
-        <div class="wageringContentWrap">
-          <div class="contentWrap">
-            <img src="https://static.drf.com/sstf/images/pps_page_images/wageringLiveImg.png">
-          </div>
-          <div class="wageringLeftSection">
-            <div>
-              <div class="availableFormulatorCard white">
-                Formulator is available for
-                <span class="yellowText free">FREE</span><br />
-                Exclusively on <br />
-                <span>DRF BETS</span>
-              </div>
-              <div class="btnWrap">
-                <a class="button primary joinNowBtn" target="_blank"
-                  href="https://www.drf.com/register?utm_source=drf&utm_medium=formulatorpage&utm_campaign=drfbets&utm_content=winning">Join
-                  Now</a>
-              </div>
-              <a target="_blank" href="https://bets.drf.com/" class="login red">Login</a>
-            </div>
-            <div class="listWrap">
-              <ul>
-                <li>Log into your DRF Bets account to watch live race video<a href="https://bets.drf.com/"
-                    target="_blank" class="login red">Login
-                    Now</a>
-                </li>
-                <li>Always FREE</li>
-                <li>Place a wager directly from your PPs!</li>
-              </ul>
-            </div>
-          </div>
-        </div>
-      </section>
-      <section class="customizedPrinting colorBgSection" id="customizedPrinting">
-        <div>
-          <h2 class="sectionTitle">Customized Printing</h2>
-          <div class="contentWrap">
-            <img src="https://static.drf.com/sstf/images/pps_page_images/customisedPrinting.png" class="desktopHide">
-            <img src="https://static.drf.com/sstf/images/pps_page_images/customisedPrintingDesktopImg.png"
-              class="mobileHide">
-          </div>
-          <div class="listWrap">
-            <ul>
-              <li>Print Closer Looks underneath running lines</li>
-              <li>Print your card, trip, and horse notes</li>
-              <li>Print your picks above PPs</li>
-            </ul>
-            <ul>
-              <li>Choose number of running lines, workouts in PDF</li>
-              <li>Print your PPs without ads!</li>
-            </ul>
-          </div>
-          <div class="btnWrap">
-            <a class="button btndownloadExample secondary" target="_blank"
-              href="http://static.drf.com/sstf/images/pps_page_images/CustomizedPPExample.jpg">Download
-              Example</a>
-          </div>
-        </div>
-      </section>
-      <section class="relevantNewsNSelections" id="relevantNewsNSelections">
-        <div>
-          <h2 class="sectionTitle">Relevant News and Selections</h2>
-          <p class="subTitle">
-            Appear right above your PPs; never go back
-            and forth or search the site again!
-          </p>
-          <div class="contentWrap">
-            <img src="https://static.drf.com/sstf/images/pps_page_images/newsArticlesImg.png">
-          </div>
-          <div class="relevantNewsContentWrap">
-            <div class="listWrap">
-              <ul>
-                <li>
-                  Race-related news articles right at the top of
-                  your PPs
-                </li>
-                <li>Expert selections also found at top of your PPs</li>
-                <li>Simply click the News and Analysis tab</li>
-              </ul>
-            </div>
-            <div class="videoWrap">
-              <iframe width="560" height="315" src="https://www.youtube.com/embed/0uFVD7TZWXY"
-                title="YouTube video player" frameborder="0"
-                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                allowfullscreen></iframe>
-            </div>
-          </div>
+          <span>Play the Races now</span>
+          <h2>With Modernized, Faster, and Fun TimeformUS PPs</h2>
+          <a href="#" class="actionBtn">Access for free with DRF Mobile PPs</a>
         </div>
       </section>
       <section class="learnMoreHorseBetting" id="learnMoreHorseBetting">
