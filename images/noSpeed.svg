@@ -1,0 +1,8 @@
+<svg width="72" height="22" viewBox="0 0 72 22" xmlns="http://www.w3.org/2000/svg">
+    <g fill="none" fill-rule="evenodd">
+        <path stroke="#FFF" fill="#9A9A9A" d="M.5.5h71v21H.5z"/>
+        <text font-family="TitilliumWeb-Bold, Titillium Web" font-size="11" font-weight="bold" fill="#FFF" transform="translate(1 1)">
+                    <tspan x="12" y="14">No Speed</tspan>
+                </text>
+    </g>
+</svg>

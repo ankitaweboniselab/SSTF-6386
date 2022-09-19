@@ -13,61 +13,6 @@
     rel="stylesheet" />
   <title>Formulator</title>
 
-  <style data-name="adjustedFractions">
-    .btnWrapper button a,
-    .btnWrapper button a:focus,
-    .btnWrapper button a:visited,
-    .btnWrapper button a:active,
-    .btnWrap button a,
-    .btnWrap button a:focus,
-    .btnWrap button a:visited,
-    .btnWrap button a:active {
-      width: 100%;
-      height: 100%;
-      display: block;
-      color: #0066cc;
-      font-size: 15px;
-      line-height: 32px;
-      font-weight: 600;
-      text-align: center;
-    }
-
-    .btnLearnMore {
-      width: 123px;
-      height: 48px;
-      margin: 0 auto;
-      padding: 12px 24px;
-      line-height: 24px;
-    }
-
-    @media screen and (max-width: 767px) {
-      .adjustedFractions .contentWrap {
-        margin: 16px -16px;
-      }
-
-      .btnWrapper {
-        text-align: center;
-        margin-top: 16px;
-      }
-    }
-
-    @media screen and (min-width: 768px) {
-      .adjustedFractions img {
-        width: 100%;
-      }
-
-      .adjustedFractions .stepDesc {
-        font-size: 32px;
-        line-height: 40px;
-        text-align: center;
-      }
-
-      .btnWrapper {
-        text-align: center;
-        margin-top: 44px;
-      }
-    }
-  </style>
   <style data-name="allPagesWeb">
     @media screen and (min-width: 768px) {
       section .subTitle {
@@ -242,158 +187,6 @@
         width: 525px;
       }
 
-    }
-  </style>
-  <style data-name="conditionalFiters">
-    .conditionalFilters {
-      flex-direction: column;
-      margin-bottom: 20px;
-      margin-top: 20px;
-    }
-
-    .conditionalFilters img {
-      width: 100%;
-      height: auto;
-    }
-
-    .conditionalFilterInfo li::before {
-      background: transparent;
-    }
-
-    .conditionalFilters .sectionTitle {
-      margin-bottom: 14px;
-    }
-
-    .mobileShow {
-      display: block;
-    }
-
-    .mobileHide {
-      display: none;
-    }
-
-    .conditionalFilterCnt {
-      margin-left: 0;
-      margin-top: 21px;
-    }
-
-    .conditionalFilters .infoCnt li {
-      margin-bottom: 12px;
-      font-size: 15px;
-      line-height: 20px;
-      padding-left: 24px;
-    }
-
-    .conditionalFilters .infoCnt li:before {
-      width: 16px;
-      height: 16px;
-      background-size: 16px 16px;
-    }
-
-    .conditionalFilterInfo li {
-      margin-bottom: 8px;
-    }
-
-    .conditionalFilterInfo li b {
-      color: #19345e;
-      font-weight: 700;
-    }
-
-    @media screen and (min-width: 992px) {
-      .mobileShow {
-        display: none;
-      }
-
-      .mobileHide {
-        display: block;
-      }
-
-      .conditionalFilters {
-        display: flex;
-        flex-direction: row;
-        justify-content: space-between;
-        margin-top: 40px;
-        margin-bottom: 40px;
-      }
-
-      .conditionalFilters .sectionTitle {
-        margin-bottom: 32px;
-      }
-
-      .conditionalFilters .infoCnt li:before {
-        width: 24px;
-        height: 24px;
-        background-size: 24px 24px;
-      }
-
-      .conditionalFilters img {
-        width: 649px;
-        height: 564px;
-      }
-
-      .conditionalFilterCnt {
-        margin-left: 24px;
-      }
-
-      .conditionalFilters .infoCnt li {
-        margin-bottom: 16px;
-        font-size: 17px;
-        line-height: 24px;
-        padding-left: 32px;
-      }
-
-      .conditionalFilterInfo li b {
-        color: #000;
-      }
-
-      .conditionalFilters .infoCnt li:last-child {
-        margin-bottom: 6px;
-      }
-
-      .conditionalFilterInfo li {
-        font-size: 17px;
-        line-height: 28px;
-        color: #000;
-      }
-    }
-  </style>
-
-  <style data-name="customizedPrinting">
-    .btndownloadExample,
-    .btnTraineeLearnMore {
-      padding: 12px 48px;
-      margin-top: 16px;
-      height: 48px;
-      line-height: 24px;
-      width: 182px;
-      box-shadow: 0 4px 4px -3px rgba(0, 102, 204, 0.5);
-      margin: 0 auto;
-    }
-
-    .btndownloadExample {
-      padding: 12px 28px;
-      margin-top: 16px;
-    }
-
-    @media screen and (max-width: 767px) {
-      .customizedPrinting .contentWrap {
-        margin: 16px -16px;
-      }
-    }
-
-    @media screen and (min-width: 768px) {
-      .customizedPrinting .contentWrap img {
-        width: 100%;
-        margin: 26px 0 30px;
-      }
-
-      .customizedPrinting .listWrap {
-        display: flex;
-      }
-
-      .customizedPrinting .listWrap ul {
-        width: 50%;
-      }
     }
   </style>
   <style data-name="formulatorpps">
@@ -1249,18 +1042,15 @@
       position: relative;
       margin-bottom: 0;
       background: #19345e;
-    }
-
-    .paceProjectElements .leftCnt {
       padding: 104px 0 104px 0;
       display: flex;
     }
 
     .elementImg {
       position: absolute;
-      width: 388px;
-      height: 388px;
-      right: 15px;
+      width: 435px;
+      height: 454px;
+      right: 75px;
       top: 50%;
       margin-top: -184px;
     }
@@ -1345,6 +1135,55 @@
     .paceProjList .nextArrow {
       transform: rotate(180deg);
       bottom: 0;
+    }
+
+    .tabCnt.contentTwo .noteCnt {
+      margin-top: 4px;
+    }
+
+    .tabCnt.contentTwo span {
+      font-size: 13px;
+      line-height: 24px;
+      color: #fee600;
+      font-family: "Titillium Web", sans-serif;
+      font-weight: 700;
+      display: block;
+      margin-bottom: 4px;
+    }
+
+    .tabCnt.contentTwo .noteCnt p {
+      font-size: 13px;
+      line-height: 20px;
+      color: #ffffff;
+      font-family: "Titillium Web", sans-serif;
+      font-weight: 400;
+      margin-bottom: 8px;
+    }
+
+    .tabCnt.contentThree span {
+      color: #fee600;
+    }
+
+    .tabCnt.contentThree .imgsWrap {
+      display: flex;
+      margin-top: 40px;
+    }
+
+    .tabCnt.contentThree .imgsWrap img {
+      display: inline-block;
+      margin-right: 24px;
+    }
+
+    .tabCnt.contentThree .elementImg {
+      height: 410px;
+      width: 456px;
+      right: 10px;
+    }
+
+    .tabCnt.contentFour .elementImg {
+      height: 434px;
+      width: 468x;
+      right: 26px;
     }
     /* TimeFormUS UI: End */
 
@@ -1454,6 +1293,18 @@
     /* End Base Classes */
 
     /* Media Queries*/
+
+    @media screen and (max-width: 1201px) {
+      .tfusInfo,
+      .timeformSel .tfusInfo,
+      .timeformSel p  {
+        padding-right: 0;
+      }
+
+      .spotlightFig .imgBox {
+        margin-right: 0;
+      }
+    }
 
     @media screen and (max-width: 767px) {
       li::before {
@@ -1831,715 +1682,6 @@
       }
     }
   </style>
-  <style data-name="pedigreeReports">
-    .pedigreeReportsConentWrap {
-      display: flex;
-      align-items: center;
-    }
-
-    .sectionBlueTitle {
-      color: #19345e;
-      text-align: left;
-      margin-bottom: 12px;
-    }
-
-    .reportsFeatureWrap {
-      margin-top: 16px;
-    }
-
-    @media screen and (max-width: 767px) {
-      .pedigreeReports li::before {
-        width: 16px;
-        height: 16px;
-        background-size: 16px 16px;
-      }
-
-      .pedigreeReports li {
-        padding-left: 24px;
-      }
-
-      .listWrap h3 {
-        font-size: 17px;
-        line-height: 20px;
-        color: #000000;
-        font-weight: 600;
-      }
-
-      .listWrap li {
-        margin-top: 12px;
-      }
-
-      .pedigreeReportsConentWrap {
-        display: block;
-      }
-
-      .reportsImgWrap {
-        margin: 16px 0 20px;
-      }
-
-      .contentWrap img,
-      .reportsImgWrap img {
-        width: 100%;
-      }
-
-      .accordianImgWrap {
-        margin: 0 -16px 16px;
-      }
-    }
-
-    @media screen and (min-width: 768px) {
-      .pedigreeReportsConentWrap {
-        flex-direction: row-reverse;
-        margin: 56px 0 59px;
-      }
-
-      .pedigreeReportsConentWrap .reportsImgWrap {
-        width: 58%;
-      }
-
-      .pedigreeReportsConentWrap .listWrap {
-        width: 42%;
-      }
-
-      .reportsImgWrap img,
-      .accordianImgWrap img {
-        width: 648px;
-      }
-
-      .reportsFeatureWrap .sectionBlueTitle {
-        margin-bottom: 28px;
-      }
-
-      .reportsFeatureWrap .comparisonChartImg {
-        margin-bottom: 0;
-      }
-
-      .comparisonChartImg img {
-        width: 100%;
-      }
-
-      .comparisonChartImg .contentWrap {
-        margin-bottom: 0;
-      }
-    }
-
-    @media (min-width: 768px) and (max-width: 991px) {
-      .container section {
-        padding: 0 24px;
-      }
-
-      .pedigreeReportsConentWrap .reportsImgWrap {
-        width: 56%;
-        margin-left: 20px;
-      }
-
-      .pedigreeReportsConentWrap .listWrap {
-        width: 44%;
-      }
-
-      .accordianContentWrap .contentLeftSection {
-        width: 42%;
-      }
-
-      .reportsImgWrap img,
-      .accordianImgWrap img,
-      .wageringLiveVideo .wageringContentWrap .contentWrap img {
-        width: 390px;
-      }
-    }
-  </style>
-  <style data-name="raceChart">
-    .raceChartImgWrap {
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      margin: 19px 0;
-    }
-
-    .raceChartImgWrap img {
-      width: 213px;
-    }
-
-    .raceChart .videoWrap {
-      margin: 16px 0;
-    }
-
-    @media screen and (min-width: 768px) {
-      .raceChartImgWrap {
-        margin: 0;
-      }
-
-      .raceChartImgWrap img {
-        width: 83%;
-        margin: 40px 0;
-      }
-
-      .raceChartVideoListWrap {
-        display: flex;
-        align-items: center;
-        flex-direction: row-reverse;
-      }
-
-      .raceChartVideoListWrap .videoWrap {
-        width: 40%;
-      }
-
-      .raceChartVideoListWrap .listWrap {
-        width: 60%;
-        margin-left: 120px;
-      }
-    }
-  </style>
-  <style data-name="raceHorseNotes">
-    .formulatorLanding .colorBgSection.raceHorseNotes {
-      padding-bottom: 32px;
-      height: auto;
-    }
-
-    .raceHorseNotes .hgroup {
-      margin-bottom: 16px;
-    }
-
-    .raceHorseNotes .colTwo {
-      display: flex;
-      flex-direction: column-reverse;
-    }
-
-    .raceHorseNotes .colTwo {
-      align-items: flex-start;
-    }
-
-    .raceHorseNotes img {
-      margin-bottom: 20px;
-      object-fit: contain;
-    }
-
-    .raceHorseNotes ol {
-      margin-left: 22px;
-    }
-
-    .raceHorseNotes li {
-      margin-bottom: 24px;
-      font-size: 15px;
-      line-height: 20px;
-      font-weight: 700;
-      color: #000;
-      list-style-type: unset;
-      padding-left: 10px;
-    }
-
-    .raceHorseNotes li:last-child {
-      margin-bottom: 0;
-    }
-
-
-    @media screen and (min-width:992px) {
-      .raceHorseNotes .hgroup {
-        margin-bottom: 40px;
-      }
-
-      .raceHorseNotes .colTwo {
-        display: flex;
-        flex-direction: row;
-        justify-content: space-between;
-      }
-
-      .raceHorseNotes li {
-        font-size: 24px;
-        line-height: 36px;
-        margin-bottom: 36px;
-      }
-
-      .raceHorseNotes li:last-child {
-        margin-bottom: 0;
-      }
-
-      .raceHorseNotes img {
-        margin-bottom: 0;
-        width: 580px;
-        margin-left: 24px;
-      }
-    }
-
-    @media screen and (min-width:1200px) {
-      .raceHorseNotes img {
-        width: 744px;
-        margin-left: 24px;
-      }
-    }
-  </style>
-  <style data-name="projectedOdds">
-    .projectedOdds .oddsDescription p {
-      font-size: 15px;
-      line-height: 20px;
-      color: #000000;
-      margin-bottom: 12px;
-    }
-
-    .oddsDescription {
-      margin-top: 16px;
-    }
-
-    .projectedOdds .oddsDescription span {
-      color: #19345e;
-      font-weight: 700;
-    }
-
-    @media screen and (max-width: 767px) {
-      .projectedOdds .subTitle {
-        max-width: 85%;
-        margin: auto;
-      }
-
-      .mergedWorkouts .videoWrap {
-        margin: 16px 0;
-      }
-    }
-
-    @media screen and (min-width: 768px) {
-      .workoutsImageWrap img {
-        width: 100%;
-        margin: 44px 0 4px;
-      }
-
-      .projectedOdds .subTitle {
-        max-width: 48%;
-      }
-
-      .projectedOddsImgWrap img {
-        width: 100%;
-        margin: 22px 0 18px;
-      }
-
-      .oddsDescription {
-        display: flex;
-      }
-
-      .descLeftSection,
-      .descRightSection {
-        width: 49%;
-      }
-
-      .descRightSection {
-        margin-left: 24px;
-      }
-    }
-  </style>
-  <style data-name="relevantNews">
-    .relevantNewsNSelections {
-      border-bottom: 1px solid rgba(25, 52, 94, 0.2);
-    }
-
-    @media screen and (max-width: 767px) {
-      .relevantNewsNSelections .contentWrap {
-        margin: 16px -16px;
-      }
-    }
-
-    @media screen and (min-width: 768px) {
-      .relevantNewsNSelections .contentWrap img {
-        width: 100%;
-        margin-top: 24px;
-      }
-
-      .relevantNewsContentWrap {
-        display: flex;
-        align-items: center;
-      }
-
-      .relevantNewsContentWrap .listWrap {
-        width: 60%;
-      }
-
-      .relevantNewsNSelections .contentWrap {
-        margin: 0;
-      }
-    }
-  </style>
-  <style data-name="timeFormUS">
-    .container section.timeFormUS {
-      background: rgb(63, 171, 45);
-      background: linear-gradient(180deg, rgba(63, 171, 45, 1) 0%, rgba(46, 144, 75, 1) 100%);
-      padding: 16px 0 16px
-    }
-
-    .timeFormUS .hgroup h2 {
-      color: #fff;
-    }
-
-    section.timeFormUS .subTitle {
-      color: #fff;
-    }
-
-    .timeFormUS img.desktop {
-      display: none;
-    }
-
-    .timeFormUS img.mobile {
-      width: 263px;
-      height: 363px;
-      margin: 20px auto;
-      display: block;
-    }
-
-    .timeFormUS .colTwo {
-      display: flex;
-      flex-direction: column;
-      margin: 20px 0;
-    }
-
-    .timeFormUS li::before {
-      content: "";
-      width: 16px;
-      height: 16px;
-      background: url('https://static.drf.com/sstf/images/pps_page_images/Icons/listtick.svg') no-repeat top left;
-      background-size: 16px 16px;
-      margin-top: 2px;
-    }
-
-    .timeFormUS li {
-      margin-bottom: 12px;
-      color: #f4faff;
-      padding-left: 24px;
-    }
-
-    .timeFormUS li:last-child {
-      margin-bottom: 0;
-    }
-
-    .timeFormUS .videoWrap {
-      margin: 16px 0 20px
-    }
-
-    .timeFormUS .cards {
-      display: flex;
-      overflow: auto;
-    }
-
-    .timeFormUS .cards .card {
-      width: 166px;
-      height: 140px;
-      margin: 0 8px 0 0;
-      padding: 12px;
-      border-radius: 8px;
-      background-color: #f4faff;
-      float: left;
-      position: relative;
-    }
-
-    .timeFormUS .cards .card:last-child {
-      margin: 0;
-    }
-
-    .timeFormUS .cards .card .cardtitle {
-      margin-bottom: 4px;
-      font-size: 13px;
-      line-height: 16px;
-      color: #19345e;
-      font-weight: 700;
-    }
-
-    .timeFormUS .cards .card p {
-      margin-bottom: 12px;
-      font-size: 11px;
-      line-height: 16px;
-      color: #19345e;
-      width: 100%;
-      max-height: 36px;
-    }
-
-    .timeFormUS .cards .card a.button.secondary {
-      width: 142px;
-      height: 32px;
-      line-height: 32px;
-      position: absolute;
-      bottom: 12px
-    }
-
-    .timeFormUS .cards .card button a,
-    .timeFormUS .cards .card button a:focus,
-    .timeFormUS .cards .card button a:visited,
-    .timeFormUS .cards .card button a:active {
-      width: 100%;
-      height: 100%;
-      display: block;
-      color: #0066cc;
-      font-size: 15px;
-      line-height: 32px;
-      font-weight: 600;
-      text-align: center;
-    }
-
-    .card br {
-      display: none;
-    }
-
-    @media screen and (min-width: 768px) {
-      .timeFormUS img.desktop {
-        display: block;
-      }
-
-      .timeFormUS img.mobile {
-        display: none;
-      }
-
-      .card br {
-        display: block;
-      }
-    }
-
-    @media screen and (min-width:1024px) {
-
-      .container section.timeFormUS {
-        padding-bottom: 28px;
-      }
-
-      .timeFormUS .cards .card {
-        width: 264px;
-        height: 172px;
-        margin-right: 24px;
-      }
-
-      .timeFormUS .cards .card .cardtitle {
-        margin-bottom: 6px;
-        font-size: 17px;
-        line-height: 24px;
-      }
-
-      .timeFormUS .cards .card p {
-        font-size: 15px;
-        line-height: 20px;
-        height: 74px;
-        width: 100%;
-      }
-
-      .timeFormUS .cards .card a.button.secondary {
-        width: calc(100% - 24px);
-        height: 32px;
-      }
-
-      .timeFormUS .colTwo {
-        display: flex;
-        flex-direction: row-reverse;
-      }
-
-      .timeFormUS .colTwo {
-        margin: 40px 0;
-        justify-content: space-between;
-      }
-
-      .timeFormUS .hgroup {
-        margin-bottom: 44px;
-      }
-
-      .timeFormUS .videoWrap {
-        margin: 0;
-      }
-
-      .timeFormUS ul {
-        width: 400px;
-        margin-top: 80px;
-      }
-    }
-  </style>
-  <style data-name="traineePatterns">
-    .btnTraineeLearnMore {
-      width: 324px;
-      height: 48px;
-      margin: 0 auto;
-    }
-
-    .traineePatternsListing .listWrap li::before {
-      width: 16px;
-      height: 16px;
-      background-size: 16px 16px;
-      top: 2px;
-    }
-
-    .traineePatternsListing .listWrap li span {
-      color: #19345e;
-      font-weight: 700;
-    }
-
-    .trainerPatterns p {
-      font-size: 15px;
-      margin-top: 16px;
-      line-height: 20px;
-    }
-
-    .featuresWrapper {
-      margin-top: 12px;
-    }
-
-    .featuresWrapper .accordianWrapper {
-      margin-bottom: 16px;
-    }
-
-    @media screen and (max-width: 767px) {
-      .modifyingFiltersImgWrap {
-        margin: 12px -16px 0;
-      }
-
-      .trainerPatterns {
-        margin-bottom: 0;
-      }
-    }
-
-    @media screen and (min-width: 768px) {
-      .trainerPatterns .contentWrap {
-        margin: 40px 0;
-      }
-
-      .imgRightSection {
-        width: 588px;
-      }
-
-      .traineePatternsContent {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-      }
-
-      .projectedOdds .descLeftSection p {
-        font-size: 17px;
-        line-height: 24px;
-      }
-
-      .trainerPatterns .traineePatternsAccordianWrap {
-        flex-direction: column;
-      }
-
-      .trainerPatterns .accordianContentWrap p {
-        font-size: 17px;
-        margin-top: 16px;
-        line-height: 24px;
-      }
-
-      .traineePatternsListing {
-        display: flex;
-        margin-top: 10px;
-      }
-
-      .traineePatternsListing .listWrap {
-        width: 50%;
-      }
-
-      .modifyingFiltersImgWrap img {
-        width: 552px;
-      }
-
-      .modifyingFiltersDesc,
-      .modifyingFiltersImgWrap,
-      .traineePatternsContent .descLeftSection,
-      .traineePatternsContent .imgRightSection {
-        width: 49%;
-      }
-
-      .modifyingFiltersWrap {
-        justify-content: space-between;
-        align-items: center;
-      }
-    }
-  </style>
-  <style data-name="wageringLive">
-    .availableFormulatorCard {
-      width: 324px;
-      height: 192px;
-      background: linear-gradient(61deg, #133563 -5%, #09519e 117%);
-      font-size: 24px;
-      line-height: 32px;
-      text-align: center;
-      margin: 0 auto 10px;
-      font-weight: 600;
-      padding: 32px 18px 24px;
-      border-radius: 12px;
-    }
-
-    .availableFormulatorCard span {
-      font-family: 'Alfa Slab One', sans-serif;
-      line-height: 32px;
-    }
-
-    .availableFormulatorCard span.free {
-      letter-spacing: 1px;
-    }
-
-    .wageringLiveVideo .primary {
-      width: 324px;
-      padding: 12px 16px;
-      height: 48px;
-      line-height: 24px;
-    }
-
-    .btnWrap {
-      text-align: center;
-    }
-
-    .wageringLiveVideo .login {
-      font-size: 17px;
-      font-weight: 700;
-      line-height: 24px;
-      margin: 10px 0;
-      text-align: center;
-      display: block;
-    }
-
-    .wageringLiveVideo button a,
-    .wageringLiveVideo button a:active,
-    .wageringLiveVideo button a:focus,
-    .wageringLiveVideo button a:visited {
-      color: #fff;
-    }
-
-    .listWrap .login {
-      font-size: 15px;
-      display: inline;
-      line-height: 20px;
-      margin: 0 0 0 2px;
-    }
-
-    @media screen and (max-width: 767px) {
-      .wageringLiveVideo .contentWrap {
-        margin: 16px -16px;
-      }
-
-      .wageringLiveVideo .primary {
-        margin: 0 auto;
-      }
-    }
-
-    @media screen and (min-width: 768px) {
-      .wageringContentWrap {
-        display: flex;
-        flex-direction: row-reverse;
-        justify-content: space-between;
-        align-items: center;
-        margin-top: 40px;
-      }
-
-      .wageringLeftSection {
-        display: flex;
-        flex-direction: column-reverse;
-      }
-
-      .wageringLeftSection {
-        width: 32%;
-      }
-
-      .wageringContentWrap .contentWrap {
-        width: 58%;
-        margin-left: 24px;
-      }
-
-      .wageringContentWrap .contentWrap img {
-        width: 648px;
-      }
-
-      .wageringLeftSection .availableFormulatorCard {
-        margin: 10px 0;
-      }
-    }
-  </style>
   <style data-name="footer">
     .footer {
       height: 60px;
@@ -2564,30 +1706,6 @@
       .footer {
         height: 108px;
       }
-    }
-  </style>
-  <style data-name="global2">
-    .accordianHeader {
-      cursor: pointer;
-    }
-
-    @media screen and (min-width:1025px) {
-      a.button.secondary:hover {
-        box-shadow: 0 4px 8px -3px #06c;
-        border: solid 1px #06c;
-        background-color: #06c;
-        color: #fff;
-      }
-
-      a.button.primary:hover {
-        box-shadow: 0 4px 8px -3px rgba(65, 117, 5, 0.7);
-        background-color: #417505;
-        color: #fff
-      }
-    }
-
-    #izmiddle-box {
-      display: none;
     }
   </style>
   <style data-name="slick">
@@ -2878,21 +1996,71 @@
         </p>
       </section>
       <section class="paceProjectElements" id="paceProjElements" >
-        <div class="leftCnt">
-          <div class="paceProjList">
-            <div class="prevArrow">
-              <img src="images/arrow.svg">
-            </div>
-            <ul>
-              <li class="active">Early Pace</li>
-              <li>Finish Positions</li>
-              <li>Pace Flags</li>
-              <li>Best Late Pace Rating</li>
-            </ul>
-            <div class="nextArrow">
-              <img src="images/arrow.svg">
+        <div class="paceProjList">
+          <div class="prevArrow">
+            <img src="images/arrow.svg">
+          </div>
+          <ul>
+            <li class="active">Early Pace</li>
+            <li>Finish Positions</li>
+            <li>Pace Flags</li>
+            <li>Best Late Pace Rating</li>
+          </ul>
+          <div class="nextArrow">
+            <img src="images/arrow.svg">
+          </div>
+        </div>
+        <div class="tabCnt contentOne">
+          <div class="paceProjInfoBox">
+            <h3>Elements of Pace Projector</h3>
+            <span class="elementHead">Early Pace</span>
+            <p>
+              Our classic Pace Projector. The projected positions of each horse at the quarter-mile mark for sprint races (less than one mile) and the half-mile mark for route races (one mile or longer).
+            </p>
+          </div>
+          <div class="elementImg">
+            <img src="images/earlyPace.png"/>
+          </div>
+        </div>
+        <div class="tabCnt contentTwo hide">
+          <div class="paceProjInfoBox">
+            <h3>Elements of Pace Projector</h3>
+            <span class="elementHead">Finish Positions</span>
+            <p>
+              Our visual representation of the field’s projected finishing positions. We use our algorithms to create a points system to rank each horse in the race, with a reliance on TimeformUS Speed Figures and our Early Pace Projector. The more races a horse has, the more relevant the rating. When horses have limited starts, we use trainer data to enhance the projections.
+            </p>
+            <div class="noteCnt">
+              <span>Note:</span>
+              <p>
+                1. Larger margins between horses on this projector denote higher confidence, whereas the horses will be bunched together when the algorithm doesn't separate the horses as easily.
+              </p>
+              <p>
+                2. Finish Position Projections are not available until the card goes final, typically 36-48 hours before the race.
+              </p>
             </div>
           </div>
+          <div class="elementImg">
+            <img src="images/finishPos.png"/>
+          </div>
+        </div>
+        <div class="tabCnt contentThree hide">
+          <div class="paceProjInfoBox">
+            <h3>Elements of Pace Projector</h3>
+            <span class="elementHead">Pace Flags</span>
+            <p>
+              A race that projects to have a hot pace is designated with a <span>Fast Pace</span> icon. Slow paces (the opposite of a hot pace, or a cold pace) are designated with <span>Favors Frontrunners</span>. Races with no speed are labeled as <span>No Speed</span>.
+            </p>
+            <div class="imgsWrap">
+              <img src="images/fastPace.svg"/>
+              <img src="images/favFront.svg"/>
+              <img src="images/noSpeed.svg"/>
+            </div>
+          </div>
+          <div class="elementImg">
+            <img src="images/paceFlags.png"/>
+          </div>
+        </div>
+        <div class="tabCnt contentFour hide">
           <div class="paceProjInfoBox">
             <h3>Elements of Pace Projector</h3>
             <span class="elementHead">Best Late Pace Rating</span>
@@ -2900,9 +2068,9 @@
               The horse(s) with the best Late Pace rating is designated with an LP flag. If there is a tie for best Late Pace rating there will be more than one flag. In some Early Pace projections the horse(s) with the best Late Pace rating will be a deep closer not visible in the diagram. That horse will be listed below the Projector as a Deep Closer with an (LP) next to its number.
             </p>
           </div>
-        </div>
-        <div class="elementImg">
-          <img src="images/earlyPace.png"/>
+          <div class="elementImg">
+            <img src="images/paceRating.png"/>
+          </div>
         </div>
       </section>
       <section class="tfusWorking" id="tfusWorkingSection">
@@ -3030,7 +2198,7 @@
           <a href="#" class="actionBtn">Access for free with DRF Mobile PPs</a>
         </div>
       </section>
-      <section class="learnMoreHorseBetting" id="learnMoreHorseBetting">
+      <section class="learnMoreHorseBetting hide" id="learnMoreHorseBetting">
         <div class="bettingCardsWrap">
           <div class="bettingCardHead d-flex">
             <h2 class="cardTitle">Learn more about Horse Betting</h2>
