@@ -9,7 +9,7 @@
   <link href="https://fonts.googleapis.com/css?family=Alfa+Slab+One&display=swap" rel="stylesheet" />
   <link href="https://fonts.googleapis.com/css2?family=Titillium+Web:wght@400;600;700;900&amp;display=swap"
     rel="stylesheet" />
-  <title>Formulator</title>
+  <title>TimeFormUS</title>
 
   <style data-name="allPagesWeb">
     @media screen and (min-width: 768px) {
@@ -1292,6 +1292,10 @@
       flex: 1;
     }
 
+    .paceProjInfoBox {
+      margin-bottom: 24px;
+    }
+
     .elementImg {
       align-self: center;
       position: relative;
@@ -1467,12 +1471,13 @@
       background: rgb(2,0,36);
       margin-bottom: 0;
       background-image: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(0,102,204,1) 100%);
+      
     }
 
     .addInfo img {
-      max-height: 439px;
-      aspect-ratio: 213/439;
-      min-height: 439px;
+      max-height: 360px;
+      aspect-ratio: 375/360;
+      min-height: 360px;
       margin : 0 auto;
     }
 
@@ -1522,6 +1527,22 @@
       color: #06c;
       font-family: "Titillium Web", sans-serif;
       font-weight: 600;
+    }
+
+    .addInfo div:last-child .actionBtn:hover,
+    .addInfo div:last-child .actionBtn:active {
+      background: #06c;
+      color: #ffffff;
+    }
+
+    .backLink:hover svg path,
+    .backLink:active svg path {
+      fill: #000000;
+    }
+
+    .backLink:hover a,
+    .backLink:active a{
+      color: #000000;
     }
 
     @media screen and (min-width: 455px) {
@@ -1606,6 +1627,11 @@
 
       .paceProjList {
         width: calc(100% - 204px);
+      }
+
+      .paceProjInfoBox {
+        padding-right: 42px;
+        margin-bottom: 0;
       }
 
       .paceProjInfoBox h3 {
@@ -2802,15 +2828,15 @@
         </div>
         <div class="trackImageWrap">
           <div class="dirt">
-            <img src="images/dirtImage.png"/>
+            <img src="images/dirtImage.png" alt="dirt"/>
             <span>Dirt</span>
           </div>
           <div class="turf">
-            <img src="images/turfImage.png"/>
+            <img src="images/turfImage.png" alt="turf"/>
             <span>Turf</span>
           </div>
           <div class="synthetic">
-            <img src="images/syntheticImage.png"/>
+            <img src="images/syntheticImage.png" alt="synthetic"/>
             <span>Synthetic</span>
           </div>
         </div>
@@ -2843,7 +2869,7 @@
             </p>
           </div>
           <div class="elementImg">
-            <img src="images/earlyPace.png"/>
+            <img src="images/earlyPace.png" alt="Early Pace"/>
           </div>
         </div>
         <div class="tabCnt contentTwo hide" id="finishPosition">
@@ -2864,7 +2890,7 @@
             </div>
           </div>
           <div class="elementImg">
-            <img src="images/finishPos.png"/>
+            <img src="images/finishPos.png" alt="Finish Positions"/>
           </div>
         </div>
         <div class="tabCnt contentThree hide" id="paceFlags">
@@ -2881,7 +2907,7 @@
             </div>
           </div>
           <div class="elementImg">
-            <img src="images/paceFlags.png"/>
+            <img src="images/paceFlags.png" alt="Pace Flags"/>
           </div>
         </div>
         <div class="tabCnt contentFour hide" id="latePaceRating">
@@ -2893,7 +2919,7 @@
             </p>
           </div>
           <div class="elementImg">
-            <img src="images/paceRating.png"/>
+            <img src="images/paceRating.png" alt="Best late Pace Rating"/>
           </div>
         </div>
         <div class="rightCnt"></div>
@@ -2903,12 +2929,12 @@
           <h2 class="sectionTitle">How TFUS PPs Work</h2>
           <div class="tfusBox tfusSpeedFig">
             <div class="imgBox mobileHide">
-              <img src='images/tfusSpeedFig.png'/>
+              <img src='images/tfusSpeedFig.png' alt="TimeFormUs Speed Figures"/>
             </div>
             <div class="mobileShow headImgBox">
               <h4>TFUS Speed Figures</h4>
               <div class="imgBox">
-                <img src='images/tfusSpeedFigMob.png'/>
+                <img src='images/tfusSpeedFigMob.png' alt="TimeFormUs Speed Figures"/>
               </div>
             </div>
             <div class="tfusInfo">
@@ -2923,12 +2949,12 @@
           </div>
           <div class="tfusBox spotlightFig">
             <div class="imgBox mobileHide">
-              <img src='images/spotlightFig.png'/>
+              <img src='images/spotlightFig.png' alt="TimeFormUs Spotlight Figures"/>
             </div>
             <div class="mobileShow headImgBox">
               <h4>Spotlight Figures</h4>
               <div class="imgBox">
-                <img src='images/spotLightFigMob.png'/>
+                <img src='images/spotLightFigMob.png' alt="TimeFormUs Spotlight Figures"/>
               </div>
             </div>
             <div class="tfusInfo">
@@ -2957,12 +2983,12 @@
           </div>
           <div class="tfusBox timeformSel">
             <div class="imgBox mobileHide">
-              <img src='images/timeFormSel.png'/>
+              <img src='images/timeFormSel.png' alt="TimeFormUs Selection"/>
             </div>
             <div class="mobileShow headImgBox">
               <h4>TimeformUS Selection</h4>
               <div class="imgBox">
-                <img src='images/timeformSelMob.png'/>
+                <img src='images/timeformSelMob.png' alt="TimeFormUs Selection"/>
               </div>
             </div>
             <div class="tfusInfo">
@@ -3015,7 +3041,7 @@
         </div>
         <div>
           <h2 class="sectionTitle mobileShow">Pace Ratings</h2>
-          <img src='images/paceRatings.png'/>
+          <img src='images/paceRatings.png' alt="Pace Ratings"/>
         </div>
       </section>
       <section class="topEarlyLate">
