@@ -26,7 +26,7 @@
 
       .formulatorLanding .sectionTitle {
         font-size: 40px;
-        line-height: 48px;
+        line-height: 44px;
       }
 
       .formulatorLanding .sectionBlueTitle {
@@ -90,26 +90,6 @@
       .desktopHide {
         display: none;
       }
-
-      .videoReplaysImgWrap img {
-        width: 100%;
-        margin: 36px 0 40px
-      }
-
-      .videoListWrapper {
-        display: flex;
-        flex-direction: row-reverse;
-        align-items: center;
-      }
-
-      .videoListWrapper .videoWrap {
-        width: 49%;
-        margin-top: 0;
-      }
-
-      .videoListWrapper .listWrap {
-        width: 51%;
-      }
     }
 
     @media (min-width: 768px) and (max-width: 991px) {
@@ -133,19 +113,6 @@
 
       .formulatorLanding section.colorBgSection {
         padding: 24px;
-      }
-
-      .raceChartVideoListWrap .listWrap {
-        margin-left: 60px;
-        width: 55%;
-      }
-
-      .raceChartVideoListWrap .videoWrap {
-        width: 42%;
-      }
-
-      .videoListWrapper .listWrap h3 {
-        font-size: 18px;
       }
 
       section.customizedPrinting .contentWrap img {
@@ -208,7 +175,7 @@
 
     .formulatorpps .content {
       margin-top: 359px;
-      padding: 18px 0 24px;
+      padding-bottom: 152px;
       background-image: #19345E;
     }
 
@@ -330,7 +297,7 @@
       }
 
       .formulatorpps .content {
-        margin-top: 65px;
+        margin-top: 50px;
         width: 440px;
         background: transparent;
       }
@@ -338,6 +305,7 @@
       .formulatorpps .content .hgroup h1 {
         font-size: 40px;
         line-height: 52px;
+        margin-bottom: 12px;
       }
 
       .formulatorpps .customize {
@@ -457,7 +425,7 @@
       font-size: 14px;
       line-height: 24px;
       color: #ffffff;
-      padding-top: 13px;
+      padding-top: 33px;
     }
 
     .backLink svg {
@@ -646,7 +614,7 @@
       color: #00b7ff;
     }
 
-    .timeformRating span {
+    .timeformBottom .timeformRating span {
       font-size: 15.6px;
       line-height: 20.9px;
       color: #000000;
@@ -721,7 +689,7 @@
     .timeformBottom {
       margin-top: 16px;
       font-size: 15px;
-      line-height: 24px;
+      line-height: 20px;
       color: #000000;
       font-family: "Titillium Web", sans-serif;
       font-weight: 600;
@@ -937,7 +905,7 @@
       font-size: 17px;
       line-height: 30px;
       color: #000000;
-      margin-bottom: 8px;
+      margin-bottom: 4px;
       display: block;
       font-family: "Titillium Web", sans-serif;
       font-weight: 700;
@@ -1051,12 +1019,13 @@
       font-weight: 700;
       padding-bottom: 0;
       border-bottom: none;
+      margin-bottom: 15px;
     }
 
     .content.mobContent.mobileShow ul li {
       font-size: 15px;
       line-height: 24px;
-      margin-bottom: 8px;
+      margin-bottom: 20px;
       color: #06c;
       font-family: "Titillium Web", sans-serif;
       font-weight: 400;
@@ -1083,7 +1052,7 @@
 
     .info {
       font-size: 13px;
-      line-height: 24px;
+      line-height: 20px;
     }
 
     .sectionTitle {
@@ -1228,6 +1197,7 @@
       flex-direction: row;
       flex-wrap: wrap;
       display: flex;
+      margin-top: 8px;
     }
 
     .note span {
@@ -1256,9 +1226,11 @@
       text-align: center;
     }
 
-    .paceRatingWrap {
+    .container section.paceRatingWrap {
       display: flex;
       flex-direction: column-reverse;
+      padding-top: 0;
+      padding-bottom: 0;
     }
 
     .paceRatingWrap  .mobileShow.sectionTitle {
@@ -1267,14 +1239,14 @@
 
     .paceRatingWrap img {
       max-height: 436px;
-      aspect-ratio: 343/436;
+      aspect-ratio: 388/436;
       display: block;
       margin: 0 auto;
     }
 
     .paceRatingWrap .info {
       margin-top: 16px;
-      margin-bottom: 16px;
+      line-height: 24px;
     }
 
     .container section.paceProjectElements {
@@ -1283,8 +1255,8 @@
     }
 
     .elementImg img {
-      max-height: 454px;
-      aspect-ratio: 435/454;
+      max-height: 388px;
+      aspect-ratio: 388/388;
     } 
 
     .paceProjInfoBox, 
@@ -1302,12 +1274,12 @@
       z-index: 1;
     }
 
-    .paceProjInfoBox .elementHead {
+    .tabCnt .paceProjInfoBox span.elementHead {
       font-size: 28px;
       line-height: 36px;
       display: block;
       color: #fee600;
-      margin-bottom: 12px;
+      margin-bottom: 8px;
       font-family: "Titillium Web", sans-serif;
       font-weight: 700;
     }
@@ -1344,7 +1316,7 @@
       line-height: 24px;
       color: #ffffff;
       opacity: 0.3;
-      margin-bottom: 12px;
+      margin-bottom: 16px;
       font-family: "Titillium Web", sans-serif;
       font-weight: 400;
       text-align: right;
@@ -1394,16 +1366,21 @@
       color: #ffffff;
       font-family: "Titillium Web", sans-serif;
       font-weight: 400;
-      margin-bottom: 8px;
+      margin-bottom: 4px;
     }
 
     .tabCnt.contentThree span {
       color: #fee600;
     }
 
+    .tabCnt.contentThree p {
+      font-family: "Titillium Web", sans-serif;
+      font-weight: 600;
+    }
+
     .tabCnt.contentThree .imgsWrap {
       display: flex;
-      margin-top: 40px;
+      margin-top: 24px;
     }
 
     .tabCnt.contentThree .imgsWrap img {
@@ -1417,8 +1394,12 @@
     }
 
     .tabCnt.contentFour .elementImg img {
-      max-height: 434px;
-      aspect-ratio: 468/434;
+      max-height: 388px;
+      aspect-ratio: 436/388;
+    }
+
+    .speedFigBottom {
+      line-height: 24px;
     }
 
     .tabCnt {
@@ -1444,7 +1425,7 @@
     }
 
     .container section.paceProjectElements {
-      padding-top: 24px;
+      padding-top: 22px;
       position: relative;
     }
 
@@ -1470,8 +1451,9 @@
       flex-direction: column;
       background: rgb(2,0,36);
       margin-bottom: 0;
-      background-image: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(0,102,204,1) 100%);
-      
+      padding-top: 0;
+      padding-bottom: 0;
+      background-image: linear-gradient(0deg, rgba(2,0,36,1) 0%, rgba(0,102,204,1) 100%);
     }
 
     .addInfo img {
@@ -1555,13 +1537,36 @@
         position: relative;
       }
 
+      .paceProjList li {
+        margin-bottom: 12px;
+      }
+
+      .tabCnt.contentThree p {
+        font-family: "Titillium Web", sans-serif;
+        font-weight: 400;
+      }
+
+      .tabCnt.contentTwo .noteCnt p {
+        margin-bottom: 8px;
+      }
+
+      .tabCnt.contentThree .imgsWrap {
+        margin-top: 40px;
+      }
+
+      .tabCnt .paceProjInfoBox span.elementHead {
+        margin-bottom: 12px;
+      }
+
       .container section.addInfo {
         justify-content: center;
         height: 312px;
-        margin-bottom: 66px;
+        margin-bottom: 98px;
         flex-direction: row;
+        padding: 0;
+        background-image: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(0,102,204,1) 100%);
       }
-
+      
       .addInfo div:first-child {
         margin-right: 61px;
         width: auto;
@@ -1625,12 +1630,16 @@
         flex-direction: row;
       }
 
+      .container section.paceProjectElements {
+        padding-bottom: 16px;
+      }
+
       .paceProjList {
         width: calc(100% - 204px);
       }
 
       .paceProjInfoBox {
-        padding-right: 42px;
+        padding-right: 44px;
         margin-bottom: 0;
       }
 
@@ -1660,7 +1669,7 @@
       }
 
       .container section.topEarlyLate {
-        padding-bottom: 88px;
+        padding-bottom: 80px;
       }
 
       .topEarlyLate div {
@@ -1670,7 +1679,7 @@
       .topEarlyLate span {
         font-size: 20px;
         line-height: 30px;
-        margin-bottom: 4px;
+        margin-bottom: 8px;
         display: block;
         text-align: left;
       }
@@ -1867,7 +1876,7 @@
         margin-top: 12px;
       }
 
-      .trackImageWrap .turf {
+      .trackImageWrap div.turf {
         width: 523px;
         height: 229px;
         margin-left: 12px;
@@ -1887,7 +1896,6 @@
       .paceProjInfo .info {
         margin-bottom: 76px;
       }
-
 
       .container section.tfusWorking {
         padding-bottom: 131px;
@@ -2007,6 +2015,14 @@
         padding-right: 12px;
       }
 
+      .note span:last-child {
+        color: #555555;
+      }
+
+      .container section.paceRatingWrap {
+        flex-direction: row;
+      }
+
     }
 
     @media screen and (min-width: 992px) {
@@ -2028,7 +2044,7 @@
 
       .formulatorpps {
         background: url("images/bgImage.png");
-        background-size: auto 626px;
+        background-size: auto 703px;
         background-repeat: no-repeat;
         background-position: right top;
         height: auto;
@@ -2036,7 +2052,7 @@
       }
 
       .formulatorpps .content .hgroup p {
-        max-width: 355px;
+        max-width: 340px;
       }
 
       .innerContainer {
@@ -2063,14 +2079,38 @@
       }
 
       .spotlightBottom {
-        padding: 0 54px 6px 12px;
+        padding: 8px 54px 6px 12px;
+      }
+
+      .formulatorpps .content {
+        padding-bottom: 85px;
+      }
+
+      .formulatorpps {
+        background-size: auto 659px;
+      }
+
+      .formulatorLanding .tfusWorking .sectionTitle {
+        line-height: 52px;
+      }
+
+      .formulatorLanding .paceRatingWrap .sectionTitle.mobileHide {
+        line-height: 56px;
+      }
+
+      .container section.paceProjectElements {
+        padding-bottom: 0;
       }
 
     }
 
     @media screen and (min-width: 1025px) {
-      .info {
+      .whyTimeForm .info {
         padding: 0 194px;
+      }
+
+      .paceProjInfo .info {
+        padding: 0 180px;
       }
 
       .tfusSpeedFig .imgBox {
@@ -2141,11 +2181,33 @@
         display: block;
       }
 
+      .paceRatingWrap .hgroup {
+        margin-top: 48px;
+      }
+
+      .formulatorpps ul li {
+        margin-bottom: 12px;
+      }
+
     }
 
     @media screen and (min-width: 1105px) {
       .formulatorpps .content .hgroup p::after {
-        width: 368px;
+        width: 366px;
+      }
+    }
+
+    @media screen and (min-width: 1140px) {
+      .formulatorpps .content {
+        padding-bottom: 151px;
+      }
+
+      .formulatorpps .content .hgroup p {
+        max-width: 405px;
+      }
+
+      .formulatorpps {
+        background-size: auto 700px;
       }
     }
 
@@ -2155,7 +2217,7 @@
       }
 
       .timeformBottom {
-        width: 438px;
+        width: 445px;
       }
     }
   </style>
@@ -2874,7 +2936,7 @@
         </div>
         <div class="tabCnt contentTwo hide" id="finishPosition">
           <div class="paceProjInfoBox">
-            <h3>Elements of Pace Projector</h3>
+            <h3 class="mobileHide">Elements of Pace Projector</h3>
             <span class="elementHead">Finish Positions</span>
             <p>
               Our visual representation of the field’s projected finishing positions. We use our algorithms to create a points system to rank each horse in the race, with a reliance on TimeformUS Speed Figures and our Early Pace Projector. The more races a horse has, the more relevant the rating. When horses have limited starts, we use trainer data to enhance the projections.
@@ -2895,7 +2957,7 @@
         </div>
         <div class="tabCnt contentThree hide" id="paceFlags">
           <div class="paceProjInfoBox">
-            <h3>Elements of Pace Projector</h3>
+            <h3 class="mobileHide">Elements of Pace Projector</h3>
             <span class="elementHead">Pace Flags</span>
             <p>
               A race that projects to have a hot pace is designated with a <span>Fast Pace</span> icon. Slow paces (the opposite of a hot pace, or a cold pace) are designated with <span>Favors Frontrunners</span>. Races with no speed are labeled as <span>No Speed</span>.
@@ -2912,7 +2974,7 @@
         </div>
         <div class="tabCnt contentFour hide" id="latePaceRating">
           <div class="paceProjInfoBox">
-            <h3>Elements of Pace Projector</h3>
+            <h3 class="mobileHide">Elements of Pace Projector</h3>
             <span class="elementHead">Best Late Pace Rating</span>
             <p>
               The horse(s) with the best Late Pace rating is designated with an LP flag. If there is a tie for best Late Pace rating there will be more than one flag. In some Early Pace projections the horse(s) with the best Late Pace rating will be a deep closer not visible in the diagram. That horse will be listed below the Projector as a Deep Closer with an (LP) next to its number.
@@ -2926,7 +2988,8 @@
       </section>
       <section class="tfusWorking" id="tfusWorkingSection">
         <div class="hgroup">
-          <h2 class="sectionTitle">How TFUS PPs Work</h2>
+          <h2 class="sectionTitle mobileHide">How TFUS PPs Work</h2>
+          <h2 class="sectionTitle mobileShow">How TimeformUS PPs Work</h2>
           <div class="tfusBox tfusSpeedFig">
             <div class="imgBox mobileHide">
               <img src='images/tfusSpeedFig.png' alt="TimeFormUs Speed Figures"/>
