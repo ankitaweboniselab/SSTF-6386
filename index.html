@@ -753,66 +753,6 @@
       margin-bottom: 0;
     }
 
-    .container section.addInfo {
-      display: flex;
-      justify-content: center;
-      background: rgb(2,0,36);
-      background-image: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(0,102,204,1) 100%);
-    }
-
-    .container section.addInfo {
-      margin-bottom: 66px;
-      height: 312px;
-    }
-
-    .addInfo img {
-      max-height: 312px;
-      aspect-ratio: 322/312;
-      min-height: 312px;
-    }
-
-    .addInfo div:first-child {
-      margin-right: 61px;
-    }
-
-    .addInfo div:last-child {
-      padding-top: 40px;
-      padding-bottom: 90px;
-      width: 456px;
-    }
-
-    .addInfo div:last-child span {
-      font-size: 21px;
-      line-height: 24px;
-      color: #ffffff;
-      display: block;
-      margin-bottom: 12px;
-      font-family: "Titillium Web", sans-serif;
-      font-weight: 400;
-    }
-
-    .addInfo div:last-child h2 {
-      font-size: 32px;
-      line-height: 40px;
-      color: #ffffff;
-      margin-bottom: 32px;
-      font-family: "Titillium Web", sans-serif;
-      font-weight: 700;
-    }
-
-    .addInfo div:last-child .actionBtn {
-      padding: 12px 15px;
-      border-radius: 5.8px;
-      border: solid 1px #06c;
-      background-color: #fff;
-      font-size: 15px;
-      line-height: 20px;
-      text-align: center;
-      color: #06c;
-      font-family: "Titillium Web", sans-serif;
-      font-weight: 600;
-    }
-
     /* TimeFormUS UI: End */
 
     .sectionSubTitle {
@@ -1520,6 +1460,70 @@
       transform: rotate(90deg);
     }
 
+    .container section.addInfo {
+      display: flex;
+      justify-content: center;
+      flex-direction: column;
+      background: rgb(2,0,36);
+      margin-bottom: 0;
+      background-image: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(0,102,204,1) 100%);
+    }
+
+    .addInfo img {
+      max-height: 439px;
+      aspect-ratio: 213/439;
+      min-height: 439px;
+      margin : 0 auto;
+    }
+
+    .addInfo div:first-child {
+      display: flex;
+      width: 100%;
+      align-self: center;
+      border-bottom: 1px solid rgba(255, 255, 255, 0.26);
+    }
+
+    .addInfo div:last-child {
+      padding-top: 24px;
+      padding-bottom: 24px;
+      text-align: center;
+    }
+
+    .addInfo div:last-child span {
+      font-size: 13px;
+      line-height: 16px;
+      color: #ffffff;
+      display: block;
+      margin-bottom: 8px;
+      font-family: "Titillium Web", sans-serif;
+      font-weight: 400;
+    }
+
+    .addInfo div:last-child h2 {
+      font-size: 17px;
+      line-height: 20px;
+      color: #ffffff;
+      margin-bottom: 12px;
+      font-family: "Titillium Web", sans-serif;
+      font-weight: 700;
+    }
+
+    .addInfo div:last-child .actionBtn {
+      padding: 12px 15px;
+      border-radius: 5.8px;
+      border: solid 1px #06c;
+      background-color: #fff;
+      font-size: 12px;
+      line-height: 16px;
+      text-align: center;
+      display: block;
+      width: 219px;
+      margin: 0 auto;
+      color: #06c;
+      font-family: "Titillium Web", sans-serif;
+      font-weight: 600;
+    }
+
     @media screen and (min-width: 455px) {
       .timeformRating > div:last-child {
         margin-top: 0;
@@ -1528,6 +1532,62 @@
     @media screen and (min-width: 768px) {
       .tfusBox {
         position: relative;
+      }
+
+      .container section.addInfo {
+        justify-content: center;
+        height: 312px;
+        margin-bottom: 66px;
+        flex-direction: row;
+      }
+
+      .addInfo div:first-child {
+        margin-right: 61px;
+        width: auto;
+        border-bottom: none;
+        display: inline-block;
+      }
+
+      .addInfo div:last-child {
+        padding-top: 40px;
+        padding-bottom: 90px;
+        width: 456px;
+        text-align: left;
+      }
+
+      .addInfo div:last-child span {
+        font-size: 21px;
+        line-height: 24px;
+        margin-bottom: 12px;
+      }
+
+      .addInfo div:last-child h2 {
+        font-size: 32px;
+        line-height: 40px;
+        margin-bottom: 32px;
+      }
+
+      .addInfo div:last-child .actionBtn {
+        padding: 12px 15px;
+        border-radius: 5.8px;
+        border: solid 1px #06c;
+        background-color: #fff;
+        font-size: 15px;
+        line-height: 20px;
+        text-align: center;
+        display: inline-block;
+        color: #06c;
+        font-family: "Titillium Web", sans-serif;
+        font-weight: 600;
+        width: auto;
+        margin: unset;
+      }
+
+      .addInfo img {
+        max-height: 312px;
+        aspect-ratio: 322/312;
+        min-height: 312px;
+        margin: unset;
       }
 
       .rightCnt {
@@ -2970,7 +3030,8 @@
       </section>
       <section class="addInfo">
         <div>
-          <img src="images/addImage.png" />
+          <img src="images/mobilePhone.png" class="mobileShow"/>
+          <img src="images/addImage.png" class="mobileHide" />
         </div>
         <div>
           <span>Play the Races now</span>
@@ -2978,7 +3039,7 @@
           <a href="#" class="actionBtn">Access for free with DRF Mobile PPs</a>
         </div>
       </section>
-      <section class="learnMoreHorseBetting hide" id="learnMoreHorseBetting">
+      <section class="learnMoreHorseBetting" id="learnMoreHorseBetting">
         <div class="bettingCardsWrap">
           <div class="bettingCardHead d-flex">
             <h2 class="cardTitle">Learn more about Horse Betting</h2>
