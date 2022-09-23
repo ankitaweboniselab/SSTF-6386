@@ -2719,6 +2719,10 @@
         width: auto;
       }
     }
+    .disabled {
+      opacity: .5;
+      pointer-events: none;
+    }
   </style>
   <script src="./formulator.js"></script>
 </head>
@@ -2817,20 +2821,20 @@
       <section class="paceProjectElements" id="paceProjElements" >
         <h3 class="mobileShow">Elements of Pace Projector</h3>
         <div class="paceProjList">
-          <div class="prevArrow">
+          <div class="prevArrow disabled" id="prevArrow" onclick="displayEleOfPaceProjector(true, 'up')">
             <img src="images/arrow.svg">
           </div>
           <ul>
-            <li class="active">Early Pace</li>
-            <li>Finish Positions</li>
-            <li>Pace Flags</li>
-            <li>Best Late Pace Rating</li>
+            <li id="early" class="active" onclick="displayEleOfPaceProjector(false, 0)">Early Pace</li>
+            <li id="finish" onclick="displayEleOfPaceProjector(false, 1)">Finish Positions</li>
+            <li id="pace" onclick="displayEleOfPaceProjector(false, 2)">Pace Flags</li>
+            <li id="best" onclick="displayEleOfPaceProjector(false, 3)">Best Late Pace Rating</li>
           </ul>
-          <div class="nextArrow">
+          <div class="nextArrow" id="nextArrow" onclick="displayEleOfPaceProjector(true, 'down')">
             <img src="images/arrow.svg">
           </div>
         </div>
-        <div class="tabCnt contentOne">
+        <div class="tabCnt contentOne active" id="earlyPace">
           <div class="paceProjInfoBox">
             <h3 class="mobileHide">Elements of Pace Projector</h3>
             <span class="elementHead">Early Pace</span>
@@ -2842,7 +2846,7 @@
             <img src="images/earlyPace.png"/>
           </div>
         </div>
-        <div class="tabCnt contentTwo hide">
+        <div class="tabCnt contentTwo hide" id="finishPosition">
           <div class="paceProjInfoBox">
             <h3>Elements of Pace Projector</h3>
             <span class="elementHead">Finish Positions</span>
@@ -2863,7 +2867,7 @@
             <img src="images/finishPos.png"/>
           </div>
         </div>
-        <div class="tabCnt contentThree hide">
+        <div class="tabCnt contentThree hide" id="paceFlags">
           <div class="paceProjInfoBox">
             <h3>Elements of Pace Projector</h3>
             <span class="elementHead">Pace Flags</span>
@@ -2880,7 +2884,7 @@
             <img src="images/paceFlags.png"/>
           </div>
         </div>
-        <div class="tabCnt contentFour hide">
+        <div class="tabCnt contentFour hide" id="latePaceRating">
           <div class="paceProjInfoBox">
             <h3>Elements of Pace Projector</h3>
             <span class="elementHead">Best Late Pace Rating</span>
@@ -3139,5 +3143,58 @@
     </div>
   </div>
 </body>
+<script>
+  var currentIndex = 0;
+  upArrow = document.querySelector(".prevArrow");
+  downArrow = document.querySelector(".nextArrow");
+
+  const ids = ['earlyPace', 'finishPosition', 'paceFlags', 'latePaceRating'];
+  const tabIds = ['early', 'finish', 'pace', 'best'];
+
+  function arrowDisabler(index = currentIndex){
+    if(index === 0){
+      upArrow.classList.add("disabled")
+      downArrow.classList.remove("disabled")
+    } else if(index === 3){
+      downArrow.classList.add("disabled")
+      upArrow.classList.remove("disabled")
+    } else {
+      upArrow.classList.remove("disabled")
+      downArrow.classList.remove("disabled")
+    }
+  }
+
+  function arrowHandler(type){
+    if(type === 'up'){
+      showContent(currentIndex - 1);
+      currentIndex--;
+    } else {
+      showContent(currentIndex + 1);
+      currentIndex++;
+    }
+    arrowDisabler();
+  }
+
+  function showContent(selectedId) {
+    ids.map((id, index) => {
+      if(selectedId === index){
+        document.getElementById(ids[index]).classList.remove("hide")
+        document.getElementById(tabIds[index]).classList.add("active")
+      } else {
+        document.getElementById(ids[index]).classList.add("hide")
+        document.getElementById(tabIds[index]).classList.remove("active")
+      }
+    });
+  }
+
+  function displayEleOfPaceProjector(isArrow, index){
+    showContent(index);
+    if(isArrow){
+      arrowHandler(index);
+    }else {
+      arrowDisabler(index);
+    }  
+  }
+</script>
 
 </html>
