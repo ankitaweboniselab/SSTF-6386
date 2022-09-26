@@ -2807,6 +2807,11 @@
         width: auto;
       }
     }
+    @media(max-width:768px) {
+      .mobileTab {
+        display: none !important;
+      }
+    }
     .disabled {
       opacity: .5;
       pointer-events: none;
@@ -2888,12 +2893,12 @@
         <div class="hgroup">
           <h2 class="sectionTitle">Understanding New Modern Pace Projector</h2>
         </div>
-        <div class="trackImageWrap">
+        <div class="trackImageWrap" id="imageSlider">
           <div class="dirt">
             <img src="images/dirtImage.png" alt="dirt"/>
             <span>Dirt</span>
           </div>
-          <div class="turf">
+          <div class="turf" id="turf">
             <img src="images/turfImage.png" alt="turf"/>
             <span>Turf</span>
           </div>
@@ -2914,9 +2919,9 @@
           </div>
           <ul>
             <li id="early" class="active" onclick="displayEleOfPaceProjector(false, 0)">Early Pace</li>
-            <li id="finish" onclick="displayEleOfPaceProjector(false, 1)">Finish Positions</li>
-            <li id="pace" onclick="displayEleOfPaceProjector(false, 2)">Pace Flags</li>
-            <li id="best" onclick="displayEleOfPaceProjector(false, 3)">Best Late Pace Rating</li>
+            <li id="finish" class="mobileTab" onclick="displayEleOfPaceProjector(false, 1)">Finish Positions</li>
+            <li id="pace" class="mobileTab" onclick="displayEleOfPaceProjector(false, 2)">Pace Flags</li>
+            <li id="best" class="mobileTab" onclick="displayEleOfPaceProjector(false, 3)">Best Late Pace Rating</li>
           </ul>
           <div class="nextArrow" id="nextArrow" onclick="displayEleOfPaceProjector(true, 'down')">
             <img src="images/arrow.svg">
@@ -3233,6 +3238,18 @@
   </div>
 </body>
 <script>
+  const BASE_WIDTH = 302
+  const sectionTitle = document.getElementsByClassName("sectionTitle")[0];
+  const netWidth = (sectionTitle.offsetWidth - BASE_WIDTH) / 2
+
+  const slideContainer = document.getElementById("imageSlider");
+  const turf = document.getElementById("turf");
+  slideContainer.scrollLeft += (turf.offsetWidth - netWidth)
+  window.onresize = () => {
+    if(screen.width > 767) return;
+      location.reload();
+  }
+
   var currentIndex = 0;
   upArrow = document.querySelector(".prevArrow");
   downArrow = document.querySelector(".nextArrow");
@@ -3269,9 +3286,11 @@
       if(selectedId === index){
         document.getElementById(ids[index]).classList.remove("hide")
         document.getElementById(tabIds[index]).classList.add("active")
+        document.getElementById(tabIds[index]).classList.remove("mobileTab")
       } else {
         document.getElementById(ids[index]).classList.add("hide")
         document.getElementById(tabIds[index]).classList.remove("active")
+        document.getElementById(tabIds[index]).classList.add("mobileTab")
       }
     });
   }
