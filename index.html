@@ -2807,7 +2807,7 @@
         width: auto;
       }
     }
-    @media(max-width:1024px) {
+    @media(max-width:768px) {
       .mobileTab {
         display: none !important;
       }
@@ -3238,14 +3238,16 @@
   </div>
 </body>
 <script>
-  const BASE_WIDTH = 333
-  const netWidth = (screen.width - BASE_WIDTH) / 2
+  const BASE_WIDTH = 302
+  const sectionTitle = document.getElementsByClassName("sectionTitle")[0];
+  const netWidth = (sectionTitle.offsetWidth - BASE_WIDTH) / 2
 
   const slideContainer = document.getElementById("imageSlider");
   const turf = document.getElementById("turf");
   slideContainer.scrollLeft += (turf.offsetWidth - netWidth)
   window.onresize = () => {
-    location.reload();
+    if(screen.width > 767) return;
+      location.reload();
   }
 
   var currentIndex = 0;
