@@ -71,12 +71,6 @@ f.event={add:function(a,c,d,e,g){var h,i,j,k,l,m,n,o,p,q,r,s;if(!(a.nodeType===3
 
 /* custom js jquery dependency */
 $(document).ready(function(){
-  $('.accordianHeader').on('click',function(){
-    var the = $(this);
-    the.find("span").toggleClass("collapseIcon");
-    the.next(".accordianContentWrap").toggleClass('hide');
-    return false;
-  })
   $('.backLink.back').on('click', function (e) {
     e.preventDefault();
     window.history.back();
