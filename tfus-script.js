@@ -101,4 +101,69 @@ $(document).ready(function(){
       $("html, body").animate({ scrollTop: 0 }, "slow");
       return false;
   });
+  const BASE_WIDTH = 302
+  const sectionTitle = document.getElementsByClassName("sectionTitle")[0];
+  const netWidth = (sectionTitle.offsetWidth - BASE_WIDTH) / 2
+
+  const slideContainer = document.getElementById("imageSlider");
+  const turf = document.getElementById("turf");
+  slideContainer.scrollLeft += (turf.offsetWidth - netWidth)
+  window.onresize = () => {
+    if(screen.width > 767) return;
+      location.reload();
+  }
+  upArrow = document.querySelector(".prevArrow");
+  downArrow = document.querySelector(".nextArrow");
+  
 })
+
+var currentIndex = 0;
+const ids = ['earlyPace', 'finishPosition', 'paceFlags', 'latePaceRating'];
+const tabIds = ['early', 'finish', 'pace', 'best'];
+
+function arrowDisabler(index = currentIndex){
+  if(index === 0){
+    upArrow.classList.add("disabled")
+    downArrow.classList.remove("disabled")
+  } else if(index === 3){
+    downArrow.classList.add("disabled")
+    upArrow.classList.remove("disabled")
+  } else {
+    upArrow.classList.remove("disabled")
+    downArrow.classList.remove("disabled")
+  }
+}
+
+function arrowHandler(type){
+  if(type === 'up'){
+    showContent(currentIndex - 1);
+    currentIndex--;
+  } else {
+    showContent(currentIndex + 1);
+    currentIndex++;
+  }
+  arrowDisabler();
+}
+
+function showContent(selectedId) {
+  ids.map((id, index) => {
+    if(selectedId === index){
+      document.getElementById(ids[index]).classList.remove("hide")
+      document.getElementById(tabIds[index]).classList.add("active")
+      document.getElementById(tabIds[index]).classList.remove("mobileTab")
+    } else {
+      document.getElementById(ids[index]).classList.add("hide")
+      document.getElementById(tabIds[index]).classList.remove("active")
+      document.getElementById(tabIds[index]).classList.add("mobileTab")
+    }
+  });
+}
+
+function displayEleOfPaceProjector(isArrow, index){
+  showContent(index);
+  if(isArrow){
+    arrowHandler(index);
+  }else {
+    arrowDisabler(index);
+  }  
+}
