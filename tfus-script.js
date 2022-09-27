@@ -102,10 +102,7 @@ $(document).ready(function(){
   const slideContainer = document.getElementById("imageSlider");
   const turf = document.getElementById("turf");
   slideContainer.scrollLeft += (turf.offsetWidth - netWidth)
-  window.onresize = () => {
-    if(screen.width > 767) return;
-      location.reload();
-  }
+
   upArrow = document.querySelector(".prevArrow");
   downArrow = document.querySelector(".nextArrow");
   
