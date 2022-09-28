@@ -95,18 +95,22 @@ $(document).ready(function(){
       $("html, body").animate({ scrollTop: 0 }, "slow");
       return false;
   });
-  const BASE_WIDTH = 302
-  const sectionTitle = document.getElementsByClassName("sectionTitle")[0];
-  const netWidth = (sectionTitle.offsetWidth - BASE_WIDTH) / 2
 
-  const slideContainer = document.getElementById("imageSlider");
-  const turf = document.getElementById("turf");
-  slideContainer.scrollLeft += (turf.offsetWidth - netWidth)
+  alighToCenter();
 
   upArrow = document.querySelector(".prevArrow");
-  downArrow = document.querySelector(".nextArrow");
-  
+  downArrow = document.querySelector(".nextArrow");  
 })
+
+$(window).resize(function(){
+  alighToCenter();
+});
+
+function alighToCenter(){
+  var windowWidth = $(".trackImageWrap").width();
+  var leftScroll = (868 - windowWidth)/2;
+  $( ".trackImageWrap" ).scrollLeft( leftScroll );
+}
 
 var currentIndex = 0;
 const ids = ['earlyPace', 'finishPosition', 'paceFlags', 'latePaceRating'];
