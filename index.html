@@ -865,6 +865,13 @@
       .mobileHide {
         display: none;
       }
+      .mobileShow li a,
+      .mobileShow li a:hover,
+      .mobileShow li a:visited,
+      .mobileShow li a:focus
+       {
+        color: #0066cc;
+      }
     }
     /* Styles for TimeFormUs 101 Page: Start */
     .hide {
@@ -1245,7 +1252,7 @@
 
     .paceRatingWrap img {
       max-height: 436px;
-      aspect-ratio: 388/436;
+      aspect-ratio: 324/412;
       display: block;
       margin: 0 auto;
     }
@@ -1395,13 +1402,8 @@
     }
 
     .tabCnt.contentThree .elementImg img {
-      max-height: 410px;
-      aspect-ratio: 456/410;
-    }
-
-    .tabCnt.contentFour .elementImg img {
-      max-height: 388px;
-      aspect-ratio: 436/388;
+      max-height: 432px;
+      aspect-ratio: 438/432;
     }
 
     .speedFigBottom {
@@ -2812,10 +2814,23 @@
       .timeFormUS .cards {
         width: auto;
       }
+      .paceRatingWrap .desktopShow {
+        display: block;
+        margin: 0 auto;
+      }
+      .paceRatingWrap .mobileShow {
+        display: none;
+      }
     }
     @media(max-width:768px) {
       .mobileTab {
         display: none !important;
+      }
+      .paceRatingWrap .desktopShow {
+        display: none;
+      }
+      .paceRatingWrap .mobileShow {
+        display: block;
       }
     }
     .disabled {
@@ -3115,7 +3130,8 @@
         </div>
         <div>
           <h2 class="sectionTitle mobileShow">Pace Ratings</h2>
-          <img src='images/paceRatings.png' alt="Pace Ratings"/>
+          <img src='images/pace-rating-desktop-2x.png' class="desktopShow" alt="Pace Ratings"/>
+          <img src='images/pace-rating-mobile-2x.png' class="mobileShow" alt="Pace Ratings"/>
         </div>
       </section>
       <section class="topEarlyLate">
